@@ -1,0 +1,43 @@
+/* CSS Document */
+body{
+	margin:0; 
+	padding: 0;
+	background-color: white;
+}
+
+.gamediv{
+	margin:0 auto;
+	width:1200px;
+	height:600px; 
+	background-color: white;
+	position:absolute;
+	left:100px;
+	top:180px;
+}
+
+#content{
+	width:900px;
+	margin:0 auto;
+}
+
+#title{
+	color: #lightpink;
+	float: left;
+}
+
+#controlcenter{
+	width: 300px;
+	height:200px;
+	color: lightpink;
+	background-color: LavenderBlush;
+	float:left;
+	margin-left: 50px;
+}
+
+#score{
+	width:100px;
+	height:200px;
+	float:left; 
+	margin-left: 90px;
+	color: #lightpink;
+}
