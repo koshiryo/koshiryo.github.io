@@ -79,19 +79,17 @@
 
 
 
-<meta name="description" content="Day 10 for 応用情報技術者試験マネジメント">
+<meta name="description" content="Vue.js 学习笔记 2常用语法数据绑定vue与html中内容建立关系的方式是绑定，在自定的js文件中定义一个Vue对象，内部元素el作为选择器绑定对应标签，如div;data是一个对象，其中的键值对对应html中v-model属性的值如data：{ name:”Jack”}。在html中将被绑定的值用双大括号保住，则的值随自定义vue对象data值中name的值改变。 v-model , v-">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Note10">
-<meta property="og:url" content="http://yoursite.com/2019/10/22/Note10/index.html">
+<meta property="og:title" content="Vuejs">
+<meta property="og:url" content="http://yoursite.com/2019/11/01/Vuejs/index.html">
 <meta property="og:site_name" content="This is Jiaozi :)">
-<meta property="og:description" content="Day 10 for 応用情報技術者試験マネジメント">
+<meta property="og:description" content="Vue.js 学习笔记 2常用语法数据绑定vue与html中内容建立关系的方式是绑定，在自定的js文件中定义一个Vue对象，内部元素el作为选择器绑定对应标签，如div;data是一个对象，其中的键值对对应html中v-model属性的值如data：{ name:”Jack”}。在html中将被绑定的值用双大括号保住，则的值随自定义vue对象data值中name的值改变。 v-model , v-">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="http://yoursite.com/2019/10/22/Note10/1.jpg">
-<meta property="og:updated_time" content="2019-10-22T11:47:24.986Z">
+<meta property="og:updated_time" content="2019-11-01T12:25:01.895Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Note10">
-<meta name="twitter:description" content="Day 10 for 応用情報技術者試験マネジメント">
-<meta name="twitter:image" content="http://yoursite.com/2019/10/22/Note10/1.jpg">
+<meta name="twitter:title" content="Vuejs">
+<meta name="twitter:description" content="Vue.js 学习笔记 2常用语法数据绑定vue与html中内容建立关系的方式是绑定，在自定的js文件中定义一个Vue对象，内部元素el作为选择器绑定对应标签，如div;data是一个对象，其中的键值对对应html中v-model属性的值如data：{ name:”Jack”}。在html中将被绑定的值用双大括号保住，则的值随自定义vue对象data值中name的值改变。 v-model , v-">
 
 
 
@@ -121,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/10/22/Note10/">
+  <link rel="canonical" href="http://yoursite.com/2019/11/01/Vuejs/">
 
 
 
 
 
-  <title>Note10 | This is Jiaozi :)</title>
+  <title>Vuejs | This is Jiaozi :)</title>
   
 
 
@@ -234,7 +232,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/22/Note10/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/01/Vuejs/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Koshi Ryo">
@@ -251,7 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Note10</h1>
+          <h1 class="post-title" itemprop="name headline">Vuejs</h1>
         
 
         <div class="post-meta">
@@ -263,8 +261,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-10-22T19:24:26+09:00">
-                2019-10-22
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-11-01T21:09:57+09:00">
+                2019-11-01
               </time>
             
 
@@ -301,7 +299,39 @@
       
 
       
-        <h1 id="Day-10-for-応用情報技術者試験"><a href="#Day-10-for-応用情報技術者試験" class="headerlink" title="Day 10 for 応用情報技術者試験"></a>Day 10 for 応用情報技術者試験</h1><h2 id="マネジメント"><a href="#マネジメント" class="headerlink" title="マネジメント　"></a>マネジメント　</h2><img src="/2019/10/22/Note10/1.jpg">
+        <h1 id="Vue-js-学习笔记-2"><a href="#Vue-js-学习笔记-2" class="headerlink" title="Vue.js 学习笔记 2"></a>Vue.js 学习笔记 2</h1><h2 id="常用语法"><a href="#常用语法" class="headerlink" title="常用语法"></a>常用语法</h2><h3 id="数据绑定"><a href="#数据绑定" class="headerlink" title="数据绑定"></a>数据绑定</h3><p>vue与html中内容建立关系的方式是绑定，在自定的js文件中定义一个Vue对象，内部元素el作为选择器绑定对应标签，如div;data是一个对象，其中的键值对对应html中v-model属性的值如data：{ name:”Jack”}。在html中将被绑定的值用双大括号保住，则的值随自定义vue对象data值中name的值改变。</p>
+<h4 id="v-model-v-show"><a href="#v-model-v-show" class="headerlink" title="v-model , v-show"></a>v-model , v-show</h4><p>v-model,v-show是vue自定义的属性，称为指令：directive.<br>v-model与v-show一般配合使用。v-model绑定输入标签input与vue对象变量；v-show绑定输出标签与VUE变量对象如SPAN等；</p>
+<h5 id="html"><a href="#html" class="headerlink" title="html:"></a>html:</h5><pre><code>&lt;div id=&quot;app&quot;&gt;
+    &lt;div&gt;
+        &lt;!-- v-model是vue定义的属性，称为指令：directive --&gt;
+        &lt;input type=&quot;text&quot; v-model=&quot;name&quot;&gt;
+        &lt;span v-show=&quot;name&quot;&gt;
+            My name is {{name}}
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;input type=&quot;text&quot; v-model=&quot;age&quot;&gt;
+        &lt;span v-show=&quot;age&quot;&gt;
+            I am {{age}} years old.
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;input type=&quot;text&quot; v-model=&quot;sex&quot;&gt;
+        &lt;!-- v-show的作用是：如果sex属性存在，则显示此sapn
+v-if,与v-show作用相同，区别是，v-show是仅仅隐藏，而v-if是当sex属性不存在时则将span从DOM中删除
+--&gt;
+        &lt;span v-show=&quot;sex&quot;&gt;
+           I am a {{sex}}.
+        &lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre><h5 id="js-var-app-new-Vue"><a href="#js-var-app-new-Vue" class="headerlink" title="js:    var app = new Vue({"></a>js:    var app = new Vue({</h5><pre><code>    el:&apos;#app&apos;,
+    data:{
+        name:&apos;Sophie&apos;,
+        age:&apos;25,
+        sex:&apos;girl&apos;
+    }
+})</code></pre><p>可以在console中输入app.name来查看对应的值。</p>
+
       
     </div>
     
@@ -325,8 +355,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/10/19/Note9/" rel="next" title="Note9">
-                <i class="fa fa-chevron-left"></i> Note9
+              <a href="/2019/10/27/Vue/" rel="next" title="Vue">
+                <i class="fa fa-chevron-left"></i> Vue
               </a>
             
           </div>
@@ -334,10 +364,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/10/24/Cook/" rel="prev" title="Cooking">
-                Cooking <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -451,7 +477,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Day-10-for-応用情報技術者試験"><span class="nav-number">1.</span> <span class="nav-text">Day 10 for 応用情報技術者試験</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#マネジメント"><span class="nav-number">1.1.</span> <span class="nav-text">マネジメント　</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Vue-js-学习笔记-2"><span class="nav-number">1.</span> <span class="nav-text">Vue.js 学习笔记 2</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#常用语法"><span class="nav-number">1.1.</span> <span class="nav-text">常用语法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#数据绑定"><span class="nav-number">1.1.1.</span> <span class="nav-text">数据绑定</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#v-model-v-show"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">v-model , v-show</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#html"><span class="nav-number">1.1.1.1.1.</span> <span class="nav-text">html:</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#js-var-app-new-Vue"><span class="nav-number">1.1.1.1.2.</span> <span class="nav-text">js:    var app = new Vue({</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></div>
             
 
           </div>
