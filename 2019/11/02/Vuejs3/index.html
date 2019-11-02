@@ -79,20 +79,17 @@
 
 
 
-<meta name="description" content="Collectons Framework Overview Translation 4FINISHED!!!!! This is the link to the original site:Collections Framework Overview">
+<meta name="description" content="Vue.js 学习笔记 3常用语法v-forv-for的作用格式迭代，在html中li元素中定义个v-for的属性如：表示在foodList中迭代输出food，代码如下 html:&amp;lt;div id=&amp;quot;app&amp;quot;&amp;gt;     &amp;lt;ul&amp;gt;         &amp;lt;!-- v-for是一种迭代 --&amp;gt;         &amp;lt;!-- &amp;lt;li v-for=&amp;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Translation">
-<meta property="og:url" content="http://yoursite.com/2019/09/13/Translation4/index.html">
+<meta property="og:title" content="Vue.js">
+<meta property="og:url" content="http://yoursite.com/2019/11/02/Vuejs3/index.html">
 <meta property="og:site_name" content="This is Jiaozi :)">
-<meta property="og:description" content="Collectons Framework Overview Translation 4FINISHED!!!!! This is the link to the original site:Collections Framework Overview">
+<meta property="og:description" content="Vue.js 学习笔记 3常用语法v-forv-for的作用格式迭代，在html中li元素中定义个v-for的属性如：表示在foodList中迭代输出food，代码如下 html:&amp;lt;div id=&amp;quot;app&amp;quot;&amp;gt;     &amp;lt;ul&amp;gt;         &amp;lt;!-- v-for是一种迭代 --&amp;gt;         &amp;lt;!-- &amp;lt;li v-for=&amp;">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="http://yoursite.com/2019/09/13/Translation4/2.PNG">
-<meta property="og:image" content="http://yoursite.com/2019/09/13/Translation4/3.PNG">
-<meta property="og:updated_time" content="2019-10-06T05:45:37.973Z">
+<meta property="og:updated_time" content="2019-11-02T08:25:36.247Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Translation">
-<meta name="twitter:description" content="Collectons Framework Overview Translation 4FINISHED!!!!! This is the link to the original site:Collections Framework Overview">
-<meta name="twitter:image" content="http://yoursite.com/2019/09/13/Translation4/2.PNG">
+<meta name="twitter:title" content="Vue.js">
+<meta name="twitter:description" content="Vue.js 学习笔记 3常用语法v-forv-for的作用格式迭代，在html中li元素中定义个v-for的属性如：表示在foodList中迭代输出food，代码如下 html:&amp;lt;div id=&amp;quot;app&amp;quot;&amp;gt;     &amp;lt;ul&amp;gt;         &amp;lt;!-- v-for是一种迭代 --&amp;gt;         &amp;lt;!-- &amp;lt;li v-for=&amp;">
 
 
 
@@ -122,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/09/13/Translation4/">
+  <link rel="canonical" href="http://yoursite.com/2019/11/02/Vuejs3/">
 
 
 
 
 
-  <title>Translation | This is Jiaozi :)</title>
+  <title>Vue.js | This is Jiaozi :)</title>
   
 
 
@@ -235,7 +232,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/13/Translation4/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/02/Vuejs3/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Koshi Ryo">
@@ -252,7 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Translation</h1>
+          <h1 class="post-title" itemprop="name headline">Vue.js</h1>
         
 
         <div class="post-meta">
@@ -264,8 +261,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-09-13T17:59:38+09:00">
-                2019-09-13
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-11-02T11:32:53+09:00">
+                2019-11-02
               </time>
             
 
@@ -302,15 +299,40 @@
       
 
       
-        <h3 id="Collectons-Framework-Overview-Translation-4"><a href="#Collectons-Framework-Overview-Translation-4" class="headerlink" title="Collectons Framework Overview Translation 4"></a>Collectons Framework Overview Translation 4</h3><p>FINISHED!!!!!</p>
-<p>This is the link to the original site:<br><a href="docs.oracle.com/javase/7/docs/technotes/guides/collections/overview.html" title="Collections Framework Overview ">Collections Framework Overview </a></p>
-<hr>
-<img src="/2019/09/13/Translation4/2.PNG">
-
-<hr>
-<img src="/2019/09/13/Translation4/3.PNG">
-
-
+        <h1 id="Vue-js-学习笔记-3"><a href="#Vue-js-学习笔记-3" class="headerlink" title="Vue.js 学习笔记 3"></a>Vue.js 学习笔记 3</h1><h2 id="常用语法"><a href="#常用语法" class="headerlink" title="常用语法"></a>常用语法</h2><h4 id="v-for"><a href="#v-for" class="headerlink" title="v-for"></a>v-for</h4><p>v-for的作用格式迭代，在html中li元素中定义个v-for的属性如：<br>表示在foodList中迭代输出food，代码如下</p>
+<h5 id="html"><a href="#html" class="headerlink" title="html:"></a>html:</h5><pre><code>&lt;div id=&quot;app&quot;&gt;
+    &lt;ul&gt;
+        &lt;!-- v-for是一种迭代 --&gt;
+        &lt;!-- &lt;li v-for=&quot;food in foodList&quot;&gt;
+            {{food}}
+        &lt;/li&gt; --&gt;
+        &lt;li v-for=&quot;food in foodList&quot;&gt;
+            {{food.name}}:￥{{food.price*food.discount}}
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</code></pre><h5 id="js"><a href="#js" class="headerlink" title="js:"></a>js:</h5><pre><code>var app = new Vue({
+    el:&quot;#app&quot;,//绑定对应元素
+    data:{    //数据键值对
+        // foodList:[&apos;bread&apos;,&apos;egg&apos;,&apos;carrot&apos;],
+        foodList:[
+            {
+                name:&apos;bread&apos;,
+                price:2.99,
+                discount:2,
+            },
+            {
+                name:&apos;egg&apos;,
+                price:0.5,
+                discount:0.5,
+            },
+            {
+                name:&apos;carrot&apos;,
+                price:1.99,
+                discount:0,
+            }
+        ]
+    }
+})</code></pre>
       
     </div>
     
@@ -334,8 +356,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/09/12/Translation3/" rel="next" title="Translation">
-                <i class="fa fa-chevron-left"></i> Translation
+              <a href="/2019/11/01/Vuejs/" rel="next" title="Vue.js">
+                <i class="fa fa-chevron-left"></i> Vue.js
               </a>
             
           </div>
@@ -343,10 +365,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/09/27/Cooking/" rel="prev" title="Cooking">
-                Cooking <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -460,7 +478,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Collectons-Framework-Overview-Translation-4"><span class="nav-number">1.</span> <span class="nav-text">Collectons Framework Overview Translation 4</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Vue-js-学习笔记-3"><span class="nav-number">1.</span> <span class="nav-text">Vue.js 学习笔记 3</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#常用语法"><span class="nav-number">1.1.</span> <span class="nav-text">常用语法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#v-for"><span class="nav-number">1.1.0.1.</span> <span class="nav-text">v-for</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#html"><span class="nav-number">1.1.0.1.1.</span> <span class="nav-text">html:</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#js"><span class="nav-number">1.1.0.1.2.</span> <span class="nav-text">js:</span></a></li></ol></li></ol></li></ol></li></ol></div>
             
 
           </div>
