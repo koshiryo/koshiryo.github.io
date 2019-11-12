@@ -245,7 +245,7 @@ a:focus, a:hover {
 	padding: 100px 0;
 }
 
-.about h2, .wthreeskills h3, .aitsresumewthree h3, .portfolio h3, .agileinfosclients h3, .wthreetestimonials h3, .contact h3 {
+.about h2, .wthreeskills h3, .aitsresumewthree h3, .portfolio h3, .agileinfosclients h3, .wthreetestimonials h3, .study h3 {
 	font-size: 50px;
 	font-weight: 700;
 	margin-bottom: 50px;
@@ -556,9 +556,112 @@ a:focus, a:hover {
 
 /*-- //Skills --*/
 
+/*-- Study --*/
+
+.study {
+	padding: 100px 0;
+}
+
+.about h2, .wthreeskills h3, .aitsresumewthree h3, .portfolio h3, .agileinfosclients h3, .wthreetestimonials h3, .study h2 {
+	font-size: 50px;
+	font-weight: 700;
+	margin-bottom: 50px;
+}
+
+.study h2 {
+	margin-bottom: 100px;
+}
+
+.study-grid h3, .wthreeskills-grid h4, .aitsresumewthree h4.title {
+	font-size: 25px;
+	font-weight: 700;
+	text-align: left;
+	padding-bottom: 10px;
+	border-bottom: 3px solid #000;
+	margin-bottom: 25px;
+	width: 40%;
+}
+
+.study-grid p {
+	line-height: 30px;
+	font-size: 15px;
+}
+.study h4 {
+	color: #333333;
+    font-weight: 700;
+}
+
+.studyDetails .rightArea {
+    border-left: dashed 1px #897f8a;
+    padding-bottom: 47px;
+}
+
+.studyDetails:last-child .rightArea {
+    padding-bottom: 0px;
+}
+
+.studyDetails:last-child .rightArea .exCon p:last-child {
+    padding-bottom: 0;
+}
+
+.level {
+    font-size: 17px;
+    color: #fff;
+    line-height: 40px;
+}
+
+.level span {
+    display: block;
+    font-size: 18pxpx;
+    padding: 0 21px;
+    white-space: nowrap;
+    float: right;
+    margin-bottom: 2px;
+    margin-right: 28px;
+    font-weight: bold;
+}
+
+.finished {
+	font-size: 16px;
+    background: #607d8b;
+    display: inline-block;
+    padding: 12px 30px;
+    color: #fff;
+    position: relative;
+}
+
+.unfinished {
+	font-size: 16px;
+    background: #333333;
+    display: inline-block;
+    padding: 12px 30px;
+    color: #fff;
+    position: relative;
+}
+
+.programming {
+	font-size: 16px;
+    background: #333333;
+    display: inline-block;
+    padding: 12px 30px;
+    color: #fff;
+    position: relative;
+}
+
+.arrowpart {
+    margin-left: -26px;
+    margin-top: 32px;
+    float: left;
+    width: 22px;
+    height: 22px;
+    background: url(../images/arrow-left.png) no-repeat 0 0 #f8f7f8;
+}
+/*-- //Study --*/
+
 /*-- Projects --*/
 .project {
 	padding: 100px 0;
+	background-color:#F5F5F5
 }
 
 .project h2, .wthreeskills h3, .aitsresumewthree h3, .wthreetestimonials h3, {
@@ -574,7 +677,7 @@ a:focus, a:hover {
 }
 
 .exprience {
-    background: #ffffff;
+    background: #F5F5F5;
 }
 
 .exprience .container {
@@ -679,7 +782,7 @@ a:focus, a:hover {
 .aitsresumewthree {
 	padding: 100px 0;
 	position: relative;
-	background-color: #F5F5F5
+	background-color: #ffffff
 }
 
 .aitsresumewthree h4.title {
@@ -1100,10 +1203,10 @@ li.aitsaitsresumewthreeli-1 {
 	.navigation {
 		padding: 0 150px;
 	}
-	.about, .wthreeskills, .aitsresumewthree, .portfolio, .agileinfosclients, .contact {
+	.about, .wthreeskills, .aitsresumewthree, .portfolio, .agileinfosclients, .study {
 		padding: 75px 0;
 	}
-	.about h2, .wthreeskills h3, .aitsresumewthree h3, .portfolio h3, .agileinfosclients h3, .wthreetestimonials h3, .contact h3 {
+	.about h2, .wthreeskills h3, .aitsresumewthree h3, .portfolio h3, .agileinfosclients h3, .wthreetestimonials h3, .study h3 {
 		font-size: 45px;
 		margin-bottom: 40px;
 	}
@@ -1223,7 +1326,7 @@ li.aitsaitsresumewthreeli-1 {
 }
 
 @media screen and (max-width: 966px) {
-	.about h2, .wthreeskills h3, .aitsresumewthree h3, .portfolio h3, .agileinfosclients h3, .wthreetestimonials h3, .contact h3 {
+	.about h2, .wthreeskills h3, .aitsresumewthree h3, .portfolio h3, .agileinfosclients h3, .wthreetestimonials h3, .study h3 {
 		font-size: 40px;
 	}
 	.about-grid h3, .wthreeskills-grid h4, .aitsresumewthree h4.title {
@@ -1377,10 +1480,10 @@ li.aitsaitsresumewthreeli-1 {
 		font-size: 16px;
 		margin-top: 33px;
 	}
-	.about, .wthreeskills, .aitsresumewthree, .portfolio, .agileinfosclients, .contact {
+	.about, .wthreeskills, .aitsresumewthree, .portfolio, .agileinfosclients, .study {
 		padding: 50px 0;
 	}
-	.about h2, .wthreeskills h3, .aitsresumewthree h3, .portfolio h3, .agileinfosclients h3, .wthreetestimonials h3, .contact h3 {
+	.about h2, .wthreeskills h3, .aitsresumewthree h3, .portfolio h3, .agileinfosclients h3, .wthreetestimonials h3, .study h3 {
 		font-size: 35px;
 		margin-bottom: 35px;
 	}
@@ -1438,13 +1541,13 @@ li.aitsaitsresumewthreeli-1 {
 }
 
 @media screen and (max-width: 767px) {
-	.contact_form input[type='text'], .contact_form input[type="email"], .contact_form textarea {
+	.study_form input[type='text'], .study_form input[type="email"], .study_form textarea {
 		line-height: 0;
 		padding: 10px 15px 10px;
 		height: 100%;
 		margin: 0 0 10px;
 	}
-	.contact_form textarea {
+	.study_form textarea {
 		height: 150px;
 		line-height: 2;
 	}
@@ -1679,10 +1782,10 @@ li.aitsaitsresumewthreeli-1 {
 	.ch-info-back h3 {
 		font-size: 14px;
 	}
-	.about, .wthreeskills, .aitsresumewthree, .portfolio, .agileinfosclients, .contact {
+	.about, .wthreeskills, .aitsresumewthree, .portfolio, .agileinfosclients, .study {
 		padding: 35px 0;
 	}
-	.about h2, .wthreeskills h3, .aitsresumewthree h3, .portfolio h3, .agileinfosclients h3, .wthreetestimonials h3, .contact h3 {
+	.about h2, .wthreeskills h3, .aitsresumewthree h3, .portfolio h3, .agileinfosclients h3, .wthreetestimonials h3, .study h3 {
 		font-size: 30px;
 		margin-bottom: 25px;
 	}
@@ -1720,7 +1823,7 @@ li.aitsaitsresumewthreeli-1 {
 	.portfolio figcaption h3 {
 		margin-top: 70px;
 	}
-	.contact_form textarea {
+	.study_form textarea {
 		height: 100px;
 	}
 }
@@ -2130,10 +2233,10 @@ li.aitsaitsresumewthreeli-1 {
 		margin-left: -30px;
 		top: 20%;
 	}
-	.about, .wthreeskills, .aitsresumewthree, .portfolio, .agileinfosclients, .contact {
+	.about, .wthreeskills, .aitsresumewthree, .portfolio, .agileinfosclients, .study {
 		padding: 30px 0;
 	}
-	.about h2, .wthreeskills h3, .aitsresumewthree h3, .portfolio h3, .agileinfosclients h3, .wthreetestimonials h3, .contact h3 {
+	.about h2, .wthreeskills h3, .aitsresumewthree h3, .portfolio h3, .agileinfosclients h3, .wthreetestimonials h3, .study h3 {
 		font-size: 28px;
 		margin-bottom: 20px;
 	}
