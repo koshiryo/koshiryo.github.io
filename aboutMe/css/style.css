@@ -69,10 +69,6 @@ a:focus, a:hover {
 
 /*-- Index-Page-Styling --*/
 
-
-
-
-
 .header {
 	position: relative;
 }
@@ -245,7 +241,7 @@ a:focus, a:hover {
 	padding: 100px 0;
 }
 
-.about h2, .wthreeskills h3, .aitsresumewthree h3, .portfolio h3, .agileinfosclients h3, .wthreetestimonials h3, .study h3 {
+.about h2, .skills h3, .resume h3, .study h3 {
 	font-size: 50px;
 	font-weight: 700;
 	margin-bottom: 50px;
@@ -255,7 +251,7 @@ a:focus, a:hover {
 	margin-bottom: 100px;
 }
 
-.about-grid h3, .wthreeskills-grid h4, .aitsresumewthree h4.title {
+.about-grid h3, .skills-grid h4, .resume h4.title {
 	font-size: 25px;
 	font-weight: 700;
 	text-align: left;
@@ -339,16 +335,16 @@ a:focus, a:hover {
 
 /*-- Skills --*/
 
-.wthreeskills {
+.skills {
 	padding: 100px 0;
 	background-color: #F5F5F5;
 }
 
-.wthreeskills-grid-1 h4 {
+.skills-grid-1 h4 {
 	width: 40%;
 }
 
-.wthreeskills-grid-2 h4 {
+.skills-grid-2 h4 {
 	width: 33%;
 }
 
@@ -442,27 +438,6 @@ a:focus, a:hover {
 	}
 
 	/*-- //Tabs --*/
-
-	/*-- Number-Scroller --*/
-
-	.w3lsstatsaits-info {
-		text-align: center;
-		margin-top: 20px;
-	}
-
-	.w3lsstatsaitsstats {
-		font-family: 'Montserrat', sans-serif;
-		font-size: 35px;
-		font-weight: 700;
-		margin-bottom: 10px;
-	}
-
-	.w3lsstatsaits-info p {
-		font-family: 'Montserrat', sans-serif;
-		font-size: 20px;
-	}
-
-	/*-- //Number-Scroller --*/
 
 	/*-- Progress-Bar --*/
 
@@ -562,7 +537,7 @@ a:focus, a:hover {
 	padding: 100px 0;
 }
 
-.about h2, .wthreeskills h3, .aitsresumewthree h3, .portfolio h3, .agileinfosclients h3, .wthreetestimonials h3, .study h2 {
+.about h2, .skills h3, .resume h3, .study h2 {
 	font-size: 50px;
 	font-weight: 700;
 	margin-bottom: 50px;
@@ -572,7 +547,7 @@ a:focus, a:hover {
 	margin-bottom: 100px;
 }
 
-.study-grid h3, .wthreeskills-grid h4, .aitsresumewthree h4.title {
+.study-grid h3, .skills-grid h4, .resume h4.title {
 	font-size: 25px;
 	font-weight: 700;
 	text-align: left;
@@ -664,7 +639,7 @@ a:focus, a:hover {
 	background-color:#F5F5F5
 }
 
-.project h2, .wthreeskills h3, .aitsresumewthree h3, .wthreetestimonials h3, {
+.project h2, .skills h3, .resume h3, {
 	font-size: 50px;
 	font-weight: 700;
 	margin-bottom: 50px;
@@ -779,17 +754,17 @@ a:focus, a:hover {
 
 /*-- Resume --*/
 
-.aitsresumewthree {
+.resume {
 	padding: 100px 0;
 	position: relative;
 	background-color: #ffffff
 }
 
-.aitsresumewthree h4.title {
+.resume h4.title {
 	width: 15%;
 }
 
-.aitsresumewthree h4.title2 {
+.resume h4.title2 {
 	width: 14%;
 }
 
@@ -866,7 +841,7 @@ ul#myList {
 	text-align: center;
 }
 
-li.aitsaitsresumewthreeli-1 {
+li.resumeli-1 {
 	margin-bottom: 50px;
 }
 
@@ -1065,10 +1040,10 @@ li.aitsaitsresumewthreeli-1 {
 	.about-grid-3 ul li:nth-child(5) .li3 {
 		padding-right: 0;
 	}
-	.wthreeskills-grid-1 h4 {
+	.skills-grid-1 h4 {
 		width: 33%;
 	}
-	.wthreeskills-grid-2 h4 {
+	.skills-grid-2 h4 {
 		width: 27%;
 	}
 }
@@ -1086,10 +1061,10 @@ li.aitsaitsresumewthreeli-1 {
 	.about-grid-3 h3 {
 		width: 25%;
 	}
-	.wthreeskills-grid-1 h4 {
+	.skills-grid-1 h4 {
 		width: 38%;
 	}
-	.wthreeskills-grid-2 h4 {
+	.skills-grid-2 h4 {
 		width: 31%;
 	}
 }
@@ -1107,10 +1082,10 @@ li.aitsaitsresumewthreeli-1 {
 	.about-grid-1 h3, .about-grid-3 h3 {
 		width: 27%;
 	}
-	.wthreeskills-grid-1 h4 {
+	.skills-grid-1 h4 {
 		width: 40%;
 	}
-	.wthreeskills-grid-2 h4 {
+	.skills-grid-2 h4 {
 		width: 33%;
 	}
 }
@@ -1135,10 +1110,10 @@ li.aitsaitsresumewthreeli-1 {
 	.about-grid p {
 		line-height: 30px;
 	}
-	.wthreeskills-grid-1 h4 {
+	.skills-grid-1 h4 {
 		width: 45%;
 	}
-	.wthreeskills-grid-2 h4 {
+	.skills-grid-2 h4 {
 		width: 37%;
 	}
 }
@@ -1159,10 +1134,10 @@ li.aitsaitsresumewthreeli-1 {
 	.about-grid-1 {
 		padding-right: 0;
 	}
-	.wthreeskills-grid-1 h4 {
+	.skills-grid-1 h4 {
 		width: 47%;
 	}
-	.wthreeskills-grid-2 h4 {
+	.skills-grid-2 h4 {
 		width: 39%;
 	}
 }
@@ -1180,10 +1155,10 @@ li.aitsaitsresumewthreeli-1 {
 	.about-grid-3 ul li .li3 {
 		width: 77%;
 	}
-	.wthreeskills-grid-1 h4 {
+	.skills-grid-1 h4 {
 		width: 51%;
 	}
-	.wthreeskills-grid-2 h4 {
+	.skills-grid-2 h4 {
 		width: 42%;
 	}
 }
@@ -1203,10 +1178,10 @@ li.aitsaitsresumewthreeli-1 {
 	.navigation {
 		padding: 0 150px;
 	}
-	.about, .wthreeskills, .aitsresumewthree, .portfolio, .agileinfosclients, .study {
+	.about, .skills, .resume, .study {
 		padding: 75px 0;
 	}
-	.about h2, .wthreeskills h3, .aitsresumewthree h3, .portfolio h3, .agileinfosclients h3, .wthreetestimonials h3, .study h3 {
+	.about h2, .skills h3, .resume h3, .study h3 {
 		font-size: 45px;
 		margin-bottom: 40px;
 	}
@@ -1230,24 +1205,21 @@ li.aitsaitsresumewthreeli-1 {
 	.about-grid-3 ul li .li3 {
 		width: 75%;
 	}
-	.wthreeskills-grid-1 h4 {
+	.skills-grid-1 h4 {
 		width: 61%;
 	}
-	.wthreeskills-grid-2 h4 {
+	.skills-grid-2 h4 {
 		width: 50%;
 	}
-	.aitsresumewthree h4.title {
+	.resume h4.title {
 		width: 18%;
 	}
 	.work-info p {
 		font-size: 14px;
 		line-height: 25px;
 	}
-	.aitsresumewthree h4.title2 {
+	.resume h4.title2 {
 		width: 17%;
-	}
-	.portfolio figcaption h3 {
-		margin-top: 90px;
 	}
 	.copyright {
 		margin: 30px 0;
@@ -1261,10 +1233,10 @@ li.aitsaitsresumewthreeli-1 {
 	.about-grid-1 h3, .about-grid-3 h3 {
 		width: 43%;
 	}
-	.wthreeskills-grid-1 h4 {
+	.skills-grid-1 h4 {
 		width: 65%;
 	}
-	.wthreeskills-grid-2 h4 {
+	.skills-grid-2 h4 {
 		width: 53%;
 	}
 }
@@ -1292,14 +1264,14 @@ li.aitsaitsresumewthreeli-1 {
 	.about-grid-2-image {
 		left: 10%;
 	}
-	.wthreeskills-grid {
+	.skills-grid {
 		width: 50%;
 		float: left;
 	}
-	.wthreeskills-grid-1 h4 {
+	.skills-grid-1 h4 {
 		width: 67%;
 	}
-	.wthreeskills-grid-2 h4 {
+	.skills-grid-2 h4 {
 		width: 55%;
 	}
 	.resp-tab-content {
@@ -1308,13 +1280,6 @@ li.aitsaitsresumewthreeli-1 {
 	.resp-tab-content p {
 		line-height: 26px;
 		font-size: 14px;
-	}
-	.w3lsstatsaits-grid {
-		width: 33.3%;
-		float: left;
-	}
-	.w3lsstatsaits-info p {
-		font-size: 20px;
 	}
 	.work-grid {
 		width: 50%;
@@ -1326,10 +1291,10 @@ li.aitsaitsresumewthreeli-1 {
 }
 
 @media screen and (max-width: 966px) {
-	.about h2, .wthreeskills h3, .aitsresumewthree h3, .portfolio h3, .agileinfosclients h3, .wthreetestimonials h3, .study h3 {
+	.about h2, .skills h3, .resume h3, .study h3 {
 		font-size: 40px;
 	}
-	.about-grid h3, .wthreeskills-grid h4, .aitsresumewthree h4.title {
+	.about-grid h3, .skills-grid h4, .resume h4.title {
 		font-weight: 100;
 	}
 	.about-grid-1 h3 {
@@ -1338,10 +1303,10 @@ li.aitsaitsresumewthreeli-1 {
 	.about-grid-3 h3 {
 		width: 43%;
 	}
-	.wthreeskills-grid-1 h4 {
+	.skills-grid-1 h4 {
 		width: 69%;
 	}
-	.wthreeskills-grid-2 h4 {
+	.skills-grid-2 h4 {
 		width: 57%;
 	}
 }
@@ -1362,7 +1327,7 @@ li.aitsaitsresumewthreeli-1 {
 	.about-grid-2, .about-grid-3 {
 		width: 50%;
 	}
-	.about-grid h3, .wthreeskills-grid h4, .aitsresumewthree h4.title {
+	.about-grid h3, .skills-grid h4, .resume h4.title {
 		font-size: 22px;
 		padding-bottom: 10px;
 		margin-bottom: 15px;
@@ -1389,13 +1354,6 @@ li.aitsaitsresumewthreeli-1 {
 	.about-grid-3 ul li .li1, .about-grid-3 ul li .li3 {
 		font-size: 14px;
 	}
-	.w3lsstatsaits-info {
-		margin-top: 5px;
-	}
-	.w3lsstatsaitsstats {
-		font-size: 30px;
-		margin-bottom: 3px;
-	}
 }
 
 @media screen and (max-width: 853px) {
@@ -1411,14 +1369,11 @@ li.aitsaitsresumewthreeli-1 {
 	.about-grid-3 h3 {
 		width: 28%;
 	}
-	.wthreeskills-grid-1 h4 {
+	.skills-grid-1 h4 {
 		width: 70%;
 	}
-	.wthreeskills-grid-2 h4 {
+	.skills-grid-2 h4 {
 		width: 58%;
-	}
-	.portfolio figcaption h3 {
-		margin-top: 70px;
 	}
 }
 
@@ -1435,23 +1390,20 @@ li.aitsaitsresumewthreeli-1 {
 	.about-grid-3 h3 {
 		width: 30%;
 	}
-	.wthreeskills-grid-1 h4 {
+	.skills-grid-1 h4 {
 		width: 75%;
 	}
-	.wthreeskills-grid-2 h4 {
+	.skills-grid-2 h4 {
 		width: 62%;
 	}
-	.aitsresumewthree h4.title {
+	.resume h4.title {
 		width: 19.5%;
 	}
-	.aitsresumewthree h4.title2 {
+	.resume h4.title2 {
 		width: 18%;
 	}
 	#loadMore, #showLess {
 		width: 20%;
-	}
-	.portfolio figcaption h3 {
-		margin-top: 60px;
 	}
 }
 
@@ -1480,10 +1432,10 @@ li.aitsaitsresumewthreeli-1 {
 		font-size: 16px;
 		margin-top: 33px;
 	}
-	.about, .wthreeskills, .aitsresumewthree, .portfolio, .agileinfosclients, .study {
+	.about, .skills, .resume, .study {
 		padding: 50px 0;
 	}
-	.about h2, .wthreeskills h3, .aitsresumewthree h3, .portfolio h3, .agileinfosclients h3, .wthreetestimonials h3, .study h3 {
+	.about h2, .skills h3, .resume h3, .study h3 {
 		font-size: 35px;
 		margin-bottom: 35px;
 	}
@@ -1499,7 +1451,7 @@ li.aitsaitsresumewthreeli-1 {
 	.about-grid-3 ul li {
 		padding: 13px 0;
 	}
-	.wthreeskills-grid-1 h4 {
+	.skills-grid-1 h4 {
 		width: 79%;
 	}
 	.resp-tab-item {
@@ -1508,10 +1460,10 @@ li.aitsaitsresumewthreeli-1 {
 	.resp-tab-item span {
 		font-size: 14px;
 	}
-	.wthreeskills-grid-2 h4 {
+	.skills-grid-2 h4 {
 		width: 65%;
 	}
-	.aitsresumewthree h4.title {
+	.resume h4.title {
 		width: 20.5%;
 	}
 	.work-grid {
@@ -1520,23 +1472,14 @@ li.aitsaitsresumewthreeli-1 {
 	.work-info h4 {
 		padding: 11px 30px 10px;
 	}
-	li.aitsaitsresumewthreeli-1 {
+	li.resumeli-1 {
 		margin-bottom: 30px;
 	}
 	ul#myList {
 		margin-bottom: 2em;
 	}
-	.aitsresumewthree h4.title {
+	.resume h4.title {
 		width: 19.5%;
-	}
-	.simplefilter li, .multifilter li, .sortandshuffle li {
-		padding: 8px 20px;
-		font-family: 'Montserrat', sans-serif;
-		font-size: 16px;
-		letter-spacing: 1px;
-	}
-	.portfolio figcaption h3 {
-		margin-top: 100px;
 	}
 }
 
@@ -1567,17 +1510,13 @@ li.aitsaitsresumewthreeli-1 {
 	.about-grid-2-image {
 		width: 65%;
 	}
-	.wthreeskills-grid-1 h4 {
+	.skills-grid-1 h4 {
 		width: 83%;
 	}
-	.w3lsstatsaitsstats {
-		font-size: 25px;
-		margin-bottom: 0;
-	}
-	.wthreeskills-grid-1 {
+	.skills-grid-1 {
 		padding-left: 0;
 	}
-	.wthreeskills-grid-2 h4 {
+	.skills-grid-2 h4 {
 		width: 68%;
 	}
 }
@@ -1603,27 +1542,18 @@ li.aitsaitsresumewthreeli-1 {
 	.about-grid-2-image {
 		width: 70%;
 	}
-	.wthreeskills-grid-1 {
+	.skills-grid-1 {
 		padding: 0;
 	}
-	.wthreeskills-grid-1 h4 {
+	.skills-grid-1 h4 {
 		width: 88%;
 	}
 	.resp-tab-content p {
 		line-height: 25px;
 		padding: 0 0 0 5px;
 	}
-	.w3lsstatsaitsstats {
-		font-size: 23px;
-	}
-	.w3lsstatsaits-info p {
-		font-size: 17px;
-	}
-	.wthreeskills-grid-2 h4 {
+	.skills-grid-2 h4 {
 		width: 76%;
-	}
-	.portfolio figcaption h3 {
-		margin-top: 85px;
 	}
 }
 
@@ -1657,37 +1587,28 @@ li.aitsaitsresumewthreeli-1 {
 	.about-grid-3 {
 		width: 60%;
 	}
-	.wthreeskills-grid {
+	.skills-grid {
 		width: 100%;
 		padding: 0;
 	}
-	.wthreeskills-grid-1 {
+	.skills-grid-1 {
 		width: 100%;
 		margin-bottom: 40px;
 	}
-	.wthreeskills-grid-1 h4 {
+	.skills-grid-1 h4 {
 		width: 44%;
 	}
 	.tabs {
 		margin: 20px 0 0 0;
 	}
-	.w3lsstatsaits-info {
-		margin-top: 10px;
-	}
-	.w3lsstatsaitsstats {
-		font-size: 25px;
-	}
-	.wthreeskills-grid-2 h4 {
+	.skills-grid-2 h4 {
 		width: 36%;
 	}
 	.bar_group__bar.thin {
 		margin-bottom: 1em !important;
 	}
-	.aitsresumewthree h4.title {
+	.resume h4.title {
 		width: 25%;
-	}
-	.portfolio figcaption h3 {
-		font-size: 25px;
 	}
 	.work-info p {
 		font-size: 13px;
@@ -1710,23 +1631,20 @@ li.aitsaitsresumewthreeli-1 {
 	.about-grid-3 ul li {
 		padding: 10px 0;
 	}
-	.wthreeskills-grid-1 h4 {
+	.skills-grid-1 h4 {
 		width: 47%;
 	}
-	.wthreeskills-grid-2 h4 {
+	.skills-grid-2 h4 {
 		width: 39%;
 	}
-	.aitsresumewthree h4.title {
+	.resume h4.title {
 		width: 27%;
 	}
-	.aitsresumewthree h4.title {
+	.resume h4.title {
 		width: 25%;
 	}
 	.work-grid {
 		height: 210px;
-	}
-	.portfolio figcaption h3 {
-		margin-top: 75px;
 	}
 }
 
@@ -1747,10 +1665,10 @@ li.aitsaitsresumewthreeli-1 {
 		margin-left: -3px;
 		font-size: 13px;
 	}
-	.aitsresumewthree h4.title {
+	.resume h4.title {
 		width: 27%;
 	}
-	.aitsresumewthree h4.title2 {
+	.resume h4.title2 {
 		width: 25%;
 	}
 	.ch-info-wrap, .ch-info {
@@ -1782,14 +1700,14 @@ li.aitsaitsresumewthreeli-1 {
 	.ch-info-back h3 {
 		font-size: 14px;
 	}
-	.about, .wthreeskills, .aitsresumewthree, .portfolio, .agileinfosclients, .study {
+	.about, .skills, .resume, .portfolio, .agileinfosclients, .study {
 		padding: 35px 0;
 	}
-	.about h2, .wthreeskills h3, .aitsresumewthree h3, .portfolio h3, .agileinfosclients h3, .wthreetestimonials h3, .study h3 {
+	.about h2, .skills h3, .resume h3, .portfolio h3, .agileinfosclients h3, .wthreetestimonials h3, .study h3 {
 		font-size: 30px;
 		margin-bottom: 25px;
 	}
-	.about-grid h3, .wthreeskills-grid h4, .aitsresumewthree h4.title {
+	.about-grid h3, .skills-grid h4, .resume h4.title {
 		font-size: 20px;
 		padding-bottom: 7px;
 	}
@@ -1805,23 +1723,20 @@ li.aitsaitsresumewthreeli-1 {
 	.about-grid-3 h3 {
 		width: 33%;
 	}
-	.wthreeskills-grid-1 h4 {
+	.skills-grid-1 h4 {
 		width: 46%;
 	}
-	.aitsresumewthree h4.title {
+	.resume h4.title {
 		width: 26%;
 	}
-	.aitsresumewthree h4.title2 {
+	.resume h4.title2 {
 		width: 24%;
 	}
-	.wthreeskills-grid-2 h4 {
+	.skills-grid-2 h4 {
 		width: 38%;
 	}
 	.work-grid {
 		height: 220px;
-	}
-	.portfolio figcaption h3 {
-		margin-top: 70px;
 	}
 	.study_form textarea {
 		height: 100px;
@@ -1844,30 +1759,21 @@ li.aitsaitsresumewthreeli-1 {
 	.about-grid-3 h3 {
 		width: 35%;
 	}
-	.wthreeskills-grid-1 h4 {
+	.skills-grid-1 h4 {
 		width: 49%;
 	}
-	.wthreeskills-grid-2 h4 {
+	.skills-grid-2 h4 {
 		width: 40%;
 	}
-	.aitsresumewthree h4.title {
+	.resume h4.title {
 		width: 28%;
 	}
-	.aitsresumewthree h4.title2 {
+	.resume h4.title2 {
 		width: 26%;
 	}
 	#loadMore, #showLess {
 		width: 30%;
 		font-size: 14px;
-	}
-	.simplefilter li, .multifilter li, .sortandshuffle li {
-		padding: 5px 15px;
-		font-size: 14px;
-		letter-spacing: 0;
-	}
-	.portfolio figcaption h3 {
-		margin-top: 60px;
-		font-size: 20px;
 	}
 }
 
@@ -1904,13 +1810,13 @@ li.aitsaitsresumewthreeli-1 {
 	.about-grid-3 ul li {
 		padding: 7px 0;
 	}
-	.wthreeskills-grid-1 h4 {
+	.skills-grid-1 h4 {
 		width: 55%;
 	}
-	.wthreeskills-grid-2 h4 {
+	.skills-grid-2 h4 {
 		width: 45%;
 	}
-	.aitsresumewthree h4.title {
+	.resume h4.title {
 		width: 31%;
 	}
 	.work-info h4 {
@@ -1967,7 +1873,7 @@ li.aitsaitsresumewthreeli-1 {
 	ul#myList {
 		margin-bottom: 0;
 	}
-	li.aitsaitsresumewthreeli-1 {
+	li.resumeli-1 {
 		margin-bottom: 0;
 	}
 	.work-info h5.comp {
@@ -2048,13 +1954,13 @@ li.aitsaitsresumewthreeli-1 {
 	.about-grid-3 h3 {
 		width: 28%;
 	}
-	.wthreeskills-grid-1 h4 {
+	.skills-grid-1 h4 {
 		width: 65%;
 	}
-	.wthreeskills-grid-2 h4 {
+	.skills-grid-2 h4 {
 		width: 53%;
 	}
-	.aitsresumewthree h4.title {
+	.resume h4.title {
 		width: 36%;
 	}
 	.work-right {
@@ -2105,13 +2011,13 @@ li.aitsaitsresumewthreeli-1 {
 	.about-grid-3 h3 {
 		width: 31%;
 	}
-	.wthreeskills-grid-1 h4 {
+	.skills-grid-1 h4 {
 		width: 70%;
 	}
-	.wthreeskills-grid-2 h4 {
+	.skills-grid-2 h4 {
 		width: 58%;
 	}
-	.aitsresumewthree h4.title {
+	.resume h4.title {
 		width: 40%;
 	}
 	.work-info h4 {
@@ -2126,7 +2032,7 @@ li.aitsaitsresumewthreeli-1 {
 	.work-info h5.comp {
 		right: 7%;
 	}
-	.aitsresumewthree h4.title {
+	.resume h4.title {
 		width: 37%;
 	}
 	.work-info h5.univ {
@@ -2141,13 +2047,13 @@ li.aitsaitsresumewthreeli-1 {
 	.about-grid-1 h3 {
 		width: 33%;
 	}
-	.wthreeskills-grid-1 h4 {
+	.skills-grid-1 h4 {
 		width: 72%;
 	}
-	.wthreeskills-grid-2 h4 {
+	.skills-grid-2 h4 {
 		width: 59%;
 	}
-	.aitsresumewthree h4.title {
+	.resume h4.title {
 		width: 41%;
 	}
 	.work-info h4 {
@@ -2174,13 +2080,13 @@ li.aitsaitsresumewthreeli-1 {
 	.about-grid-3 h3 {
 		width: 32%;
 	}
-	.wthreeskills-grid-1 h4 {
+	.skills-grid-1 h4 {
 		width: 76%;
 	}
-	.wthreeskills-grid-2 h4 {
+	.skills-grid-2 h4 {
 		width: 62%;
 	}
-	.aitsresumewthree h4.title {
+	.resume h4.title {
 		width: 43%;
 	}
 	.work-right {
@@ -2233,17 +2139,17 @@ li.aitsaitsresumewthreeli-1 {
 		margin-left: -30px;
 		top: 20%;
 	}
-	.about, .wthreeskills, .aitsresumewthree, .portfolio, .agileinfosclients, .study {
+	.about, .skills, .resume, .portfolio, .agileinfosclients, .study {
 		padding: 30px 0;
 	}
-	.about h2, .wthreeskills h3, .aitsresumewthree h3, .portfolio h3, .agileinfosclients h3, .wthreetestimonials h3, .study h3 {
+	.about h2, .skills h3, .resume h3, .portfolio h3, .agileinfosclients h3, .wthreetestimonials h3, .study h3 {
 		font-size: 28px;
 		margin-bottom: 20px;
 	}
 	.about h2 {
 		margin-bottom: 20px;
 	}
-	.about-grid h3, .wthreeskills-grid h4, .aitsresumewthree h4.title {
+	.about-grid h3, .skills-grid h4, .resume h4.title {
 		font-size: 18px;
 		padding-bottom: 5px;
 		margin-bottom: 10px;
@@ -2262,7 +2168,7 @@ li.aitsaitsresumewthreeli-1 {
 	.about-grid-3 ul li .li1, .about-grid-3 ul li .li3 {
 		font-size: 13px;
 	}
-	.wthreeskills-grid-1 h4 {
+	.skills-grid-1 h4 {
 		width: 78%;
 	}
 	.resp-tab-item {
@@ -2275,10 +2181,10 @@ li.aitsaitsresumewthreeli-1 {
 	.resp-tab-content p {
 		font-size: 13px;
 	}
-	.wthreeskills-grid-2 h4 {
+	.skills-grid-2 h4 {
 		width: 64%;
 	}
-	.aitsresumewthree h4.title {
+	.resume h4.title {
 		width: 44%;
 	}
 	.work-info h4 {
@@ -2306,7 +2212,7 @@ li.aitsaitsresumewthreeli-1 {
 	.work-right.work-right2 h4:before {
 		left: -13px;
 	}
-	.aitsresumewthree h4.title2 {
+	.resume h4.title2 {
 		width: 41%;
 	}
 	.work-right.work-right2 {
@@ -2324,17 +2230,6 @@ li.aitsaitsresumewthreeli-1 {
 	#loadMore, #showLess {
 		width: 44%;
 	}
-	.simplefilter li, .multifilter li, .sortandshuffle li {
-		margin: 0 0 15px 0;
-		font-size: 13px;
-	}
-	.portfolio figcaption h3 {
-		margin-top: 80px;
-	}
 }
-
-
-
-
 
 /*-- //Responsive-Code --*/
