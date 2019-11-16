@@ -1479,6 +1479,9 @@ li.resumeli-1 {
 	#loadMore, #showLess {
 		width: 20%;
 	}
+	#more, #less {
+		width: 20%;
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -1690,6 +1693,9 @@ li.resumeli-1 {
 	#loadMore, #showLess {
 		width: 25%;
 	}
+	#more, #less {
+		width: 25%;
+	}
 }
 
 @media screen and (max-width: 603px) {
@@ -1849,6 +1855,10 @@ li.resumeli-1 {
 		width: 30%;
 		font-size: 14px;
 	}
+	#more, #less {
+		width: 30%;
+		font-size: 14px;
+	}
 }
 
 @media screen and (max-width: 480px) {
@@ -1963,8 +1973,9 @@ li.resumeli-1 {
 		padding: 7px 0;
 		font-size: 13px;
 	}
-	.portfolio figcaption h3 {
-		margin-top: 55px;
+	#more, #less {
+		padding: 7px 0;
+		font-size: 13px;
 	}
 	.more_btn {
 		padding: 7px 20px;
@@ -2064,8 +2075,8 @@ li.resumeli-1 {
 	#loadMore, #showLess {
 		width: 35%;
 	}
-	.portfolio figcaption h3 {
-		margin-top: 100px;
+	#more, #less {
+		width: 35%;
 	}
 	.c1 {
 		padding: 0;
@@ -2302,6 +2313,9 @@ li.resumeli-1 {
 		height: 150px;
 	}
 	#loadMore, #showLess {
+		width: 44%;
+	}
+	#more, #less {
 		width: 44%;
 	}
 }
