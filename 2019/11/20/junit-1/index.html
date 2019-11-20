@@ -79,19 +79,17 @@
 
 
 
-<meta name="description" content="Day 7 for 応用情報技術者試験テクノロジ　part 2ネットワーク">
+<meta name="description" content="Junit的基本使用2概要测试的方法多，不想一个个的建立测试方法那么可以使用以下方法：    package com.koshi.textjunit; import static org.junit.Assert.*;  import org.junit.Test;  public class CalculateTest3 {      @Test     public void testAdd(">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Note7">
-<meta property="og:url" content="http://yoursite.com/2019/10/17/Note7/index.html">
+<meta property="og:title" content="junit">
+<meta property="og:url" content="http://yoursite.com/2019/11/20/junit-1/index.html">
 <meta property="og:site_name" content="This is Jiaozi :)">
-<meta property="og:description" content="Day 7 for 応用情報技術者試験テクノロジ　part 2ネットワーク">
+<meta property="og:description" content="Junit的基本使用2概要测试的方法多，不想一个个的建立测试方法那么可以使用以下方法：    package com.koshi.textjunit; import static org.junit.Assert.*;  import org.junit.Test;  public class CalculateTest3 {      @Test     public void testAdd(">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="http://yoursite.com/2019/10/17/Note7/2.jpg">
-<meta property="og:updated_time" content="2019-10-18T13:28:30.915Z">
+<meta property="og:updated_time" content="2019-11-20T13:22:52.451Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Note7">
-<meta name="twitter:description" content="Day 7 for 応用情報技術者試験テクノロジ　part 2ネットワーク">
-<meta name="twitter:image" content="http://yoursite.com/2019/10/17/Note7/2.jpg">
+<meta name="twitter:title" content="junit">
+<meta name="twitter:description" content="Junit的基本使用2概要测试的方法多，不想一个个的建立测试方法那么可以使用以下方法：    package com.koshi.textjunit; import static org.junit.Assert.*;  import org.junit.Test;  public class CalculateTest3 {      @Test     public void testAdd(">
 
 
 
@@ -121,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/10/17/Note7/">
+  <link rel="canonical" href="http://yoursite.com/2019/11/20/junit-1/">
 
 
 
 
 
-  <title>Note7 | This is Jiaozi :)</title>
+  <title>junit | This is Jiaozi :)</title>
   
 
 
@@ -234,7 +232,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/17/Note7/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/20/junit-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Koshi Ryo">
@@ -251,7 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Note7</h1>
+          <h1 class="post-title" itemprop="name headline">junit</h1>
         
 
         <div class="post-meta">
@@ -263,8 +261,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-10-17T23:59:32+09:00">
-                2019-10-17
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-11-20T22:17:37+09:00">
+                2019-11-20
               </time>
             
 
@@ -301,7 +299,85 @@
       
 
       
-        <h1 id="Day-7-for-応用情報技術者試験"><a href="#Day-7-for-応用情報技術者試験" class="headerlink" title="Day 7 for 応用情報技術者試験"></a>Day 7 for 応用情報技術者試験</h1><h2 id="テクノロジ-part-2"><a href="#テクノロジ-part-2" class="headerlink" title="テクノロジ　part 2"></a>テクノロジ　part 2</h2><h3 id="ネットワーク"><a href="#ネットワーク" class="headerlink" title="ネットワーク"></a>ネットワーク</h3><img src="/2019/10/17/Note7/2.jpg">
+        <h1 id="Junit的基本使用2"><a href="#Junit的基本使用2" class="headerlink" title="Junit的基本使用2"></a>Junit的基本使用2</h1><h2 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h2><p>测试的方法多，不想一个个的建立测试方法那么可以使用以下方法：<br>    package com.koshi.textjunit;</p>
+<pre><code>import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class CalculateTest3 {
+
+    @Test
+    public void testAdd() {
+        fail(&quot;Not yet implemented&quot;);
+    }
+
+    @Test
+    public void testSubstract() {
+        fail(&quot;Not yet implemented&quot;);
+    }
+
+    @Test
+    public void testCheng() {
+        fail(&quot;Not yet implemented&quot;);
+    }
+
+    @Test
+    public void testChu() {
+        fail(&quot;Not yet implemented&quot;);
+    }
+
+}</code></pre><p>再在这个基础上进行修改测试类方法</p>
+<p>在测试中结果中关于Failure和error的解释</p>
+<p>1.Failure 一般由测试单元使用断言方法判断失败引起的，这个报错，说明测试点发现了问题，即程序输出的结果和我们预期的不一样</p>
+<p>2.error 是由代码异常引起的，它可以产生代码本身的错误，也可以是测试代码中的一个隐藏bug，测试用例不是用来证明你是对的，而是用来证明你没错。</p>
+<pre><code>package com.fulisha.textjunit;
+
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+public class JunitFlowText {
+
+    @BeforeClass
+    public static void setUpBeforeClass() throws Exception {
+    System.out.println(&quot;this is beforeClasss....&quot;);
+    }
+
+    @AfterClass
+    public static void tearDownAfterClass() throws Exception {
+        System.out.println(&quot;this is afterClasss....&quot;);
+    }
+
+    @Before
+    public void setUp() throws Exception {
+        System.out.println(&quot;this is brfore....&quot;);
+    }
+
+    @After
+    public void tearDown() throws Exception {
+        System.out.println(&quot;this is after....&quot;);
+    }
+
+    @Test
+    public void test1() {
+        System.out.println(&quot;this is test1....&quot;);
+    }
+    @Test
+    public void test2() {
+        System.out.println(&quot;this is test2....&quot;);
+    }
+}</code></pre><h2 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h2><p><code>@BeforeClass</code></p>
+<p>修饰的方法会在所有方法被调用前执行，且该方法时静态的，所以当测试类被加载后就接着运行它，而且在内存中他只会存在一份实例，他比较适合加载配置文件（针对所有测试，只执行一次 ）</p>
+<p><code>@AfterClass</code></p>
+<p>所修饰的方法通常用来对资源管理，如关闭数据库连接（针对所有测试，只执行一次 ）</p>
+<p><code>@Before</code>和<code>@After</code> 会在每个测试方法前后各执行一次</p>
+<p><code>@Test</code>：测试方法，在这里可以测试期望异常和超时时间</p>
+<p><code>@Ignore</code>：忽略的测试方法  </p>
+
       
     </div>
     
@@ -325,8 +401,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/10/16/Note6/" rel="next" title="Note6">
-                <i class="fa fa-chevron-left"></i> Note6
+              <a href="/2019/11/19/junit/" rel="next" title="junit">
+                <i class="fa fa-chevron-left"></i> junit
               </a>
             
           </div>
@@ -334,10 +410,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/10/18/Note8/" rel="prev" title="Note8">
-                Note8 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -451,7 +523,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Day-7-for-応用情報技術者試験"><span class="nav-number">1.</span> <span class="nav-text">Day 7 for 応用情報技術者試験</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#テクノロジ-part-2"><span class="nav-number">1.1.</span> <span class="nav-text">テクノロジ　part 2</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#ネットワーク"><span class="nav-number">1.1.1.</span> <span class="nav-text">ネットワーク</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Junit的基本使用2"><span class="nav-number">1.</span> <span class="nav-text">Junit的基本使用2</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#概要"><span class="nav-number">1.1.</span> <span class="nav-text">概要</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结："><span class="nav-number">1.2.</span> <span class="nav-text">总结：</span></a></li></ol></li></ol></div>
             
 
           </div>

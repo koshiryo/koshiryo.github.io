@@ -79,19 +79,17 @@
 
 
 
-<meta name="description" content="Day 7 for 応用情報技術者試験テクノロジ　part 2ネットワーク">
+<meta name="description" content="Junit的基本使用什么是Junit?Junit是xUnit的一个子集， xUnit是一套基于测试驱动开发的测试框架其中的断言机制：将程序预期的结果与程序运行的最终结果进行比对，确保对结果的可预知性。 简单使用 新建一个类：Calculate package com.koshi.textjunit;  public class Calculate {     public int add(int">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Note7">
-<meta property="og:url" content="http://yoursite.com/2019/10/17/Note7/index.html">
+<meta property="og:title" content="junit">
+<meta property="og:url" content="http://yoursite.com/2019/11/19/junit/index.html">
 <meta property="og:site_name" content="This is Jiaozi :)">
-<meta property="og:description" content="Day 7 for 応用情報技術者試験テクノロジ　part 2ネットワーク">
+<meta property="og:description" content="Junit的基本使用什么是Junit?Junit是xUnit的一个子集， xUnit是一套基于测试驱动开发的测试框架其中的断言机制：将程序预期的结果与程序运行的最终结果进行比对，确保对结果的可预知性。 简单使用 新建一个类：Calculate package com.koshi.textjunit;  public class Calculate {     public int add(int">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="http://yoursite.com/2019/10/17/Note7/2.jpg">
-<meta property="og:updated_time" content="2019-10-18T13:28:30.915Z">
+<meta property="og:updated_time" content="2019-11-19T12:16:24.308Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Note7">
-<meta name="twitter:description" content="Day 7 for 応用情報技術者試験テクノロジ　part 2ネットワーク">
-<meta name="twitter:image" content="http://yoursite.com/2019/10/17/Note7/2.jpg">
+<meta name="twitter:title" content="junit">
+<meta name="twitter:description" content="Junit的基本使用什么是Junit?Junit是xUnit的一个子集， xUnit是一套基于测试驱动开发的测试框架其中的断言机制：将程序预期的结果与程序运行的最终结果进行比对，确保对结果的可预知性。 简单使用 新建一个类：Calculate package com.koshi.textjunit;  public class Calculate {     public int add(int">
 
 
 
@@ -121,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/10/17/Note7/">
+  <link rel="canonical" href="http://yoursite.com/2019/11/19/junit/">
 
 
 
 
 
-  <title>Note7 | This is Jiaozi :)</title>
+  <title>junit | This is Jiaozi :)</title>
   
 
 
@@ -234,7 +232,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/17/Note7/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/19/junit/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Koshi Ryo">
@@ -251,7 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Note7</h1>
+          <h1 class="post-title" itemprop="name headline">junit</h1>
         
 
         <div class="post-meta">
@@ -263,8 +261,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-10-17T23:59:32+09:00">
-                2019-10-17
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-11-19T21:04:34+09:00">
+                2019-11-19
               </time>
             
 
@@ -301,7 +299,67 @@
       
 
       
-        <h1 id="Day-7-for-応用情報技術者試験"><a href="#Day-7-for-応用情報技術者試験" class="headerlink" title="Day 7 for 応用情報技術者試験"></a>Day 7 for 応用情報技術者試験</h1><h2 id="テクノロジ-part-2"><a href="#テクノロジ-part-2" class="headerlink" title="テクノロジ　part 2"></a>テクノロジ　part 2</h2><h3 id="ネットワーク"><a href="#ネットワーク" class="headerlink" title="ネットワーク"></a>ネットワーク</h3><img src="/2019/10/17/Note7/2.jpg">
+        <h1 id="Junit的基本使用"><a href="#Junit的基本使用" class="headerlink" title="Junit的基本使用"></a>Junit的基本使用</h1><h2 id="什么是Junit"><a href="#什么是Junit" class="headerlink" title="什么是Junit?"></a>什么是Junit?</h2><p>Junit是xUnit的一个子集， xUnit是一套基于测试驱动开发的测试框架<br>其中的断言机制：将程序预期的结果与程序运行的最终结果进行比对，确保对结果的可预知性。</p>
+<h2 id="简单使用"><a href="#简单使用" class="headerlink" title="简单使用"></a>简单使用</h2><ol>
+<li><p>新建一个类：Calculate</p>
+<pre><code>package com.koshi.textjunit;
+
+public class Calculate {
+    public int add(int a,int b){
+        return a+b;
+    }
+
+    public int substract(int a , int b){
+        return a-b;
+    }
+
+    public int cheng(int a,int b){
+        return a*b;
+    }
+
+    public int chu(int a, int b){
+        return a/b;
+    }
+
+}</code></pre></li>
+<li><p>再新建一个测试类</p>
+<pre><code>package com.koshi.textjunit;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class CalculateTest {
+
+@Test
+public void testAdd(){
+    assertEquals(6,new Calculate().add(3, 3));
+}
+
+@Test
+public void testsubstract(){
+    assertEquals(2,new Calculate().substract(5, 3));
+}
+
+@Test
+public void testcheng(){
+    assertEquals(15,new Calculate().cheng(5, 3));
+}
+@Test
+public void testchu(){
+    assertEquals(2,new Calculate().chu(6, 3));
+}
+}</code></pre></li>
+</ol>
+<p>3.对此进行总结：</p>
+<ul>
+<li>测试方法上必须使用@Test</li>
+<li>测试方法必须使用 public void进行修饰</li>
+<li>新建一个源代码目录来存放测试代码</li>
+<li>测试类的包应该和被测试类的包一样</li>
+<li>测试单元中的每个方法一定要能够独立测试，其方法不能有任何依赖</li>
+</ul>
+
       
     </div>
     
@@ -325,8 +383,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/10/16/Note6/" rel="next" title="Note6">
-                <i class="fa fa-chevron-left"></i> Note6
+              <a href="/2019/11/12/Vuejs5/" rel="next" title="Vue.js">
+                <i class="fa fa-chevron-left"></i> Vue.js
               </a>
             
           </div>
@@ -335,8 +393,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/10/18/Note8/" rel="prev" title="Note8">
-                Note8 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/11/20/junit-1/" rel="prev" title="junit">
+                junit <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -451,7 +509,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Day-7-for-応用情報技術者試験"><span class="nav-number">1.</span> <span class="nav-text">Day 7 for 応用情報技術者試験</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#テクノロジ-part-2"><span class="nav-number">1.1.</span> <span class="nav-text">テクノロジ　part 2</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#ネットワーク"><span class="nav-number">1.1.1.</span> <span class="nav-text">ネットワーク</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Junit的基本使用"><span class="nav-number">1.</span> <span class="nav-text">Junit的基本使用</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是Junit"><span class="nav-number">1.1.</span> <span class="nav-text">什么是Junit?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#简单使用"><span class="nav-number">1.2.</span> <span class="nav-text">简单使用</span></a></li></ol></li></ol></div>
             
 
           </div>
