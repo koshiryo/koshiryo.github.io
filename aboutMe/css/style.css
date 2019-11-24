@@ -241,7 +241,7 @@ a:focus, a:hover {
 	padding: 100px 0;
 }
 
-.about h2, .skills h3, .resume h3, .study h3 {
+.about h2, .skills h3, .study h2, .project h2 .resume h3,  {
 	font-size: 50px;
 	font-weight: 700;
 	margin-bottom: 50px;
@@ -251,7 +251,7 @@ a:focus, a:hover {
 	margin-bottom: 100px;
 }
 
-.about-grid h3, .skills-grid h4, .resume h4.title {
+.about-grid h3, .skills-grid h4, .study-grid h3, .project-grid h3 .resume h4.title {
 	font-size: 25px;
 	font-weight: 700;
 	text-align: left;
@@ -537,7 +537,7 @@ a:focus, a:hover {
 	padding: 100px 0;
 }
 
-.about h2, .skills h3, .resume h3, .study h2 {
+.about h2, .skills h3, .resume h3, .study h2, .project h2 {
 	font-size: 50px;
 	font-weight: 700;
 	margin-bottom: 50px;
@@ -547,7 +547,7 @@ a:focus, a:hover {
 	margin-bottom: 100px;
 }
 
-.study-grid h3, .skills-grid h4, .resume h4.title {
+.study-grid h3, .skills-grid h4, .project-grid h3, .resume h4.title {
 	font-size: 25px;
 	font-weight: 700;
 	text-align: left;
@@ -640,7 +640,7 @@ a:focus, a:hover {
 	background-color:#F5F5F5
 }
 
-.project h2, .skills h3, .resume h3, {
+.project h2, .skills h3, .resume h3, .study h2 {
 	font-size: 50px;
 	font-weight: 700;
 	margin-bottom: 50px;
@@ -756,8 +756,6 @@ a:focus, a:hover {
 #pjList li{ 
 	display: none;
 	list-style-type: none;
-	/*--小贝壳网站模板--*/
-	/*--agileits--*/
 }
 
 ul#pjList {
@@ -776,7 +774,6 @@ ul#pjList {
 	border: 1px solid #607d8b;
 	font-size: 1.1em;
 	position: relative;
-	/*--小贝壳网站模板--*/
 	/*--agileits--*/
 	transition: 0.5s all ease;
 	-webkit-transition: 0.5s all ease;
@@ -806,7 +803,6 @@ ul#pjList {
 	position: relative;
 	text-align:center;
 	align-items:center;
-	/*--小贝壳网站模板--*/
 	/*--agileits--*/
 	transition: 0.5s all ease;
 	-webkit-transition: 0.5s all ease;
@@ -891,7 +887,6 @@ ul#myList {
 	border: 1px solid #607d8b;
 	font-size: 1.1em;
 	position: relative;
-	/*--小贝壳网站模板--*/
 	/*--agileits--*/
 	transition: 0.5s all ease;
 	-webkit-transition: 0.5s all ease;
@@ -1067,10 +1062,6 @@ li.resumeli-1 {
 
 /*-- //Text-Selection-Background-Color --*/
 
-
-
-
-
 /*-- //Index-Page-Styling --*/
 
 
@@ -1083,10 +1074,6 @@ li.resumeli-1 {
 
 
 /*-- Responsive-Code --*/
-
-
-
-
 
 @media screen and (max-width: 1920px) {
 	.header h1 {
@@ -1120,6 +1107,24 @@ li.resumeli-1 {
 	.skills-grid-2 h4 {
 		width: 27%;
 	}
+	.study-grid-1 h3 {
+		width: 22%;
+	}
+	.study-grid-2 h3 {
+		width: 22%;
+	}
+	.study-grid p {
+		line-height: 35px;
+	}
+	.project-grid-1 h3 {
+		width: 22%;
+	}
+	.project-grid-2 h3 {
+		width: 22%;
+	}
+	.project-grid p {
+		line-height: 35px;
+	}
 }
 
 @media screen and (max-width: 1680px) {
@@ -1141,6 +1146,18 @@ li.resumeli-1 {
 	.skills-grid-2 h4 {
 		width: 31%;
 	}
+	.study-grid-1 h3 {
+		width: 26%;
+	}
+	.study-grid-2 h3 {
+		width: 26%;
+	}
+	.project-grid-1 h3 {
+		width: 26%;
+	}
+	.project-grid-2 h3 {
+		width: 26%;
+	}
 }
 
 @media screen and (max-width: 1600px) {
@@ -1161,6 +1178,18 @@ li.resumeli-1 {
 	}
 	.skills-grid-2 h4 {
 		width: 33%;
+	}
+	.study-grid-1 h3 {
+		width: 27%;
+	}
+	.study-grid-2 h3 {
+		width: 27%;
+	}
+	.project-grid-1 h3 {
+		width: 27%;
+	}
+	.project-grid-2 h3 {
+		width: 27%;
 	}
 }
 
@@ -1190,6 +1219,24 @@ li.resumeli-1 {
 	.skills-grid-2 h4 {
 		width: 37%;
 	}
+	.study-grid-1 h3 {
+		width: 31%;
+	}
+	.study-grid-2 h3 {
+		width: 31%;
+	}
+	.study-grid p {
+		line-height: 30px;
+	}
+	.project-grid-1 h3 {
+		width: 31%;
+	}
+	.project-grid-2 h3 {
+		width: 31%;
+	}
+	.project-grid p {
+		line-height: 30px;
+	}
 }
 
 @media screen and (max-width: 1366px) {
@@ -1214,6 +1261,18 @@ li.resumeli-1 {
 	.skills-grid-2 h4 {
 		width: 39%;
 	}
+	.study-grid-1 h3 {
+		width: 33%;
+	}
+	.study-grid-2 h3 {
+		width: 33%;
+	}
+	.project-grid-1 h3 {
+		width: 33%;
+	}
+	.project-grid-2 h3 {
+		width: 33%;
+	}
 }
 
 @media screen and (max-width: 1280px) {
@@ -1235,6 +1294,18 @@ li.resumeli-1 {
 	.skills-grid-2 h4 {
 		width: 42%;
 	}
+	.study-grid-1 h3 {
+		width: 35%;
+	}
+	.study-grid-2 h3 {
+		width: 35%;
+	}
+	.project-grid-1 h3 {
+		width: 35%;
+	}
+	.project-grid-2 h3 {
+		width: 35%;
+	}
 }
 
 @media screen and (max-width: 1080px) {
@@ -1252,10 +1323,10 @@ li.resumeli-1 {
 	.navigation {
 		padding: 0 150px;
 	}
-	.about, .skills, .resume, .study {
+	.about, .skills, .resume, .study, .project {
 		padding: 75px 0;
 	}
-	.about h2, .skills h3, .resume h3, .study h3 {
+	.about h2, .skills h3, .resume h3, .study h2, .project h2{
 		font-size: 45px;
 		margin-bottom: 40px;
 	}
@@ -1285,6 +1356,18 @@ li.resumeli-1 {
 	.skills-grid-2 h4 {
 		width: 50%;
 	}
+	.study-grid-1 h3 {
+		width: 41%;
+	}
+	.study-grid-2 h3 {
+		width: 41%;
+	}
+	.project-grid-1 h3 {
+		width: 41%;
+	}
+	.project-grid-2 h3 {
+		width: 41%;
+	}
 	.resume h4.title {
 		width: 18%;
 	}
@@ -1313,6 +1396,19 @@ li.resumeli-1 {
 	.skills-grid-2 h4 {
 		width: 53%;
 	}
+	.study-grid-1 h3 {
+		width: 43%;
+	}
+	.study-grid-2 h3 {
+		width: 43%;
+	}
+	.project-grid-1 h3 {
+		width: 43%;
+	}
+	.project-grid-2 h3 {
+		width: 43%;
+	}
+	
 }
 
 @media screen and (max-width: 991px) {
@@ -1355,20 +1451,34 @@ li.resumeli-1 {
 		line-height: 26px;
 		font-size: 14px;
 	}
+	.study-grid-1 h3 {
+		width: 60%;
+	}
+	.study-grid-2 h3 {
+		width: 60%;
+	}
+	.project-grid {
+		width: 33.3%;
+		float: left;
+		padding: 0;
+	}
+	.project-grid-1 h3 {
+		width: 60%;
+	}
+	.project-grid-2 h3 {
+		width: 60%;
+	}
 	.work-grid {
 		width: 50%;
 		float: left;
 	}
-	.portfolio figcaption h3 {
-		margin-top: 85px;
-	}
 }
 
 @media screen and (max-width: 966px) {
-	.about h2, .skills h3, .resume h3, .study h3 {
+	.about h2, .skills h3, .resume h3, .study h2, .project h2 {
 		font-size: 40px;
 	}
-	.about-grid h3, .skills-grid h4, .resume h4.title {
+	.about-grid h3, .skills-grid h4, .study-grid h3, .project-grid h3, .resume h4.title {
 		font-weight: 100;
 	}
 	.about-grid-1 h3 {
@@ -1382,6 +1492,18 @@ li.resumeli-1 {
 	}
 	.skills-grid-2 h4 {
 		width: 57%;
+	}
+	.study-grid-1 h3 {
+		width: 44%;
+	}
+	.study-grid-2 h3 {
+		width: 44%;
+	}
+	.project-grid-1 h3 {
+		width: 44%;
+	}
+	.project-grid-2 h3 {
+		width: 44%;
 	}
 }
 
@@ -1401,7 +1523,7 @@ li.resumeli-1 {
 	.about-grid-2, .about-grid-3 {
 		width: 50%;
 	}
-	.about-grid h3, .skills-grid h4, .resume h4.title {
+	.about-grid h3, .skills-grid h4, .study h3, .project h3, .resume h4.title {
 		font-size: 22px;
 		padding-bottom: 10px;
 		margin-bottom: 15px;
@@ -1449,6 +1571,18 @@ li.resumeli-1 {
 	.skills-grid-2 h4 {
 		width: 58%;
 	}
+	.study-grid-1 h3 {
+		width: 15%;
+	}
+	.study-grid-2 h3 {
+		width: 15%;
+	}
+	.project-grid-1 h3 {
+		width: 15%;
+	}
+	.project-grid-2 h3 {
+		width: 15%;
+	}
 }
 
 @media screen and (max-width: 800px) {
@@ -1468,7 +1602,19 @@ li.resumeli-1 {
 		width: 75%;
 	}
 	.skills-grid-2 h4 {
-		width: 62%;
+		width: 16%;
+	}
+	.study-grid-1 h3 {
+		width: 16%;
+	}
+	.study-grid-2 h3 {
+		width: 16%;
+	}
+	.project-grid-1 h3 {
+		width: 16%;
+	}
+	.project-grid-2 h3 {
+		width: 16%;
 	}
 	.resume h4.title {
 		width: 19.5%;
@@ -1509,10 +1655,10 @@ li.resumeli-1 {
 		font-size: 16px;
 		margin-top: 33px;
 	}
-	.about, .skills, .resume, .study {
+	.about, .skills, .resume, .study, .project {
 		padding: 50px 0;
 	}
-	.about h2, .skills h3, .resume h3, .study h3 {
+	.about h2, .skills h3, .resume h3, .study h2, .project h2 {
 		font-size: 35px;
 		margin-bottom: 35px;
 	}
@@ -1530,6 +1676,18 @@ li.resumeli-1 {
 	}
 	.skills-grid-1 h4 {
 		width: 79%;
+	}
+	.study-grid-1 h3 {
+		width: 17%;
+	}
+	.study-grid-2 h3 {
+		width: 17%;
+	}
+	.project-grid-1 h3 {
+		width: 17%;
+	}
+	.project-grid-2 h3 {
+		width: 17%;
 	}
 	.resp-tab-item {
 		padding: 7px 0;
@@ -1557,6 +1715,12 @@ li.resumeli-1 {
 	}
 	.resume h4.title {
 		width: 19.5%;
+	}
+	li.pjli-1 {
+		margin-bottom: 30px;
+	}
+	ul#pjList {
+		margin-bottom: 2em;
 	}
 }
 
@@ -1632,6 +1796,18 @@ li.resumeli-1 {
 	.skills-grid-2 h4 {
 		width: 76%;
 	}
+	.study-grid-1 h3 {
+		width: 19%;
+	}
+	.study-grid-2 h3 {
+		width: 19%;
+	}
+	.project-grid-1 h3 {
+		width: 19%;
+	}
+	.project-grid-2 h3 {
+		width: 19%;
+	}
 }
 
 @media screen and (max-width: 640px) {
@@ -1684,6 +1860,18 @@ li.resumeli-1 {
 	.bar_group__bar.thin {
 		margin-bottom: 1em !important;
 	}
+	.study-grid-1 h3 {
+		width: 20%;
+	}
+	.study-grid-2 h3 {
+		width: 20%;
+	}
+	.project-grid-1 h3 {
+		width: 20%;
+	}
+	.project-grid-2 h3 {
+		width: 20%;
+	}
 	.resume h4.title {
 		width: 25%;
 	}
@@ -1716,6 +1904,18 @@ li.resumeli-1 {
 	}
 	.skills-grid-2 h4 {
 		width: 39%;
+	}
+	.study-grid-1 h3 {
+		width: 22%;
+	}
+	.study-grid-2 h3 {
+		width: 22%;
+	}
+	.project-grid-1 h3 {
+		width: 22%;
+	}
+	.project-grid-2 h3 {
+		width: 22%;
 	}
 	.resume h4.title {
 		width: 27%;
@@ -1780,14 +1980,14 @@ li.resumeli-1 {
 	.ch-info-back h3 {
 		font-size: 14px;
 	}
-	.about, .skills, .resume, .portfolio, .agileinfosclients, .study {
+	.about, .skills, .resume, .study, .project {
 		padding: 35px 0;
 	}
-	.about h2, .skills h3, .resume h3, .portfolio h3, .agileinfosclients h3, .wthreetestimonials h3, .study h3 {
+	.about h2, .skills h3, .resume h3, .study h2, .project h2 {
 		font-size: 30px;
 		margin-bottom: 25px;
 	}
-	.about-grid h3, .skills-grid h4, .resume h4.title {
+	.about-grid h3, .skills-grid h4, .study-grid h3, .project-grid h3, .resume h4.title {
 		font-size: 20px;
 		padding-bottom: 7px;
 	}
@@ -1805,6 +2005,18 @@ li.resumeli-1 {
 	}
 	.skills-grid-1 h4 {
 		width: 46%;
+	}
+	.study-grid-1 h3 {
+		width: 21%;
+	}
+	.study-grid-2 h3 {
+		width: 21%;
+	}
+	.project-grid-1 h3 {
+		width: 21%;
+	}
+	.project-grid-2 h3 {
+		width: 21%;
 	}
 	.resume h4.title {
 		width: 26%;
@@ -1845,11 +2057,23 @@ li.resumeli-1 {
 	.skills-grid-2 h4 {
 		width: 40%;
 	}
+	.study-grid-1 h3 {
+		width: 22%;
+	}
+	.study-grid-2 h3 {
+		width: 22%;
+	}
+	.project-grid-1 h3 {
+		width: 22%;
+	}
+	.project-grid-2 h3 {
+		width: 22%;
+	}
 	.resume h4.title {
-		width: 28%;
+		width: 22%;
 	}
 	.resume h4.title2 {
-		width: 26%;
+		width: 22%;
 	}
 	#loadMore, #showLess {
 		width: 30%;
@@ -1899,6 +2123,18 @@ li.resumeli-1 {
 	}
 	.skills-grid-2 h4 {
 		width: 45%;
+	}
+	.study-grid-1 h3 {
+		width: 23%;
+	}
+	.study-grid-2 h3 {
+		width: 23%;
+	}
+	.project-grid-1 h3 {
+		width: 23%;
+	}
+	.project-grid-2 h3 {
+		width:23%;
 	}
 	.resume h4.title {
 		width: 31%;
@@ -2045,6 +2281,18 @@ li.resumeli-1 {
 	.skills-grid-2 h4 {
 		width: 53%;
 	}
+	.study-grid-1 h3 {
+		width: 29%;
+	}
+	.study-grid-2 h3 {
+		width: 29%;
+	}
+	.project-grid-1 h3 {
+		width: 29%;
+	}
+	.project-grid-2 h3 {
+		width: 29%;
+	}
 	.resume h4.title {
 		width: 36%;
 	}
@@ -2102,6 +2350,18 @@ li.resumeli-1 {
 	.skills-grid-2 h4 {
 		width: 58%;
 	}
+	.study-grid-1 h3 {
+		width: 30%;
+	}
+	.study-grid-2 h3 {
+		width: 30%;
+	}
+	.project-grid-1 h3 {
+		width: 30%;
+	}
+	.project-grid-2 h3 {
+		width: 30%;
+	}
 	.resume h4.title {
 		width: 40%;
 	}
@@ -2138,6 +2398,18 @@ li.resumeli-1 {
 	.skills-grid-2 h4 {
 		width: 59%;
 	}
+	.study-grid-1 h3 {
+		width: 33%;
+	}
+	.study-grid-2 h3 {
+		width: 33%;
+	}
+	.project-grid-1 h3 {
+		width: 33%;
+	}
+	.project-grid-2 h3 {
+		width: 33%;
+	}
 	.resume h4.title {
 		width: 41%;
 	}
@@ -2170,6 +2442,18 @@ li.resumeli-1 {
 	}
 	.skills-grid-2 h4 {
 		width: 62%;
+	}
+	.study-grid-1 h3 {
+		width: 34%;
+	}
+	.study-grid-2 h3 {
+		width: 34%;
+	}
+	.project-grid-1 h3 {
+		width: 34%;
+	}
+	.project-grid-2 h3 {
+		width: 34%;
 	}
 	.resume h4.title {
 		width: 43%;
@@ -2224,17 +2508,17 @@ li.resumeli-1 {
 		margin-left: -30px;
 		top: 20%;
 	}
-	.about, .skills, .resume, .portfolio, .agileinfosclients, .study {
+	.about, .skills, .resume, .study, .project {
 		padding: 30px 0;
 	}
-	.about h2, .skills h3, .resume h3, .portfolio h3, .agileinfosclients h3, .wthreetestimonials h3, .study h3 {
+	.about h2, .skills h3, .resume h3, .study h2, .project h2 {
 		font-size: 28px;
 		margin-bottom: 20px;
 	}
 	.about h2 {
 		margin-bottom: 20px;
 	}
-	.about-grid h3, .skills-grid h4, .resume h4.title {
+	.about-grid h3, .skills-grid h4, .study-grid h3, .project-grid h3,.resume h4.title {
 		font-size: 18px;
 		padding-bottom: 5px;
 		margin-bottom: 10px;
@@ -2268,6 +2552,18 @@ li.resumeli-1 {
 	}
 	.skills-grid-2 h4 {
 		width: 64%;
+	}
+	.study-grid-1 h3 {
+		width: 34%;
+	}
+	.study-grid-2 h3 {
+		width: 34%;
+	}
+	.project-grid-1 h3 {
+		width: 34%;
+	}
+	.project-grid-2 h3 {
+		width: 34%;
 	}
 	.resume h4.title {
 		width: 44%;
