@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="Junit的基本使用什么是Junit?Junit是xUnit的一个子集， xUnit是一套基于测试驱动开发的测试框架其中的断言机制：将程序预期的结果与程序运行的最终结果进行比对，确保对结果的可预知性。 简单使用 新建一个类：Calculate package com.koshi.textjunit;  public class Calculate {     public int add(int">
+<meta name="description" content="Junit的基本使用什么是Junit?Junit是xUnit的一个子集， xUnit是一套基于测试驱动开发的测试框架其中的断言机制：将程序预期的结果与程序运行的最终结果进行比对，确保对结果的可预知性。 简单使用 新建一个工程  工程右键，点击Properties    新建一个类：Calculate package koshiryotest;      public class Calculate">
 <meta property="og:type" content="article">
 <meta property="og:title" content="junit">
 <meta property="og:url" content="http://yoursite.com/2019/11/19/junit/index.html">
 <meta property="og:site_name" content="This is Jiaozi :)">
-<meta property="og:description" content="Junit的基本使用什么是Junit?Junit是xUnit的一个子集， xUnit是一套基于测试驱动开发的测试框架其中的断言机制：将程序预期的结果与程序运行的最终结果进行比对，确保对结果的可预知性。 简单使用 新建一个类：Calculate package com.koshi.textjunit;  public class Calculate {     public int add(int">
+<meta property="og:description" content="Junit的基本使用什么是Junit?Junit是xUnit的一个子集， xUnit是一套基于测试驱动开发的测试框架其中的断言机制：将程序预期的结果与程序运行的最终结果进行比对，确保对结果的可预知性。 简单使用 新建一个工程  工程右键，点击Properties    新建一个类：Calculate package koshiryotest;      public class Calculate">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-11-19T12:16:24.308Z">
+<meta property="og:updated_time" content="2019-11-24T05:15:34.659Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="junit">
-<meta name="twitter:description" content="Junit的基本使用什么是Junit?Junit是xUnit的一个子集， xUnit是一套基于测试驱动开发的测试框架其中的断言机制：将程序预期的结果与程序运行的最终结果进行比对，确保对结果的可预知性。 简单使用 新建一个类：Calculate package com.koshi.textjunit;  public class Calculate {     public int add(int">
+<meta name="twitter:description" content="Junit的基本使用什么是Junit?Junit是xUnit的一个子集， xUnit是一套基于测试驱动开发的测试框架其中的断言机制：将程序预期的结果与程序运行的最终结果进行比对，确保对结果的可预知性。 简单使用 新建一个工程  工程右键，点击Properties    新建一个类：Calculate package koshiryotest;      public class Calculate">
 
 
 
@@ -301,58 +301,63 @@
       
         <h1 id="Junit的基本使用"><a href="#Junit的基本使用" class="headerlink" title="Junit的基本使用"></a>Junit的基本使用</h1><h2 id="什么是Junit"><a href="#什么是Junit" class="headerlink" title="什么是Junit?"></a>什么是Junit?</h2><p>Junit是xUnit的一个子集， xUnit是一套基于测试驱动开发的测试框架<br>其中的断言机制：将程序预期的结果与程序运行的最终结果进行比对，确保对结果的可预知性。</p>
 <h2 id="简单使用"><a href="#简单使用" class="headerlink" title="简单使用"></a>简单使用</h2><ol>
-<li><p>新建一个类：Calculate</p>
-<pre><code>package com.koshi.textjunit;
+<li><p>新建一个工程</p>
+</li>
+<li><p>工程右键，点击Properties</p>
 
-public class Calculate {
+
+</li>
+<li><p>新建一个类：Calculate</p>
+<pre><code>package koshiryotest;
+
+    public class Calculate {
     public int add(int a,int b){
         return a+b;
     }
-
     public int substract(int a , int b){
         return a-b;
     }
-
     public int cheng(int a,int b){
         return a*b;
     }
-
     public int chu(int a, int b){
         return a/b;
     }
-
 }</code></pre></li>
 <li><p>再新建一个测试类</p>
-<pre><code>package com.koshi.textjunit;
+<pre><code>package koshiryotest;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
 public class CalculateTest {
+    @Test
+    public void testAdd(){
+        assertEquals(6,new Calculate().add(3, 3));
+    }
 
-@Test
-public void testAdd(){
-    assertEquals(6,new Calculate().add(3, 3));
-}
+    @Test
+    public void testsubstract(){
+        assertEquals(2,new Calculate().substract(5, 3));
+    }
 
-@Test
-public void testsubstract(){
-    assertEquals(2,new Calculate().substract(5, 3));
-}
-
-@Test
-public void testcheng(){
-    assertEquals(15,new Calculate().cheng(5, 3));
-}
-@Test
-public void testchu(){
-    assertEquals(2,new Calculate().chu(6, 3));
-}
+    @Test
+    public void testcheng(){
+        assertEquals(15,new Calculate().cheng(5, 3));
+    }
+    @Test
+    public void testchu(){
+        assertEquals(2,new Calculate().chu(6, 3));
+    }
 }</code></pre></li>
+<li><p>在test类上运行</p>
+
+
+
+</li>
 </ol>
-<p>3.对此进行总结：</p>
-<ul>
+<h2 id="对此进行总结："><a href="#对此进行总结：" class="headerlink" title="对此进行总结："></a>对此进行总结：</h2><ul>
 <li>测试方法上必须使用@Test</li>
 <li>测试方法必须使用 public void进行修饰</li>
 <li>新建一个源代码目录来存放测试代码</li>
@@ -509,7 +514,7 @@ public void testchu(){
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Junit的基本使用"><span class="nav-number">1.</span> <span class="nav-text">Junit的基本使用</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是Junit"><span class="nav-number">1.1.</span> <span class="nav-text">什么是Junit?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#简单使用"><span class="nav-number">1.2.</span> <span class="nav-text">简单使用</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Junit的基本使用"><span class="nav-number">1.</span> <span class="nav-text">Junit的基本使用</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是Junit"><span class="nav-number">1.1.</span> <span class="nav-text">什么是Junit?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#简单使用"><span class="nav-number">1.2.</span> <span class="nav-text">简单使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#对此进行总结："><span class="nav-number">1.3.</span> <span class="nav-text">对此进行总结：</span></a></li></ol></li></ol></div>
             
 
           </div>
