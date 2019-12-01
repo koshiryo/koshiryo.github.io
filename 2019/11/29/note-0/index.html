@@ -79,14 +79,20 @@
 
 
 
+<meta name="description" content="SpringMVC 1MVC 设计概述在早期 Java Web 的开发中，统一把显示层、控制层、数据层的操作全部交给 JSP 或者 JavaBean 来进行处理，我们称之为 Model1：   出现的弊端 JSP 和 Java Bean 之间严重耦合，Java 代码和 HTML 代码也耦合在了一起 要求开发者不仅要掌握 Java ，还要有高超的前端水平 前端和后端相互依赖，前端需要等待后端完成，后">
 <meta property="og:type" content="article">
-<meta property="og:title" content="note">
+<meta property="og:title" content="SpringMVC 1">
 <meta property="og:url" content="http://yoursite.com/2019/11/29/note-0/index.html">
 <meta property="og:site_name" content="This is Jiaozi :)">
+<meta property="og:description" content="SpringMVC 1MVC 设计概述在早期 Java Web 的开发中，统一把显示层、控制层、数据层的操作全部交给 JSP 或者 JavaBean 来进行处理，我们称之为 Model1：   出现的弊端 JSP 和 Java Bean 之间严重耦合，Java 代码和 HTML 代码也耦合在了一起 要求开发者不仅要掌握 Java ，还要有高超的前端水平 前端和后端相互依赖，前端需要等待后端完成，后">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-11-29T13:58:39.746Z">
+<meta property="og:image" content="http://yoursite.com/2019/11/29/note-0/1.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/11/29/note-0/2.jpg">
+<meta property="og:updated_time" content="2019-12-01T10:43:57.807Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="note">
+<meta name="twitter:title" content="SpringMVC 1">
+<meta name="twitter:description" content="SpringMVC 1MVC 设计概述在早期 Java Web 的开发中，统一把显示层、控制层、数据层的操作全部交给 JSP 或者 JavaBean 来进行处理，我们称之为 Model1：   出现的弊端 JSP 和 Java Bean 之间严重耦合，Java 代码和 HTML 代码也耦合在了一起 要求开发者不仅要掌握 Java ，还要有高超的前端水平 前端和后端相互依赖，前端需要等待后端完成，后">
+<meta name="twitter:image" content="http://yoursite.com/2019/11/29/note-0/1.jpg">
 
 
 
@@ -122,7 +128,7 @@
 
 
 
-  <title>note | This is Jiaozi :)</title>
+  <title>SpringMVC 1 | This is Jiaozi :)</title>
   
 
 
@@ -246,7 +252,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">note</h1>
+          <h1 class="post-title" itemprop="name headline">SpringMVC 1</h1>
         
 
         <div class="post-meta">
@@ -296,7 +302,25 @@
       
 
       
-        
+        <h1 id="SpringMVC-1"><a href="#SpringMVC-1" class="headerlink" title="SpringMVC 1"></a>SpringMVC 1</h1><h2 id="MVC-设计概述"><a href="#MVC-设计概述" class="headerlink" title="MVC 设计概述"></a>MVC 设计概述</h2><p>在早期 Java Web 的开发中，统一把显示层、控制层、数据层的操作全部交给 JSP 或者 JavaBean 来进行处理，我们称之为 Model1：</p>
+<img src="/2019/11/29/note-0/1.jpg">
+
+<h3 id="出现的弊端"><a href="#出现的弊端" class="headerlink" title="出现的弊端"></a>出现的弊端</h3><ul>
+<li>JSP 和 Java Bean 之间严重耦合，Java 代码和 HTML 代码也耦合在了一起</li>
+<li>要求开发者不仅要掌握 Java ，还要有高超的前端水平</li>
+<li>前端和后端相互依赖，前端需要等待后端完成，后端也依赖前端完成，才能进行有效的测试</li>
+<li>代码难以复用</li>
+</ul>
+<p>正因为上面的种种弊端，所以很快这种方式就被 Servlet + JSP + Java Bean 所替代了，早期的 MVC 模型（Model2）就像下图这样：</p>
+<img src="/2019/11/29/note-0/2.jpg">
+
+<p>首先用户的请求会到达 Servlet，然后根据请求调用相应的 Java Bean，并把所有的显示结果交给 JSP 去完成，这样的模式我们就称为 MVC 模式。</p>
+<ul>
+<li><strong>M 代表 模型（Model）</strong><br>模型是什么呢？ 模型就是数据，就是 dao,bean</li>
+<li><strong>V 代表 视图（View）</strong><br>视图是什么呢？ 就是网页, JSP，用来展示模型中的数据</li>
+<li><strong>C 代表 控制器（controller)</strong><br>控制器是什么？ 控制器的作用就是把不同的数据(Model)，显示在不同的视图(View)上，Servlet 扮演的就是这样的角色。</li>
+</ul>
+
       
     </div>
     
@@ -329,6 +353,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/11/30/note-1/" rel="prev" title="SpringMVC">
+                SpringMVC <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -380,8 +408,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -396,7 +433,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">30</span>
+                  <span class="site-state-item-count">31</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -423,6 +460,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#SpringMVC-1"><span class="nav-number">1.</span> <span class="nav-text">SpringMVC 1</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#MVC-设计概述"><span class="nav-number">1.1.</span> <span class="nav-text">MVC 设计概述</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#出现的弊端"><span class="nav-number">1.1.1.</span> <span class="nav-text">出现的弊端</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
