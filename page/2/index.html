@@ -229,6 +229,143 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/09/vue4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Koshi Ryo">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="This is Jiaozi :)">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/11/09/vue4/" itemprop="url">Vue.js</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-11-09T21:49:27+09:00">
+                2019-11-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Vue-js-学习笔记-4"><a href="#Vue-js-学习笔记-4" class="headerlink" title="Vue.js 学习笔记 4"></a>Vue.js 学习笔记 4</h1><h2 id="常用语法"><a href="#常用语法" class="headerlink" title="常用语法"></a>常用语法</h2><h4 id="v-bind"><a href="#v-bind" class="headerlink" title="v-bind"></a>v-bind</h4><p>与上述不同的是v-bind的作用是绑定属性，比如动态修改a标签中的链接，俄日而且，v-bind能绑定类，也可以绑定条件类，条件类传入一个对象<code>{active:isActive}</code>，<code>active</code>表示要执行的类，<code>isActive</code>代表条件，为真时执行active类 ,v-bind可以简写直接用冒号代替</p>
+<h5 id="html"><a href="#html" class="headerlink" title="html:"></a>html:</h5><pre><code>&lt;div id=&quot;app&quot;&gt;
+    &lt;!-- v-bind是绑定属性 如下边的a标签的属性可以动态修改--&gt;
+    &lt;a v-bind:href=&quot;url&quot; title=&quot;&quot;&gt;
+        &lt;!-- &lt;span v-bind:class=&quot;klass&quot;&gt; --&gt;
+        &lt;span :class=&quot;{active:isActive}&quot;&gt;
+            Click!
+        &lt;/span&gt;
+        &lt;img v-bind:src=&quot;img&quot; alt=&quot;&quot;&gt;
+    &lt;/a&gt;
+&lt;/div&gt;</code></pre><h5 id="js"><a href="#js" class="headerlink" title="js:"></a>js:</h5><pre><code>var app = new Vue({
+    el:&quot;#app&quot;,
+    data:{
+        url:&quot;httpa://www.jiaozi1122.com&quot;,
+        img:&quot;koshi.png&quot;,
+        klass:&quot;pink&quot;,
+        isActive:true,
+    }
+})</code></pre>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/02/Vuejs3/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1384,125 +1521,6 @@ v-if,与v-show作用相同，区别是，v-show是仅仅隐藏，而v-if是当se
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/13/Note5/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Koshi Ryo">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="This is Jiaozi :)">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/10/13/Note5/" itemprop="url">Note</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-10-13T17:48:35+09:00">
-                2019-10-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Day-5-for-応用情報技術者試験"><a href="#Day-5-for-応用情報技術者試験" class="headerlink" title="Day 5 for 応用情報技術者試験"></a>Day 5 for 応用情報技術者試験</h1><h2 id="ストラテジ-part-4"><a href="#ストラテジ-part-4" class="headerlink" title="ストラテジ　part 4"></a>ストラテジ　part 4</h2><h3 id="法務"><a href="#法務" class="headerlink" title="法務"></a>法務</h3><img src="/2019/10/13/Note5/4.jpg">
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1553,7 +1571,7 @@ v-if,与v-show作用相同，区别是，v-show是仅仅隐藏，而v-if是当se
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">34</span>
+                  <span class="site-state-item-count">35</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
