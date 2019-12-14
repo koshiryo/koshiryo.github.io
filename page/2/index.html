@@ -229,6 +229,154 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/12/Vuejs5/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Koshi Ryo">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="This is Jiaozi :)">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/11/12/Vuejs5/" itemprop="url">Vue.js</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-11-12T23:25:43+09:00">
+                2019-11-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Vue-js-学习笔记-5"><a href="#Vue-js-学习笔记-5" class="headerlink" title="Vue.js 学习笔记 5"></a>Vue.js 学习笔记 5</h1><h2 id="常用语法"><a href="#常用语法" class="headerlink" title="常用语法"></a>常用语法</h2><h4 id="v-on"><a href="#v-on" class="headerlink" title="v-on"></a>v-on</h4><p>v-on用于绑定事件，简写为@。v-on可以绑定单个事件格式为：<code>v-on:click=&quot;onclick&quot;</code>,其中，<code>onclick</code>为自定的函数。这个函数放在method对象中，而不是data中。绑定多个事件的格式为：<code>v-on = &quot;{mouseenter:onenter,mouseleave:onout}&quot;</code><br>代码如下</p>
+<h5 id="html"><a href="#html" class="headerlink" title="html:"></a>html:</h5><pre><code>&lt;div id=&quot;app&quot;&gt;
+    &lt;button v-on:click=&quot;onClick&quot;&gt;Click me!&lt;/button&gt;
+    &lt;button v-on=&quot;{mouseenter: onEnter, mouseleave:onOut}&quot;&gt;
+        Click me again!
+    &lt;/button&gt;
+    &lt;form @keyup.enter=&quot;onKeyup&quot; @submit.prevent=&quot;onSubmit&quot;&gt;
+        &lt;input type=&quot;text&quot;&gt;
+        &lt;button type=&quot;submit&quot;&gt;submit&lt;/button&gt;
+    &lt;/form&gt;
+&lt;/div&gt;</code></pre><h5 id="js"><a href="#js" class="headerlink" title="js:"></a>js:</h5><pre><code>var app = new Vue({
+    el:&apos;#app&apos;,
+    methods:{
+        onClick:function(){
+            console.log(&quot;onClick&quot;);
+        },
+        onEnter:function(){
+            console.log(&quot;onEnter&quot;)
+        },
+        onOut:function(){
+            console.log(&apos;outEnter&apos;)
+        },
+        onSubmit:function(){
+            console.log(&apos;submitted&apos;)
+        },
+        onKeyup:function(){
+            console.log(&apos;Keyup&apos;)
+        }
+    }
+})</code></pre>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/09/vue4/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1402,125 +1550,6 @@ v-if,与v-show作用相同，区别是，v-show是仅仅隐藏，而v-if是当se
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/16/Note6/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Koshi Ryo">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="This is Jiaozi :)">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/10/16/Note6/" itemprop="url">Note6</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-10-16T18:46:01+09:00">
-                2019-10-16
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Day-6-for-応用情報技術者試験"><a href="#Day-6-for-応用情報技術者試験" class="headerlink" title="Day 6 for 応用情報技術者試験"></a>Day 6 for 応用情報技術者試験</h1><h2 id="テクノロジ-part-1"><a href="#テクノロジ-part-1" class="headerlink" title="テクノロジ　part 1"></a>テクノロジ　part 1</h2><h3 id="システムの構成要素＆ハードウェア＆ソフトウェア＆データベース"><a href="#システムの構成要素＆ハードウェア＆ソフトウェア＆データベース" class="headerlink" title="システムの構成要素＆ハードウェア＆ソフトウェア＆データベース"></a>システムの構成要素＆ハードウェア＆ソフトウェア＆データベース</h3><img src="/2019/10/16/Note6/1.jpg">
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1571,7 +1600,7 @@ v-if,与v-show作用相同，区别是，v-show是仅仅隐藏，而v-if是当se
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">35</span>
+                  <span class="site-state-item-count">36</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
