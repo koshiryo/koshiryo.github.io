@@ -229,6 +229,185 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/19/junit/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Koshi Ryo">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="This is Jiaozi :)">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/11/19/junit/" itemprop="url">junit</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-11-19T21:04:34+09:00">
+                2019-11-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Junit的基本使用"><a href="#Junit的基本使用" class="headerlink" title="Junit的基本使用"></a>Junit的基本使用</h1><h2 id="什么是Junit"><a href="#什么是Junit" class="headerlink" title="什么是Junit?"></a>什么是Junit?</h2><p>Junit是xUnit的一个子集， xUnit是一套基于测试驱动开发的测试框架<br>其中的断言机制：将程序预期的结果与程序运行的最终结果进行比对，确保对结果的可预知性。</p>
+<h2 id="简单使用"><a href="#简单使用" class="headerlink" title="简单使用"></a>简单使用</h2><ol>
+<li><p>新建一个工程</p>
+</li>
+<li><p>工程右键，点击Properties<br><img src="//yoursite.com/2019/11/19/junit/1.PNG" alt><br><img src="//yoursite.com/2019/11/19/junit/2.PNG" alt></p>
+</li>
+<li><p>新建一个类：Calculate</p>
+<pre><code>package koshiryotest;
+
+    public class Calculate {
+    public int add(int a,int b){
+        return a+b;
+    }
+    public int substract(int a , int b){
+        return a-b;
+    }
+    public int cheng(int a,int b){
+        return a*b;
+    }
+    public int chu(int a, int b){
+        return a/b;
+    }
+}</code></pre></li>
+<li><p>再新建一个测试类</p>
+<pre><code>package koshiryotest;
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+
+public class CalculateTest {
+    @Test
+    public void testAdd(){
+        assertEquals(6,new Calculate().add(3, 3));
+    }
+
+    @Test
+    public void testsubstract(){
+        assertEquals(2,new Calculate().substract(5, 3));
+    }
+
+    @Test
+    public void testcheng(){
+        assertEquals(15,new Calculate().cheng(5, 3));
+    }
+    @Test
+    public void testchu(){
+        assertEquals(2,new Calculate().chu(6, 3));
+    }
+}</code></pre></li>
+<li><p>在test类上运行<br><img src="//yoursite.com/2019/11/19/junit/3.PNG" alt><br><img src="//yoursite.com/2019/11/19/junit/4.PNG" alt></p>
+</li>
+</ol>
+<h2 id="对此进行总结："><a href="#对此进行总结：" class="headerlink" title="对此进行总结："></a>对此进行总结：</h2><ul>
+<li>测试方法上必须使用@Test</li>
+<li>测试方法必须使用 public void进行修饰</li>
+<li>新建一个源代码目录来存放测试代码</li>
+<li>测试类的包应该和被测试类的包一样</li>
+<li>测试单元中的每个方法一定要能够独立测试，其方法不能有任何依赖</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/12/Vuejs5/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1431,125 +1610,6 @@ v-if,与v-show作用相同，区别是，v-show是仅仅隐藏，而v-if是当se
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/17/Note7/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Koshi Ryo">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="This is Jiaozi :)">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/10/17/Note7/" itemprop="url">Note7</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-10-17T23:59:32+09:00">
-                2019-10-17
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Day-7-for-応用情報技術者試験"><a href="#Day-7-for-応用情報技術者試験" class="headerlink" title="Day 7 for 応用情報技術者試験"></a>Day 7 for 応用情報技術者試験</h1><h2 id="テクノロジ-part-2"><a href="#テクノロジ-part-2" class="headerlink" title="テクノロジ　part 2"></a>テクノロジ　part 2</h2><h3 id="ネットワーク"><a href="#ネットワーク" class="headerlink" title="ネットワーク"></a>ネットワーク</h3><img src="/2019/10/17/Note7/2.jpg">
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1600,7 +1660,7 @@ v-if,与v-show作用相同，区别是，v-show是仅仅隐藏，而v-if是当se
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">36</span>
+                  <span class="site-state-item-count">37</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
