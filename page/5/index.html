@@ -79,17 +79,13 @@
 
 
 
-<meta name="description" content="Vue.js 学习笔记 5常用语法v-onv-on用于绑定事件，简写为@。v-on可以绑定单个事件格式为：v-on:click=&amp;quot;onclick&amp;quot;,其中，onclick为自定的函数。这个函数放在method对象中，而不是data中。绑定多个事件的格式为：v-on = &amp;quot;{mouseenter:onenter,mouseleave:onout}&amp;quot;代码如下 ht">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Vue.js">
-<meta property="og:url" content="http://yoursite.com/2019/11/12/Vuejs5/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="This is Jiaozi :)">
+<meta property="og:url" content="http://yoursite.com/page/5/index.html">
 <meta property="og:site_name" content="This is Jiaozi :)">
-<meta property="og:description" content="Vue.js 学习笔记 5常用语法v-onv-on用于绑定事件，简写为@。v-on可以绑定单个事件格式为：v-on:click=&amp;quot;onclick&amp;quot;,其中，onclick为自定的函数。这个函数放在method对象中，而不是data中。绑定多个事件的格式为：v-on = &amp;quot;{mouseenter:onenter,mouseleave:onout}&amp;quot;代码如下 ht">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-11-12T14:30:39.045Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Vue.js">
-<meta name="twitter:description" content="Vue.js 学习笔记 5常用语法v-onv-on用于绑定事件，简写为@。v-on可以绑定单个事件格式为：v-on:click=&amp;quot;onclick&amp;quot;,其中，onclick为自定的函数。这个函数放在method对象中，而不是data中。绑定多个事件的格式为：v-on = &amp;quot;{mouseenter:onenter,mouseleave:onout}&amp;quot;代码如下 ht">
+<meta name="twitter:title" content="This is Jiaozi :)">
 
 
 
@@ -119,13 +115,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/11/12/Vuejs5/">
+  <link rel="canonical" href="http://yoursite.com/page/5/">
 
 
 
 
 
-  <title>Vue.js | This is Jiaozi :)</title>
+  <title>This is Jiaozi :)</title>
   
 
 
@@ -144,7 +140,8 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <div class="container sidebar-position-left 
+  page-home">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -217,9 +214,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-
-  <div id="posts" class="posts-expand">
+  <section id="posts" class="posts-expand">
     
+      
 
   
 
@@ -232,7 +229,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/12/Vuejs5/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/04/Hello/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Koshi Ryo">
@@ -249,7 +246,9 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Vue.js</h1>
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/09/04/Hello/" itemprop="url">Hello</a></h1>
         
 
         <div class="post-meta">
@@ -261,8 +260,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-11-12T23:25:43+09:00">
-                2019-11-12
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-09-04T19:52:59+09:00">
+                2019-09-04
               </time>
             
 
@@ -299,36 +298,14 @@
       
 
       
-        <h1 id="Vue-js-学习笔记-5"><a href="#Vue-js-学习笔记-5" class="headerlink" title="Vue.js 学习笔记 5"></a>Vue.js 学习笔记 5</h1><h2 id="常用语法"><a href="#常用语法" class="headerlink" title="常用语法"></a>常用语法</h2><h4 id="v-on"><a href="#v-on" class="headerlink" title="v-on"></a>v-on</h4><p>v-on用于绑定事件，简写为@。v-on可以绑定单个事件格式为：<code>v-on:click=&quot;onclick&quot;</code>,其中，<code>onclick</code>为自定的函数。这个函数放在method对象中，而不是data中。绑定多个事件的格式为：<code>v-on = &quot;{mouseenter:onenter,mouseleave:onout}&quot;</code><br>代码如下</p>
-<h5 id="html"><a href="#html" class="headerlink" title="html:"></a>html:</h5><pre><code>&lt;div id=&quot;app&quot;&gt;
-    &lt;button v-on:click=&quot;onClick&quot;&gt;Click me!&lt;/button&gt;
-    &lt;button v-on=&quot;{mouseenter: onEnter, mouseleave:onOut}&quot;&gt;
-        Click me again!
-    &lt;/button&gt;
-    &lt;form @keyup.enter=&quot;onKeyup&quot; @submit.prevent=&quot;onSubmit&quot;&gt;
-        &lt;input type=&quot;text&quot;&gt;
-        &lt;button type=&quot;submit&quot;&gt;submit&lt;/button&gt;
-    &lt;/form&gt;
-&lt;/div&gt;</code></pre><h5 id="js"><a href="#js" class="headerlink" title="js:"></a>js:</h5><pre><code>var app = new Vue({
-    el:&apos;#app&apos;,
-    methods:{
-        onClick:function(){
-            console.log(&quot;onClick&quot;);
-        },
-        onEnter:function(){
-            console.log(&quot;onEnter&quot;)
-        },
-        onOut:function(){
-            console.log(&apos;outEnter&apos;)
-        },
-        onSubmit:function(){
-            console.log(&apos;submitted&apos;)
-        },
-        onKeyup:function(){
-            console.log(&apos;Keyup&apos;)
-        }
-    }
-})</code></pre>
+        
+          
+            <h3 id="What-is-in-my-blog"><a href="#What-is-in-my-blog" class="headerlink" title="What is in my blog?"></a>What is in my blog?</h3><hr>
+<h4 id="Hello"><a href="#Hello" class="headerlink" title="Hello"></a>Hello</h4><p>Lets begin with a breif introduction about myself.<br>Hello, this is jiaozi from China Guilin.<br>im working as a system engineer in Tokyo.<br>Since im still a green hand in this feild, I decide to start a blog to share my study diaries and life stories.<br>Im always trying my best to learn more and to finish the work perfectly.</p>
+<h4 id="你好"><a href="#你好" class="headerlink" title="你好"></a>你好</h4><p>你好，我是饺子。<br>为了提醒自己坚持不断的学习，汲取新的知识，<br>我将在这里记录我的学习笔记和生活日记。<br>文章可能会很简洁片面，其只是我的学习总结，方便我日后复习巩固已学知识。<br>我现在在IT行业的经验尚浅，于是我时刻提醒自己要以谦虚的心态学习。<br>谢谢！</p>
+
+          
+        
       
     </div>
     
@@ -345,32 +322,12 @@
       
 
       
-      
+
       
 
       
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2019/11/09/vue4/" rel="next" title="Vue.js">
-                <i class="fa fa-chevron-left"></i> Vue.js
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/11/19/junit/" rel="prev" title="junit">
-                junit <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
       
-
-      
+        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -380,11 +337,14 @@
   </article>
 
 
+    
+  </section>
 
-    <div class="post-spread">
-      
-    </div>
-  </div>
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/4/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span>
+  </nav>
+
 
 
           </div>
@@ -392,10 +352,6 @@
 
 
           
-
-  
-
-
 
         </div>
         
@@ -416,17 +372,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -468,22 +415,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Vue-js-学习笔记-5"><span class="nav-number">1.</span> <span class="nav-text">Vue.js 学习笔记 5</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#常用语法"><span class="nav-number">1.1.</span> <span class="nav-text">常用语法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#v-on"><span class="nav-number">1.1.0.1.</span> <span class="nav-text">v-on</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#html"><span class="nav-number">1.1.0.1.1.</span> <span class="nav-text">html:</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#js"><span class="nav-number">1.1.0.1.2.</span> <span class="nav-text">js:</span></a></li></ol></li></ol></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
@@ -617,10 +548,6 @@
   
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
-
-
 
   
 
