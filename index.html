@@ -248,7 +248,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2020/01/16/note7-0/" itemprop="url">note7</a></h1>
+                <a class="post-title-link" href="/2020/01/16/note7-0/" itemprop="url">数据与结构</a></h1>
         
 
         <div class="post-meta">
@@ -300,7 +300,22 @@
       
         
           
-            
+            <h1 id="树"><a href="#树" class="headerlink" title="树"></a>树</h1><h2 id="树的抽象数据类型："><a href="#树的抽象数据类型：" class="headerlink" title="树的抽象数据类型："></a>树的抽象数据类型：</h2><pre><code> ADT  树（tree）
+    树是由一个根结点和若干课子树构成。树中结点具有相同数据类型及层次关系。
+Operation
+    root：返回根结点。
+    nodes：树的结点数
+    depth：树的深度
+    ...
+EndADT</code></pre><h2 id="树的存储结构："><a href="#树的存储结构：" class="headerlink" title="树的存储结构："></a>树的存储结构：</h2><ul>
+<li>双亲表示法</li>
+<li>孩子表示法</li>
+<li>孩子兄弟表示法</li>
+</ul>
+<h3 id="双亲表示法"><a href="#双亲表示法" class="headerlink" title="双亲表示法"></a>双亲表示法</h3><p>在每个结点中，拥有指向双亲结点的指针（可以扩展子结点或者兄弟结点）。</p>
+<h3 id="孩子表示法"><a href="#孩子表示法" class="headerlink" title="孩子表示法"></a>孩子表示法</h3><p>每个结点有多个指针域，其中每个指针指向一棵子树的根结点，叫多重链表表示法；把每个结点排列起来，以单链表做存储结构，叫孩子表示法。</p>
+<h3 id="孩子兄弟表示法"><a href="#孩子兄弟表示法" class="headerlink" title="孩子兄弟表示法"></a>孩子兄弟表示法</h3><p>一个结点设置两个指针，分别指向该结点的第一个子结点和该结点的右兄弟。</p>
+
           
         
       
