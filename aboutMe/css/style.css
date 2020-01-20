@@ -850,6 +850,7 @@ ul.simplefilter {
 .project {
 	padding: 100px 0;
 	position: relative;
+	background-color: #F5F5F5;
 }
 
 .project h2, .skills h3, .portfolio h3, .resume h3, .study h2 {
@@ -1040,7 +1041,6 @@ li.pjli-1 {
 .resume {
 	padding: 100px 0;
 	position: relative;
-    background-color: #F5F5F5;
 }
 
 .resume h4.title {
@@ -1194,6 +1194,9 @@ li.resumeli-1 {
 
 
 /*-- Footer --*/
+.footer {
+   background-color: #F5F5F5;
+}
 
 .copyright {
 	margin: 50px 0;
