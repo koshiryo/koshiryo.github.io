@@ -47,6 +47,18 @@
 						<div class="ch-item ch-img-3">
 							<div class="ch-info-wrap">
 								<div class="ch-info">
+									<div class="ch-info-front ch-img-1"><i class="class="fa fa-briefcase"" aria-hidden="true"></i></div>
+									<div class="ch-info-back">
+										<h3><a class="scroll" href="index.html#study">Portfolio</a></h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2 nav-grid nav-grid4">
+						<div class="ch-item ch-img-3">
+							<div class="ch-info-wrap">
+								<div class="ch-info">
 									<div class="ch-info-front ch-img-1"><i class="fa fa-graduation-cap" aria-hidden="true"></i></div>
 									<div class="ch-info-back">
 										<h3><a class="scroll" href="index.html#study">STUDY</a></h3>
@@ -55,7 +67,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-2 nav-grid nav-grid4">
+					<div class="col-md-2 nav-grid nav-grid5">
 						<div class="ch-item ch-img-3">
 							<div class="ch-info-wrap">
 								<div class="ch-info">
@@ -67,7 +79,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-2 nav-grid nav-grid5">
+					<div class="col-md-2 nav-grid nav-grid6">
 						<div class="ch-item ch-img-4">
 							<div class="ch-info-wrap">
 								<div class="ch-info">
@@ -96,7 +108,7 @@
 					<h3>INTRODUCTION</h3>
 					<p>Hello, this is Koshi Ryo from China. 26 years old. I ‘d prefer to use 3 words to describe myself, <strong>Positive</strong>, <strong>Brave to challenge</strong> & <strong>Easy-going</strong>.</p>
 					<br />
-					<p>I'm working as a Junior System Engineer with 1.5 years working experience. My major work is Java web system development based on SpringBoot and hibernate framework.
+					<p>I'm working as a Junior System Engineer with 2 years working experience. My major work is Java web system development based on SpringBoot and hibernate framework.
 					Also, I'm good at HTML, CSS, JavaScript, and Frontend development based on Vue.js framework.</p>
 					<br/>
 					<p>I'm eager to get an opportunity to fully play my ability, and always desire to learn new knowledge.</p>
@@ -126,6 +138,8 @@
 		</div>
 	</div>
 	<!-- //About -->
+	
+	
 	<!-- Skills -->
 	<div class="skills" id="skills">
 		<div class="container-fluid">
@@ -145,7 +159,7 @@
 
 								<div class="resp-tabs-container">
 									<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
-										<p>・1.5 years of experience in Java web system development</p>
+										<p>・2 years of experience in Java web system development</p>
 										<p>・0.5 year of experience in technical documents translation(jpn-en)</p>
 										<p>・Leadership experience(up to 8 group members)</p>
 										<p>・Fluent in both Japanese and English(TOEIC 745)</p>
@@ -182,6 +196,40 @@
 		</div>
 	</div>
 	<!-- //Skills -->
+	
+	<!-- Portfolio -->
+	<div class="portfolio" id="portfolio">
+		<div class="container">
+			<h3>PORTFOLIO</h3>
+			<ul class="simplefilter">
+				<li class="active" data-filter="all">All</li>
+				<li data-filter="1">Webpages</li>
+				<li data-filter="2">Websystem</li>
+			</ul>
+			<div class="filtr-container">
+				<div class="filtr-item" data-category="1" data-sort="111">
+					<a href="https://www.baidu.com"><img src="images/portfolio-1.jpg"></a>
+				</div>
+				<div class="filtr-item" data-category="1" data-sort="222">
+					<a href="https://www.baidu.com"><img src="images/portfolio-2.jpg"></a>
+				</div>
+				<div class="filtr-item" data-category="1" data-sort="333">
+					<a href="https://www.baidu.com"><img src="images/portfolio-3.jpg"></a>
+				</div>
+				<div class="filtr-item" data-category="1" data-sort="444">
+					<a href="https://www.baidu.com"><img src="images/portfolio-4.jpg"></a>
+				</div>
+				<div class="filtr-item" data-category="1" data-sort="555">
+					<a href="https://www.baidu.com"><img src="images/portfolio-5.jpg"></a>
+				</div>
+				<div class="filtr-item" data-category="2" data-sort="666">
+					<a href="https://www.baidu.com"><img src="images/portfolio-6.jpg"></a>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!-- //Portfolio -->
 	<!-- Study -->
 	<div class="study" id="study">
 		<div class="container-fluid">
@@ -502,6 +550,8 @@
 		<div class="clearfix"></div>
 	</div>
 	<!-- //Projects -->
+	
+	
 	<!-- Resume -->
 	<div class="resume" id="resume">
 		<div class="container">
@@ -571,6 +621,8 @@
 		</div>
 	</div>
 	<!-- //Resume -->
+	
+	
 	<!-- Footer -->
 	<div class="footer">
 		<div class="container">
@@ -582,6 +634,8 @@
 		</div>
 	</div>
 	<!-- //Footer -->
+	
+	
 <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
       <!-- Horizontal-Tabs-JavaScript -->
@@ -636,6 +690,17 @@
 				});
 			</script>
 		<!-- Show-More-JavaScript -->
+		
+		<!-- Tabs-JavaScript -->
+			<script src="js/jquery.filterizr.js"></script>
+			<script src="js/controls.js"></script>
+			<script type="text/javascript">
+				$(function() {
+					$('.filtr-container').filterizr();
+				});
+			</script>
+		<!-- //Tabs-JavaScript -->
+		
 		<!-- Slide-To-Top JavaScript -->
 			<script type="text/javascript">
 				$(document).ready(function() {
