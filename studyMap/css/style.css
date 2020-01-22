@@ -65,7 +65,7 @@ a:focus, a:hover {
 p {
 	margin: 0;
 	line-height: 2;
-	font-size: 1em;
+	font-size: 1.5em;
 	color:#888;
 }
 /*-- header --*/ 
@@ -231,7 +231,7 @@ h3.kr-heading {
 }
 .kr-heading h2 {
     color: #fff;
-    font-size: 1.7em;
+    font-size: 2.5em;
     margin: 0;
     text-align: left;
     font-weight: 500;
@@ -276,7 +276,7 @@ h3.kr-heading {
 }
 .kr-about-info p {
     color: #000000;
-    font-size: 1.05em;
+    font-size: 1.5em;
     margin: 0 auto;
     letter-spacing: 1px;
     line-height: 1.8em;
@@ -568,20 +568,6 @@ span.frontend-circle {
     display: block;
     margin: 0 auto;
 }
-.wthree-frontend {
-    border: 1px solid #000;
-    width: 17%;
-    margin: 0 auto;
-}
-.w3ls-frontend-left {
-    padding: 3em 1em;
-    border-right: 1px solid #000;
-}
-.w3ls-frontend-left.frontend-right {
-    float: right;
-    border-left: 1px solid #000;
-    border-right: none;
-}
 /* //Front end */
 .agile-border span {
     width: 74%;
@@ -600,14 +586,14 @@ span.frontend-circle {
     padding: 8em 0 0em 6em;
 }
 .study-info h4 {
-    font-size: 1.5em;
+    font-size: 2em;
     color: #000;
     position: relative;
     font-weight: 600;
 }
 
 .study-info h5 {
-    font-size: 1.3em;
+    font-size: 1.5em;
     color: #fff;
     margin-bottom: .5em;
     display: inline-block;
@@ -678,7 +664,7 @@ span.frontend-circle {
 }
 .study1 p,.study-right1 p {
     color: #000;
-    font-size: 0.9em;
+    font-size: 1.3em;
     line-height: 1.7;
     letter-spacing: 1px;
     margin-top: 1em;
