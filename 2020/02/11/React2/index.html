@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="Vue.js 学习笔记 4常用语法v-bind与上述不同的是v-bind的作用是绑定属性，比如动态修改a标签中的链接，俄日而且，v-bind能绑定类，也可以绑定条件类，条件类传入一个对象{active:isActive}，active表示要执行的类，isActive代表条件，为真时执行active类 ,v-bind可以简写直接用冒号代替 html:&amp;lt;div id=&amp;quot;app&amp;quot">
+<meta name="description" content="React Study Note2插入动态数据let name = &amp;apos;hi&amp;apos;  ReactDOM.render((   &amp;lt;div&amp;gt;     {name}   &amp;lt;/div&amp;gt; ), document.getElementById(&amp;apos;root&amp;apos;))使用{}就可以插入数据，但是{}中间的必须是js表达式，不能是语句。如果表达式的执行结果是一个">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Vue.js">
-<meta property="og:url" content="http://yoursite.com/2019/11/09/vue4/index.html">
+<meta property="og:title" content="React">
+<meta property="og:url" content="http://yoursite.com/2020/02/11/React2/index.html">
 <meta property="og:site_name" content="This is Jiaozi :)">
-<meta property="og:description" content="Vue.js 学习笔记 4常用语法v-bind与上述不同的是v-bind的作用是绑定属性，比如动态修改a标签中的链接，俄日而且，v-bind能绑定类，也可以绑定条件类，条件类传入一个对象{active:isActive}，active表示要执行的类，isActive代表条件，为真时执行active类 ,v-bind可以简写直接用冒号代替 html:&amp;lt;div id=&amp;quot;app&amp;quot">
+<meta property="og:description" content="React Study Note2插入动态数据let name = &amp;apos;hi&amp;apos;  ReactDOM.render((   &amp;lt;div&amp;gt;     {name}   &amp;lt;/div&amp;gt; ), document.getElementById(&amp;apos;root&amp;apos;))使用{}就可以插入数据，但是{}中间的必须是js表达式，不能是语句。如果表达式的执行结果是一个">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-11-09T12:56:47.503Z">
+<meta property="og:updated_time" content="2020-02-11T09:54:27.366Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Vue.js">
-<meta name="twitter:description" content="Vue.js 学习笔记 4常用语法v-bind与上述不同的是v-bind的作用是绑定属性，比如动态修改a标签中的链接，俄日而且，v-bind能绑定类，也可以绑定条件类，条件类传入一个对象{active:isActive}，active表示要执行的类，isActive代表条件，为真时执行active类 ,v-bind可以简写直接用冒号代替 html:&amp;lt;div id=&amp;quot;app&amp;quot">
+<meta name="twitter:title" content="React">
+<meta name="twitter:description" content="React Study Note2插入动态数据let name = &amp;apos;hi&amp;apos;  ReactDOM.render((   &amp;lt;div&amp;gt;     {name}   &amp;lt;/div&amp;gt; ), document.getElementById(&amp;apos;root&amp;apos;))使用{}就可以插入数据，但是{}中间的必须是js表达式，不能是语句。如果表达式的执行结果是一个">
 
 
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/11/09/vue4/">
+  <link rel="canonical" href="http://yoursite.com/2020/02/11/React2/">
 
 
 
 
 
-  <title>Vue.js | This is Jiaozi :)</title>
+  <title>React | This is Jiaozi :)</title>
   
 
 
@@ -232,7 +232,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/09/vue4/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/11/React2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Koshi Ryo">
@@ -249,7 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Vue.js</h1>
+          <h1 class="post-title" itemprop="name headline">React</h1>
         
 
         <div class="post-meta">
@@ -261,8 +261,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-11-09T21:49:27+09:00">
-                2019-11-09
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-02-11T18:50:06+09:00">
+                2020-02-11
               </time>
             
 
@@ -299,25 +299,33 @@
       
 
       
-        <h1 id="Vue-js-学习笔记-4"><a href="#Vue-js-学习笔记-4" class="headerlink" title="Vue.js 学习笔记 4"></a>Vue.js 学习笔记 4</h1><h2 id="常用语法"><a href="#常用语法" class="headerlink" title="常用语法"></a>常用语法</h2><h4 id="v-bind"><a href="#v-bind" class="headerlink" title="v-bind"></a>v-bind</h4><p>与上述不同的是v-bind的作用是绑定属性，比如动态修改a标签中的链接，俄日而且，v-bind能绑定类，也可以绑定条件类，条件类传入一个对象<code>{active:isActive}</code>，<code>active</code>表示要执行的类，<code>isActive</code>代表条件，为真时执行active类 ,v-bind可以简写直接用冒号代替</p>
-<h5 id="html"><a href="#html" class="headerlink" title="html:"></a>html:</h5><pre><code>&lt;div id=&quot;app&quot;&gt;
-    &lt;!-- v-bind是绑定属性 如下边的a标签的属性可以动态修改--&gt;
-    &lt;a v-bind:href=&quot;url&quot; title=&quot;&quot;&gt;
-        &lt;!-- &lt;span v-bind:class=&quot;klass&quot;&gt; --&gt;
-        &lt;span :class=&quot;{active:isActive}&quot;&gt;
-            Click!
-        &lt;/span&gt;
-        &lt;img v-bind:src=&quot;img&quot; alt=&quot;&quot;&gt;
-    &lt;/a&gt;
-&lt;/div&gt;</code></pre><h5 id="js"><a href="#js" class="headerlink" title="js:"></a>js:</h5><pre><code>var app = new Vue({
-    el:&quot;#app&quot;,
-    data:{
-        url:&quot;httpa://www.jiaozi1122.com&quot;,
-        img:&quot;koshi.png&quot;,
-        klass:&quot;pink&quot;,
-        isActive:true,
-    }
-})</code></pre>
+        <h1 id="React-Study-Note2"><a href="#React-Study-Note2" class="headerlink" title="React Study Note2"></a>React Study Note2</h1><h2 id="插入动态数据"><a href="#插入动态数据" class="headerlink" title="插入动态数据"></a>插入动态数据</h2><pre><code>let name = &apos;hi&apos;
+
+ReactDOM.render((
+  &lt;div&gt;
+    {name}
+  &lt;/div&gt;
+), document.getElementById(&apos;root&apos;))</code></pre><p>使用{}就可以插入数据，但是{}中间的必须是js表达式，不能是语句。如果表达式的执行结果是一个数组，则会自动join。</p>
+<h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><p>jsx语法和html语法一样，也是可以插入注释，只不过写的时候有一些区别</p>
+<h4 id="子组件注释"><a href="#子组件注释" class="headerlink" title="子组件注释"></a>子组件注释</h4><pre><code>let name = &apos;hi&apos;
+
+ReactDOM.render((
+  &lt;div&gt;
+    {/* 注释 */}
+    {name}
+  &lt;/div&gt;
+), document.getElementById(&apos;root&apos;))</code></pre><p>在子组件中插入注释，需要使用{}包裹起来，在/ /之间插入注释文字。</p>
+<h4 id="属性注释"><a href="#属性注释" class="headerlink" title="属性注释"></a>属性注释</h4><pre><code>let name = &apos;hi&apos;
+
+ReactDOM.render((
+  &lt;div&gt;
+    {name}
+    &lt;img /* 
+        多行注释
+    */ src=&quot;1.jpg&quot;/&gt;
+  &lt;/div&gt;
+), document.getElementById(&apos;root&apos;))</code></pre><p>在标签中间，可以插入一个多行注释，类似上面的代码。</p>
+
       
     </div>
     
@@ -341,8 +349,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/11/02/Vuejs3/" rel="next" title="Vue.js">
-                <i class="fa fa-chevron-left"></i> Vue.js
+              <a href="/2020/02/09/react/" rel="next" title="react">
+                <i class="fa fa-chevron-left"></i> react
               </a>
             
           </div>
@@ -350,10 +358,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/11/12/Vuejs5/" rel="prev" title="Vue.js">
-                Vue.js <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -467,7 +471,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Vue-js-学习笔记-4"><span class="nav-number">1.</span> <span class="nav-text">Vue.js 学习笔记 4</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#常用语法"><span class="nav-number">1.1.</span> <span class="nav-text">常用语法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#v-bind"><span class="nav-number">1.1.0.1.</span> <span class="nav-text">v-bind</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#html"><span class="nav-number">1.1.0.1.1.</span> <span class="nav-text">html:</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#js"><span class="nav-number">1.1.0.1.2.</span> <span class="nav-text">js:</span></a></li></ol></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#React-Study-Note2"><span class="nav-number">1.</span> <span class="nav-text">React Study Note2</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#插入动态数据"><span class="nav-number">1.1.</span> <span class="nav-text">插入动态数据</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注释"><span class="nav-number">1.2.</span> <span class="nav-text">注释</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#子组件注释"><span class="nav-number">1.2.0.1.</span> <span class="nav-text">子组件注释</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#属性注释"><span class="nav-number">1.2.0.2.</span> <span class="nav-text">属性注释</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
