@@ -229,6 +229,158 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/15/rect3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Koshi Ryo">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="This is Jiaozi :)">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/02/15/rect3/" itemprop="url">React</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-02-15T21:53:44+09:00">
+                2020-02-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="React-Study-Note3"><a href="#React-Study-Note3" class="headerlink" title="React Study Note3"></a>React Study Note3</h1><h2 id="属性props"><a href="#属性props" class="headerlink" title="属性props"></a>属性props</h2><h4 id="可以向使用html的attr一样使用属性，就像下面img的src一样"><a href="#可以向使用html的attr一样使用属性，就像下面img的src一样" class="headerlink" title="可以向使用html的attr一样使用属性，就像下面img的src一样"></a>可以向使用html的attr一样使用属性，就像下面img的src一样</h4><p>`</p>
+<pre><code>let name = &apos;hi&apos;
+
+ReactDOM.render((
+  &lt;div&gt;
+    &lt;img src=&quot;1.png&quot;/&gt;
+  &lt;/div&gt;
+), document.getElementById(&apos;root&apos;))`</code></pre><h4 id="如果需要传递动态属性，使用-，多个属性，使用展开运算符"><a href="#如果需要传递动态属性，使用-，多个属性，使用展开运算符" class="headerlink" title="如果需要传递动态属性，使用{}，多个属性，使用展开运算符"></a>如果需要传递动态属性，使用{}，多个属性，使用展开运算符</h4><pre><code>let props = {
+    src: &apos;1.png&apos;,
+    alt: &apos;1图片&apos;
+}
+
+ReactDOM.render((
+  &lt;div&gt;
+    &lt;img src={&quot;1.png&quot;}/&gt;
+    &lt;img {...props}/&gt;
+  &lt;/div&gt;
+), document.getElementById(&apos;root&apos;))</code></pre><h4 id="两个转换-class–-gt-className-for–-gt-htmlFor"><a href="#两个转换-class–-gt-className-for–-gt-htmlFor" class="headerlink" title="两个转换,class–&gt;className for–&gt;htmlFor"></a>两个转换,class–&gt;className for–&gt;htmlFor</h4><p>因为class和for是javascript关键字，所以这里需要用转换之后名称</p>
+<pre><code>ReactDOM.render((
+  &lt;div className=&quot;tab&quot;&gt;
+    &lt;label htmlFor=&quot;name&quot;&gt;姓名:&lt;/label&gt;&lt;input id=&quot;name&quot;/&gt;
+  &lt;/div&gt;
+), document.getElementById(&apos;root&apos;))</code></pre><h4 id="布尔属性"><a href="#布尔属性" class="headerlink" title="布尔属性"></a>布尔属性</h4><p>如果一个属性的值是布尔值，当这个值是true的时候则可以省略=后面的值，只保留key。</p>
+<pre><code>ReactDOM.render((
+  &lt;div className=&quot;tab&quot;&gt;
+    &lt;input type=&quot;text&quot; required/&gt;
+    &lt;input type=&quot;text&quot; required={true}/&gt;
+  &lt;/div&gt;
+), document.getElementById(&apos;root&apos;))</code></pre><h4 id="原生元素的自定义属性"><a href="#原生元素的自定义属性" class="headerlink" title="原生元素的自定义属性"></a>原生元素的自定义属性</h4><p>react对元素属性做了校验，如果在原生属性上使用此元素不支持的属性，则不能编译成功。必须使用data-前缀</p>
+<pre><code>ReactDOM.render((
+  &lt;div className=&quot;tab&quot;&gt;
+    &lt;input type=&quot;text&quot; data-init=&quot;22&quot;/&gt;
+  &lt;/div&gt;
+), document.getElementById(&apos;root&apos;))</code></pre>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/11/React2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1412,153 +1564,6 @@ EndADT</code></pre><h2 id="树的存储结构："><a href="#树的存储结构�
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/04/note1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Koshi Ryo">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="This is Jiaozi :)">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/01/04/note1/" itemprop="url">数据与结构</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-01-04T20:04:50+09:00">
-                2020-01-04
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="线性表"><a href="#线性表" class="headerlink" title="线性表"></a>线性表</h1><h2 id="顺序线性表"><a href="#顺序线性表" class="headerlink" title="顺序线性表"></a>顺序线性表</h2><p>顺序线性表：使用一段连续的地址存储单元放置线性表的数据元素。<br>举个例子：数组。</p>
-<p>顺序线性表的优缺点：<br>优点：</p>
-<ul>
-<li>可以快速获取下标的数据元素，时间复杂度为O(1)</li>
-<li>逻辑关系是一对一的关系，连续存储单元足以储存，不需要增加额外的存储空间</li>
-</ul>
-<p>缺点：</p>
-<ul>
-<li>插入和删除操作需要移动大量的元素，时间复杂度为O(n)</li>
-<li>线性表的存储空间大小难以确定，并且不好扩展</li>
-<li>造成存储空间碎片</li>
-</ul>
-<h2 id="链式线性表"><a href="#链式线性表" class="headerlink" title="链式线性表"></a>链式线性表</h2><p>链式线性表：线性表的数据元素可以存储在随意的存储单元，每一个节点不仅仅包括数据元素还有一个指向下一个节点的指针（基本的单链表）。</p>
-<p>链式（单链表）和顺序线性表优缺点对比：<br>存储分配方式：</p>
-<ul>
-<li>顺序 -&gt; 一段地址连续的存储空间</li>
-<li>链式 -&gt; 任意地址存储空间</li>
-</ul>
-<p>时间性能：</p>
-<ul>
-<li>查找<br>顺序 -&gt; O(1)<br>链式 -&gt; O(n)</li>
-<li>插入和删除<br>顺序 -&gt; O(n)<br>链式 -&gt; 寻找相应的节点，时间复杂度为O(n)，然后，插入和删除为O(1)</li>
-</ul>
-<p>空间性能：</p>
-<ul>
-<li>顺序 -&gt; 需要提前分配存储空间，分配大了，浪费空间，分配小了，容易发生上溢</li>
-<li>链式 -&gt; 不需要提前分配空间，只要有存储空间分配就行，数据元素个数只受可分配存储空间大小的限制</li>
-</ul>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1609,7 +1614,7 @@ EndADT</code></pre><h2 id="树的存储结构："><a href="#树的存储结构�
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">54</span>
+                  <span class="site-state-item-count">55</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
