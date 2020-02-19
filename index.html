@@ -248,7 +248,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2020/02/19/rect4/" itemprop="url">rect4</a></h1>
+                <a class="post-title-link" href="/2020/02/19/rect4/" itemprop="url">React</a></h1>
         
 
         <div class="post-meta">
@@ -300,7 +300,12 @@
       
         
           
-            
+            <h1 id="React-Study-Note4"><a href="#React-Study-Note4" class="headerlink" title="React Study Note4"></a>React Study Note4</h1><h2 id="插入html"><a href="#插入html" class="headerlink" title="插入html"></a>插入html</h2><p>如果动态的插入html元素,react出于安全性考虑会自动帮我们转义。所以一定要动态的插入元素的话，使用dangerouslySetInnerHTML</p>
+<pre><code>ReactDOM.render((
+  &lt;div className=&quot;tab&quot;&gt;
+    &lt;div dangerouslySetInnerHTML={{__html: '<span>test</span>'}}&gt;&lt;/div&gt;
+  &lt;/div&gt;
+), document.getElementById(&apos;root&apos;)</code></pre>
           
         
       

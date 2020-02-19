@@ -79,14 +79,17 @@
 
 
 
+<meta name="description" content="React Study Note4插入html如果动态的插入html元素,react出于安全性考虑会自动帮我们转义。所以一定要动态的插入元素的话，使用dangerouslySetInnerHTML ReactDOM.render((   &amp;lt;div className=&amp;quot;tab&amp;quot;&amp;gt;     &amp;lt;div dangerouslySetInnerHTML={{__htm">
 <meta property="og:type" content="article">
-<meta property="og:title" content="rect4">
+<meta property="og:title" content="React">
 <meta property="og:url" content="http://yoursite.com/2020/02/19/rect4/index.html">
 <meta property="og:site_name" content="This is Jiaozi :)">
+<meta property="og:description" content="React Study Note4插入html如果动态的插入html元素,react出于安全性考虑会自动帮我们转义。所以一定要动态的插入元素的话，使用dangerouslySetInnerHTML ReactDOM.render((   &amp;lt;div className=&amp;quot;tab&amp;quot;&amp;gt;     &amp;lt;div dangerouslySetInnerHTML={{__htm">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2020-02-19T14:31:50.967Z">
+<meta property="og:updated_time" content="2020-02-19T14:55:21.100Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="rect4">
+<meta name="twitter:title" content="React">
+<meta name="twitter:description" content="React Study Note4插入html如果动态的插入html元素,react出于安全性考虑会自动帮我们转义。所以一定要动态的插入元素的话，使用dangerouslySetInnerHTML ReactDOM.render((   &amp;lt;div className=&amp;quot;tab&amp;quot;&amp;gt;     &amp;lt;div dangerouslySetInnerHTML={{__htm">
 
 
 
@@ -122,7 +125,7 @@
 
 
 
-  <title>rect4 | This is Jiaozi :)</title>
+  <title>React | This is Jiaozi :)</title>
   
 
 
@@ -246,7 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">rect4</h1>
+          <h1 class="post-title" itemprop="name headline">React</h1>
         
 
         <div class="post-meta">
@@ -296,7 +299,12 @@
       
 
       
-        
+        <h1 id="React-Study-Note4"><a href="#React-Study-Note4" class="headerlink" title="React Study Note4"></a>React Study Note4</h1><h2 id="插入html"><a href="#插入html" class="headerlink" title="插入html"></a>插入html</h2><p>如果动态的插入html元素,react出于安全性考虑会自动帮我们转义。所以一定要动态的插入元素的话，使用dangerouslySetInnerHTML</p>
+<pre><code>ReactDOM.render((
+  &lt;div className=&quot;tab&quot;&gt;
+    &lt;div dangerouslySetInnerHTML={{__html: '<span>test</span>'}}&gt;&lt;/div&gt;
+  &lt;/div&gt;
+), document.getElementById(&apos;root&apos;)</code></pre>
       
     </div>
     
@@ -380,8 +388,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -423,6 +440,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#React-Study-Note4"><span class="nav-number">1.</span> <span class="nav-text">React Study Note4</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#插入html"><span class="nav-number">1.1.</span> <span class="nav-text">插入html</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
