@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="线性表线性表：零个或者多个数据元素的有限序列。 性质： 数据元素可以为空 数据元素有 数据元素之间的逻辑结构为线性结构，也就是一对一的关系 数据元素类型相同  举个例子：举个例子： 白羊 -&amp;gt; 金牛 -&amp;gt; 双子 -&amp;gt; 巨蟹 -&amp;gt; 狮子 -&amp;gt; 处女 -&amp;gt; 天秤 -&amp;gt; 射手 -&amp;gt; 摩羯 -&amp;gt; 水平 -&amp;gt; 双鱼  线性表的抽象数据类型： ADT">
+<meta name="description" content="React Study Note5React组件创建React.createClass这是旧版本的api，使用React.createClass创建组件，配套的一些api，有getDefaultProps, getinitialstate。官方已经不建议使用了，使用下面新的api替代。 ES6 classesimport * as React from &amp;apos;react&amp;apos;  cla">
 <meta property="og:type" content="article">
-<meta property="og:title" content="数据与结构">
-<meta property="og:url" content="http://yoursite.com/2020/01/01/note0/index.html">
+<meta property="og:title" content="React">
+<meta property="og:url" content="http://yoursite.com/2020/02/22/react5/index.html">
 <meta property="og:site_name" content="This is Jiaozi :)">
-<meta property="og:description" content="线性表线性表：零个或者多个数据元素的有限序列。 性质： 数据元素可以为空 数据元素有 数据元素之间的逻辑结构为线性结构，也就是一对一的关系 数据元素类型相同  举个例子：举个例子： 白羊 -&amp;gt; 金牛 -&amp;gt; 双子 -&amp;gt; 巨蟹 -&amp;gt; 狮子 -&amp;gt; 处女 -&amp;gt; 天秤 -&amp;gt; 射手 -&amp;gt; 摩羯 -&amp;gt; 水平 -&amp;gt; 双鱼  线性表的抽象数据类型： ADT">
+<meta property="og:description" content="React Study Note5React组件创建React.createClass这是旧版本的api，使用React.createClass创建组件，配套的一些api，有getDefaultProps, getinitialstate。官方已经不建议使用了，使用下面新的api替代。 ES6 classesimport * as React from &amp;apos;react&amp;apos;  cla">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2020-01-02T13:28:42.574Z">
+<meta property="og:updated_time" content="2020-02-22T14:17:51.733Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="数据与结构">
-<meta name="twitter:description" content="线性表线性表：零个或者多个数据元素的有限序列。 性质： 数据元素可以为空 数据元素有 数据元素之间的逻辑结构为线性结构，也就是一对一的关系 数据元素类型相同  举个例子：举个例子： 白羊 -&amp;gt; 金牛 -&amp;gt; 双子 -&amp;gt; 巨蟹 -&amp;gt; 狮子 -&amp;gt; 处女 -&amp;gt; 天秤 -&amp;gt; 射手 -&amp;gt; 摩羯 -&amp;gt; 水平 -&amp;gt; 双鱼  线性表的抽象数据类型： ADT">
+<meta name="twitter:title" content="React">
+<meta name="twitter:description" content="React Study Note5React组件创建React.createClass这是旧版本的api，使用React.createClass创建组件，配套的一些api，有getDefaultProps, getinitialstate。官方已经不建议使用了，使用下面新的api替代。 ES6 classesimport * as React from &amp;apos;react&amp;apos;  cla">
 
 
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2020/01/01/note0/">
+  <link rel="canonical" href="http://yoursite.com/2020/02/22/react5/">
 
 
 
 
 
-  <title>数据与结构 | This is Jiaozi :)</title>
+  <title>React | This is Jiaozi :)</title>
   
 
 
@@ -232,7 +232,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/01/note0/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/22/react5/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Koshi Ryo">
@@ -249,7 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">数据与结构</h1>
+          <h1 class="post-title" itemprop="name headline">React</h1>
         
 
         <div class="post-meta">
@@ -261,8 +261,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-01-01T20:15:46+09:00">
-                2020-01-01
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-02-22T23:14:54+09:00">
+                2020-02-22
               </time>
             
 
@@ -299,29 +299,17 @@
       
 
       
-        <h1 id="线性表"><a href="#线性表" class="headerlink" title="线性表"></a>线性表</h1><p>线性表：零个或者多个数据元素的有限序列。</p>
-<h2 id="性质："><a href="#性质：" class="headerlink" title="性质："></a>性质：</h2><ul>
-<li>数据元素可以为空</li>
-<li>数据元素有</li>
-<li>数据元素之间的逻辑结构为线性结构，也就是一对一的关系</li>
-<li>数据元素类型相同</li>
-</ul>
-<h2 id="举个例子："><a href="#举个例子：" class="headerlink" title="举个例子："></a>举个例子：</h2><pre><code>举个例子：
-白羊 -&gt; 金牛 -&gt; 双子 -&gt; 巨蟹 -&gt; 狮子 -&gt; 处女 -&gt; 天秤 -&gt; 射手 -&gt; 摩羯 -&gt; 水平 -&gt; 双鱼
+        <h1 id="React-Study-Note5"><a href="#React-Study-Note5" class="headerlink" title="React Study Note5"></a>React Study Note5</h1><h2 id="React组件创建"><a href="#React组件创建" class="headerlink" title="React组件创建"></a>React组件创建</h2><h4 id="React-createClass"><a href="#React-createClass" class="headerlink" title="React.createClass"></a>React.createClass</h4><p>这是旧版本的api，使用React.createClass创建组件，配套的一些api，有getDefaultProps, getinitialstate。官方已经不建议使用了，使用下面新的api替代。</p>
+<h4 id="ES6-classes"><a href="#ES6-classes" class="headerlink" title="ES6 classes"></a>ES6 classes</h4><pre><code>import * as React from &apos;react&apos;
 
-线性表的抽象数据类型：
-ADT 线性表（List）
-Data
-      线性表的数据对象集合为{a1, a2, ......, an}，每一个元素的类型都是DataType。其中，除第一个元素a1外，每一个元素有且仅有一个直接前驱元素，除了最后一个元素an外，每一个元素有且仅有一个直接后续元素。数据元素之间的关系是一对一的关系。
-Operation
-       count：线性表元素个数。
-       first：头指针。
-       last：尾指针。
-       isEmpty()：若线性表为空，返回true，否则返回false。
-       remove()：将线性表清空
-       node(i)：将线性表中的第i个位置的元素返回。
-       insert(data,i)：在线性表中的第i个位置插入新数据data。
-EndADT</code></pre>
+class Page extends React.Component {
+  render() {
+    return (&lt;div&gt;
+      home
+    &lt;/div&gt;)
+  }
+}</code></pre><p>这是一个实现了render方法的class。也是一个基本的react组件。</p>
+
       
     </div>
     
@@ -345,8 +333,8 @@ EndADT</code></pre>
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/12/28/new5/" rel="next" title="NEW SKILLS 2019">
-                <i class="fa fa-chevron-left"></i> NEW SKILLS 2019
+              <a href="/2020/02/19/rect4/" rel="next" title="React">
+                <i class="fa fa-chevron-left"></i> React
               </a>
             
           </div>
@@ -354,10 +342,6 @@ EndADT</code></pre>
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2020/01/04/note1/" rel="prev" title="数据与结构">
-                数据与结构 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -471,7 +455,7 @@ EndADT</code></pre>
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#线性表"><span class="nav-number">1.</span> <span class="nav-text">线性表</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#性质："><span class="nav-number">1.1.</span> <span class="nav-text">性质：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#举个例子："><span class="nav-number">1.2.</span> <span class="nav-text">举个例子：</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#React-Study-Note5"><span class="nav-number">1.</span> <span class="nav-text">React Study Note5</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#React组件创建"><span class="nav-number">1.1.</span> <span class="nav-text">React组件创建</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#React-createClass"><span class="nav-number">1.1.0.1.</span> <span class="nav-text">React.createClass</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ES6-classes"><span class="nav-number">1.1.0.2.</span> <span class="nav-text">ES6 classes</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
