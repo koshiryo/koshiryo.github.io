@@ -229,6 +229,135 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/22/react5/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Koshi Ryo">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="This is Jiaozi :)">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/02/22/react5/" itemprop="url">React</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-02-22T23:14:54+09:00">
+                2020-02-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="React-Study-Note5"><a href="#React-Study-Note5" class="headerlink" title="React Study Note5"></a>React Study Note5</h1><h2 id="React组件创建"><a href="#React组件创建" class="headerlink" title="React组件创建"></a>React组件创建</h2><h4 id="React-createClass"><a href="#React-createClass" class="headerlink" title="React.createClass"></a>React.createClass</h4><p>这是旧版本的api，使用React.createClass创建组件，配套的一些api，有getDefaultProps, getinitialstate。官方已经不建议使用了，使用下面新的api替代。</p>
+<h4 id="ES6-classes"><a href="#ES6-classes" class="headerlink" title="ES6 classes"></a>ES6 classes</h4><pre><code>import * as React from &apos;react&apos;
+
+class Page extends React.Component {
+  render() {
+    return (&lt;div&gt;
+      home
+    &lt;/div&gt;)
+  }
+}</code></pre><p>这是一个实现了render方法的class。也是一个基本的react组件。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/19/rect4/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1440,132 +1569,6 @@ EndADT</code></pre><h2 id="树的存储结构："><a href="#树的存储结构�
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/08/note4-0/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Koshi Ryo">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="This is Jiaozi :)">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/01/08/note4-0/" itemprop="url">数据与结构</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-01-08T22:02:13+09:00">
-                2020-01-08
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="栈与队列"><a href="#栈与队列" class="headerlink" title="栈与队列"></a>栈与队列</h1><p>栈：限定在表尾进行插入和删除的线性表。<br>栈是一种LIFO(Last In First Out)的线性表，也就是数据元素遵循后进先出的原则。</p>
-<p>栈的抽象数据类型：<br>    ADT 栈(Stack)<br>    Data<br>          具有线性表一样的性质。<br>    Operation<br>          top：获取栈顶元素<br>          count：栈的长度<br>          isEmpty：栈内元素是否为空<br>          push(data)：元素进栈<br>          pop()：元素出栈<br>          removeAll()：清空栈内元素<br>    EndADT</p>
-<h2 id="按栈的存储结构分类："><a href="#按栈的存储结构分类：" class="headerlink" title="按栈的存储结构分类："></a>按栈的存储结构分类：</h2><ul>
-<li>栈的顺序存储结构<br>单栈<br>共享栈</li>
-<li>栈的链式存储结构</li>
-</ul>
-<h2 id="共享栈："><a href="#共享栈：" class="headerlink" title="共享栈："></a>共享栈：</h2><p>两个顺序栈共享存储空间，栈1的栈顶在下标0处，栈2的栈顶在下标n-1处。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1616,7 +1619,7 @@ EndADT</code></pre><h2 id="树的存储结构："><a href="#树的存储结构�
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">56</span>
+                  <span class="site-state-item-count">57</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
