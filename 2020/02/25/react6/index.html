@@ -79,19 +79,17 @@
 
 
 
-<meta name="description" content="Day 3 for 応用情報技術者試験ストラテジ　part 2経営戦略マネジメント">
+<meta name="description" content="React Study Note6React数据流statestate是组件的内部状态，需要在视图里面用到的状态，才需要放到state里面去。如下，我们在类上创建一个state属性，在视图里面通过使用this.state.name去引用。而这里的state定义则代替的是getinitialstate方法。    import * as React from ‘react’ class Page e">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Note">
-<meta property="og:url" content="http://yoursite.com/2019/10/10/Note3/index.html">
+<meta property="og:title" content="React">
+<meta property="og:url" content="http://yoursite.com/2020/02/25/react6/index.html">
 <meta property="og:site_name" content="This is Jiaozi :)">
-<meta property="og:description" content="Day 3 for 応用情報技術者試験ストラテジ　part 2経営戦略マネジメント">
+<meta property="og:description" content="React Study Note6React数据流statestate是组件的内部状态，需要在视图里面用到的状态，才需要放到state里面去。如下，我们在类上创建一个state属性，在视图里面通过使用this.state.name去引用。而这里的state定义则代替的是getinitialstate方法。    import * as React from ‘react’ class Page e">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="http://yoursite.com/2019/10/10/Note3/2.jpg">
-<meta property="og:updated_time" content="2019-10-10T09:56:03.077Z">
+<meta property="og:updated_time" content="2020-02-25T12:41:32.129Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Note">
-<meta name="twitter:description" content="Day 3 for 応用情報技術者試験ストラテジ　part 2経営戦略マネジメント">
-<meta name="twitter:image" content="http://yoursite.com/2019/10/10/Note3/2.jpg">
+<meta name="twitter:title" content="React">
+<meta name="twitter:description" content="React Study Note6React数据流statestate是组件的内部状态，需要在视图里面用到的状态，才需要放到state里面去。如下，我们在类上创建一个state属性，在视图里面通过使用this.state.name去引用。而这里的state定义则代替的是getinitialstate方法。    import * as React from ‘react’ class Page e">
 
 
 
@@ -121,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/10/10/Note3/">
+  <link rel="canonical" href="http://yoursite.com/2020/02/25/react6/">
 
 
 
 
 
-  <title>Note | This is Jiaozi :)</title>
+  <title>React | This is Jiaozi :)</title>
   
 
 
@@ -234,7 +232,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/10/Note3/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/25/react6/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Koshi Ryo">
@@ -251,7 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Note</h1>
+          <h1 class="post-title" itemprop="name headline">React</h1>
         
 
         <div class="post-meta">
@@ -263,8 +261,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-10-10T18:50:31+09:00">
-                2019-10-10
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-02-25T21:34:28+09:00">
+                2020-02-25
               </time>
             
 
@@ -301,7 +299,33 @@
       
 
       
-        <h1 id="Day-3-for-応用情報技術者試験"><a href="#Day-3-for-応用情報技術者試験" class="headerlink" title="Day 3 for 応用情報技術者試験"></a>Day 3 for 応用情報技術者試験</h1><h2 id="ストラテジ-part-2"><a href="#ストラテジ-part-2" class="headerlink" title="ストラテジ　part 2"></a>ストラテジ　part 2</h2><h3 id="経営戦略マネジメント"><a href="#経営戦略マネジメント" class="headerlink" title="経営戦略マネジメント"></a>経営戦略マネジメント</h3><img src="/2019/10/10/Note3/2.jpg">
+        <h1 id="React-Study-Note6"><a href="#React-Study-Note6" class="headerlink" title="React Study Note6"></a>React Study Note6</h1><h2 id="React数据流"><a href="#React数据流" class="headerlink" title="React数据流"></a>React数据流</h2><h4 id="state"><a href="#state" class="headerlink" title="state"></a>state</h4><p>state是组件的内部状态，需要在视图里面用到的状态，才需要放到state里面去。如下，我们在类上创建一个state属性，在视图里面通过使用this.state.name去引用。而这里的state定义则代替的是getinitialstate方法。<br>    import * as React from ‘react’</p>
+<pre><code>class Page extends React.Component {
+  state = {
+      name: &apos;小明&apos;
+  }    
+
+  render() {
+    return (&lt;div&gt;
+      {this}
+    &lt;/div&gt;)
+  }
+}</code></pre><p>如何更新state呢，直接更改state其实可以可以的，不过这样子无法触发组件视图的更新机制。所以使用<code>setState()</code>api。值得注意的是setState是异步的，原因是react内部需要对setState做优化，不是state变了立刻去更新视图，而是拦截一部分state的改变，等到合适的时机再去更新视图。</p>
+<pre><code>import * as React from &apos;react&apos;
+
+class Page extends React.Component {
+  state = {
+      name: &apos;小明&apos;
+  }    
+
+  render() {
+    setTimeout(() =&gt; this.setState({name: &apos;小明儿子&apos;})， 5000)
+
+    return (&lt;div&gt;
+      {this.state.name}
+    &lt;/div&gt;)
+  }
+}</code></pre>
       
     </div>
     
@@ -325,8 +349,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/10/08/Note2/" rel="next" title="Note">
-                <i class="fa fa-chevron-left"></i> Note
+              <a href="/2020/02/22/react5/" rel="next" title="React">
+                <i class="fa fa-chevron-left"></i> React
               </a>
             
           </div>
@@ -334,10 +358,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/10/11/Note4/" rel="prev" title="Note">
-                Note <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -451,7 +471,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Day-3-for-応用情報技術者試験"><span class="nav-number">1.</span> <span class="nav-text">Day 3 for 応用情報技術者試験</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#ストラテジ-part-2"><span class="nav-number">1.1.</span> <span class="nav-text">ストラテジ　part 2</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#経営戦略マネジメント"><span class="nav-number">1.1.1.</span> <span class="nav-text">経営戦略マネジメント</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#React-Study-Note6"><span class="nav-number">1.</span> <span class="nav-text">React Study Note6</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#React数据流"><span class="nav-number">1.1.</span> <span class="nav-text">React数据流</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#state"><span class="nav-number">1.1.0.1.</span> <span class="nav-text">state</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>

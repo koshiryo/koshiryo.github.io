@@ -248,6 +248,151 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/25/react6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Koshi Ryo">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="This is Jiaozi :)">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/02/25/react6/" itemprop="url">React</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-02-25T21:34:28+09:00">
+                2020-02-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="React-Study-Note6"><a href="#React-Study-Note6" class="headerlink" title="React Study Note6"></a>React Study Note6</h1><h2 id="React数据流"><a href="#React数据流" class="headerlink" title="React数据流"></a>React数据流</h2><h4 id="state"><a href="#state" class="headerlink" title="state"></a>state</h4><p>state是组件的内部状态，需要在视图里面用到的状态，才需要放到state里面去。如下，我们在类上创建一个state属性，在视图里面通过使用this.state.name去引用。而这里的state定义则代替的是getinitialstate方法。<br>    import * as React from ‘react’</p>
+<pre><code>class Page extends React.Component {
+  state = {
+      name: &apos;小明&apos;
+  }    
+
+  render() {
+    return (&lt;div&gt;
+      {this}
+    &lt;/div&gt;)
+  }
+}</code></pre><p>如何更新state呢，直接更改state其实可以可以的，不过这样子无法触发组件视图的更新机制。所以使用<code>setState()</code>api。值得注意的是setState是异步的，原因是react内部需要对setState做优化，不是state变了立刻去更新视图，而是拦截一部分state的改变，等到合适的时机再去更新视图。</p>
+<pre><code>import * as React from &apos;react&apos;
+
+class Page extends React.Component {
+  state = {
+      name: &apos;小明&apos;
+  }    
+
+  render() {
+    setTimeout(() =&gt; this.setState({name: &apos;小明儿子&apos;})， 5000)
+
+    return (&lt;div&gt;
+      {this.state.name}
+    &lt;/div&gt;)
+  }
+}</code></pre>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/22/react5/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -329,6 +474,13 @@ class Page extends React.Component {
     &lt;/div&gt;)
   }
 }</code></pre><p>这是一个实现了render方法的class。也是一个基本的react组件。</p>
+<h4 id="无状态函数"><a href="#无状态函数" class="headerlink" title="无状态函数"></a>无状态函数</h4><pre><code>function Button(props, context) {
+    return (
+        &lt;button&gt;
+            &lt;em&gt;{props.text}&lt;/em&gt;
+            &lt;span&gt;{context.name}&lt;/span&gt;
+        &lt;/button&gt;
+    );</code></pre><p>纯函数,不存在state，只接受props和state。纯函数有优点，优点就是易于测试，无副作用。</p>
 
           
         
@@ -1462,132 +1614,6 @@ EndADT</code></pre><h2 id="树的存储结构："><a href="#树的存储结构�
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/10/note5-0/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Koshi Ryo">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="This is Jiaozi :)">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/01/10/note5-0/" itemprop="url">数据与结构</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-01-10T20:55:39+09:00">
-                2020-01-10
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="串"><a href="#串" class="headerlink" title="串"></a>串</h1><h2 id="串：是由零个或多个字符组成的有限序列，又叫字符串。"><a href="#串：是由零个或多个字符组成的有限序列，又叫字符串。" class="headerlink" title="串：是由零个或多个字符组成的有限序列，又叫字符串。"></a>串：是由零个或多个字符组成的有限序列，又叫字符串。</h2><p>字符串在开发的时候很常用，以Objective-C为例，有可变字符串和不可变字符串，两者的实现数据结构应该有点区别；一个是链式存储结构，一个是顺序存储结构。</p>
-<p>字符串的抽象数据类型：<br>    ADT 串（String）<br>    Data<br>        串中元素仅由一个字符组成，相邻元素具有前驱和后续关系。<br>    Operation<br>        StringEmpty(S)：若串S为空，返回true，否则返回false。<br>         …<br>    EndADT</p>
-<h2 id="按存储结构分类："><a href="#按存储结构分类：" class="headerlink" title="按存储结构分类："></a>按存储结构分类：</h2><ul>
-<li>顺序存储结构的字符串</li>
-<li>链式存储结构的字符串</li>
-</ul>
-<h2 id="字符串的模式匹配"><a href="#字符串的模式匹配" class="headerlink" title="字符串的模式匹配"></a>字符串的模式匹配</h2><p>朴素的模式匹配算法：核心思想，需要匹配的字符串和主串从下标0开始匹配，一旦子串不匹配，则子串又从下标0开始匹配，主串则挪到下标1，不断的循环这个过程，直到主串或者字串当前的下标超过字符串的长度或者匹配成功返回。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1638,7 +1664,7 @@ EndADT</code></pre><h2 id="树的存储结构："><a href="#树的存储结构�
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">57</span>
+                  <span class="site-state-item-count">58</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
