@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="This is Jiaozi :)">
 <meta property="og:description" content="React Study Note5React组件创建React.createClass这是旧版本的api，使用React.createClass创建组件，配套的一些api，有getDefaultProps, getinitialstate。官方已经不建议使用了，使用下面新的api替代。 ES6 classesimport * as React from &amp;apos;react&amp;apos;  cla">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2020-02-22T14:17:51.733Z">
+<meta property="og:updated_time" content="2020-02-25T12:38:02.791Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="React">
 <meta name="twitter:description" content="React Study Note5React组件创建React.createClass这是旧版本的api，使用React.createClass创建组件，配套的一些api，有getDefaultProps, getinitialstate。官方已经不建议使用了，使用下面新的api替代。 ES6 classesimport * as React from &amp;apos;react&amp;apos;  cla">
@@ -309,6 +309,13 @@ class Page extends React.Component {
     &lt;/div&gt;)
   }
 }</code></pre><p>这是一个实现了render方法的class。也是一个基本的react组件。</p>
+<h4 id="无状态函数"><a href="#无状态函数" class="headerlink" title="无状态函数"></a>无状态函数</h4><pre><code>function Button(props, context) {
+    return (
+        &lt;button&gt;
+            &lt;em&gt;{props.text}&lt;/em&gt;
+            &lt;span&gt;{context.name}&lt;/span&gt;
+        &lt;/button&gt;
+    );</code></pre><p>纯函数,不存在state，只接受props和state。纯函数有优点，优点就是易于测试，无副作用。</p>
 
       
     </div>
@@ -342,6 +349,10 @@ class Page extends React.Component {
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/02/25/react6/" rel="prev" title="react6">
+                react6 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -418,7 +429,7 @@ class Page extends React.Component {
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">57</span>
+                  <span class="site-state-item-count">58</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -455,7 +466,7 @@ class Page extends React.Component {
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#React-Study-Note5"><span class="nav-number">1.</span> <span class="nav-text">React Study Note5</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#React组件创建"><span class="nav-number">1.1.</span> <span class="nav-text">React组件创建</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#React-createClass"><span class="nav-number">1.1.0.1.</span> <span class="nav-text">React.createClass</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ES6-classes"><span class="nav-number">1.1.0.2.</span> <span class="nav-text">ES6 classes</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#React-Study-Note5"><span class="nav-number">1.</span> <span class="nav-text">React Study Note5</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#React组件创建"><span class="nav-number">1.1.</span> <span class="nav-text">React组件创建</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#React-createClass"><span class="nav-number">1.1.0.1.</span> <span class="nav-text">React.createClass</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ES6-classes"><span class="nav-number">1.1.0.2.</span> <span class="nav-text">ES6 classes</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#无状态函数"><span class="nav-number">1.1.0.3.</span> <span class="nav-text">无状态函数</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
