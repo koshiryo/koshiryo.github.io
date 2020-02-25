@@ -248,7 +248,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2020/02/25/react6/" itemprop="url">react6</a></h1>
+                <a class="post-title-link" href="/2020/02/25/react6/" itemprop="url">React</a></h1>
         
 
         <div class="post-meta">
@@ -300,7 +300,33 @@
       
         
           
-            
+            <h1 id="React-Study-Note6"><a href="#React-Study-Note6" class="headerlink" title="React Study Note6"></a>React Study Note6</h1><h2 id="React数据流"><a href="#React数据流" class="headerlink" title="React数据流"></a>React数据流</h2><h4 id="state"><a href="#state" class="headerlink" title="state"></a>state</h4><p>state是组件的内部状态，需要在视图里面用到的状态，才需要放到state里面去。如下，我们在类上创建一个state属性，在视图里面通过使用this.state.name去引用。而这里的state定义则代替的是getinitialstate方法。<br>    import * as React from ‘react’</p>
+<pre><code>class Page extends React.Component {
+  state = {
+      name: &apos;小明&apos;
+  }    
+
+  render() {
+    return (&lt;div&gt;
+      {this}
+    &lt;/div&gt;)
+  }
+}</code></pre><p>如何更新state呢，直接更改state其实可以可以的，不过这样子无法触发组件视图的更新机制。所以使用<code>setState()</code>api。值得注意的是setState是异步的，原因是react内部需要对setState做优化，不是state变了立刻去更新视图，而是拦截一部分state的改变，等到合适的时机再去更新视图。</p>
+<pre><code>import * as React from &apos;react&apos;
+
+class Page extends React.Component {
+  state = {
+      name: &apos;小明&apos;
+  }    
+
+  render() {
+    setTimeout(() =&gt; this.setState({name: &apos;小明儿子&apos;})， 5000)
+
+    return (&lt;div&gt;
+      {this.state.name}
+    &lt;/div&gt;)
+  }
+}</code></pre>
           
         
       
