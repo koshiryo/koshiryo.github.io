@@ -79,14 +79,17 @@
 
 
 
+<meta name="description" content="React Study Note8事件react里面的用户事件都是合成事件，被React封装过。内部使用的还是事件的委托机制。常用的事件有点击事件onClick，input的onChange事件等，官网都可以查到。 合成事件的this指向问题就像上文一样，我们绑定事件的方式很奇怪，使用了bind来显示绑定this的指向。因为传递到组件内部的只是一个函数，而脱离了当前对象的函数的this指向是不能指">
 <meta property="og:type" content="article">
-<meta property="og:title" content="react8">
+<meta property="og:title" content="React">
 <meta property="og:url" content="http://yoursite.com/2020/02/28/react8/index.html">
 <meta property="og:site_name" content="This is Jiaozi :)">
+<meta property="og:description" content="React Study Note8事件react里面的用户事件都是合成事件，被React封装过。内部使用的还是事件的委托机制。常用的事件有点击事件onClick，input的onChange事件等，官网都可以查到。 合成事件的this指向问题就像上文一样，我们绑定事件的方式很奇怪，使用了bind来显示绑定this的指向。因为传递到组件内部的只是一个函数，而脱离了当前对象的函数的this指向是不能指">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2020-02-28T13:49:12.096Z">
+<meta property="og:updated_time" content="2020-02-29T14:19:30.142Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="react8">
+<meta name="twitter:title" content="React">
+<meta name="twitter:description" content="React Study Note8事件react里面的用户事件都是合成事件，被React封装过。内部使用的还是事件的委托机制。常用的事件有点击事件onClick，input的onChange事件等，官网都可以查到。 合成事件的this指向问题就像上文一样，我们绑定事件的方式很奇怪，使用了bind来显示绑定this的指向。因为传递到组件内部的只是一个函数，而脱离了当前对象的函数的this指向是不能指">
 
 
 
@@ -122,7 +125,7 @@
 
 
 
-  <title>react8 | This is Jiaozi :)</title>
+  <title>React | This is Jiaozi :)</title>
   
 
 
@@ -246,7 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">react8</h1>
+          <h1 class="post-title" itemprop="name headline">React</h1>
         
 
         <div class="post-meta">
@@ -296,7 +299,27 @@
       
 
       
-        
+        <h1 id="React-Study-Note8"><a href="#React-Study-Note8" class="headerlink" title="React Study Note8"></a>React Study Note8</h1><h2 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h2><p>react里面的用户事件都是合成事件，被React封装过。内部使用的还是事件的委托机制。<br>常用的事件有点击事件onClick，input的onChange事件等，官网都可以查到。</p>
+<h4 id="合成事件的this指向问题"><a href="#合成事件的this指向问题" class="headerlink" title="合成事件的this指向问题"></a>合成事件的this指向问题</h4><p>就像上文一样，我们绑定事件的方式很奇怪，使用了bind来显示绑定this的指向。因为传递到组件内部的只是一个函数，而脱离了当前对象的函数的this指向是不能指到当前组件的，需要显示指定。</p>
+<h4 id="通过bind"><a href="#通过bind" class="headerlink" title="通过bind"></a>通过bind</h4><pre><code>&lt;button onClick={this.update.bind(this)}&gt;更新&lt;/button&gt;</code></pre><h4 id="构造器内部指定"><a href="#构造器内部指定" class="headerlink" title="构造器内部指定"></a>构造器内部指定</h4><pre><code>import * as React from &apos;react&apos;
+
+class Child extends React.Component {
+  constructor(props) {
+     super(props) 
+     this.update = this.update.bind(this)
+  }
+
+  update() {
+      this.props.onChange(&apos;小明名字改了&apos;)
+  }
+
+  render() {
+    return (&lt;div&gt;
+      {this.props.parentName}
+      &lt;button onClick={this.update}&gt;更新&lt;/button&gt;
+    &lt;/div&gt;)
+  }
+}</code></pre>
       
     </div>
     
@@ -380,8 +403,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -423,6 +455,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#React-Study-Note8"><span class="nav-number">1.</span> <span class="nav-text">React Study Note8</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#事件"><span class="nav-number">1.1.</span> <span class="nav-text">事件</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#合成事件的this指向问题"><span class="nav-number">1.1.0.1.</span> <span class="nav-text">合成事件的this指向问题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#通过bind"><span class="nav-number">1.1.0.2.</span> <span class="nav-text">通过bind</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#构造器内部指定"><span class="nav-number">1.1.0.3.</span> <span class="nav-text">构造器内部指定</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
