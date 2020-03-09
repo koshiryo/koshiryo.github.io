@@ -229,6 +229,145 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/09/react/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Koshi Ryo">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="This is Jiaozi :)">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/02/09/react/" itemprop="url">react</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-02-09T20:45:14+09:00">
+                2020-02-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="React-Study-Note1"><a href="#React-Study-Note1" class="headerlink" title="React Study Note1"></a>React Study Note1</h1><h2 id="jsx语法"><a href="#jsx语法" class="headerlink" title="jsx语法"></a>jsx语法</h2><p>前端MVVM主流框架都有一套自己的模板处理方法，react则使用它独特的jsx语法。在组件中插入html类似的语法，简化创建view的流程。</p>
+<h4 id="原生元素"><a href="#原生元素" class="headerlink" title="原生元素"></a>原生元素</h4><pre><code>ReactDOM.render((
+  &lt;div&gt;
+    &lt;h1&gt;标题&lt;/h1&gt;
+  &lt;/div&gt;
+), document.getElementById(&apos;root&apos;))</code></pre><p>通过简单的语法页面就会被插入一个div+一个h1标签。原生的html元素可以被直接使用。以上的语法并不是js支持的语法，需要被转换之后才能运行。</p>
+<h4 id="自定义元素"><a href="#自定义元素" class="headerlink" title="自定义元素"></a>自定义元素</h4><p>react强大之处就在于可以组件的自定义，实现组件的复用。如果我们创建了一个组件。我们也可以通过jsx语法调用。<br>    import * as React from ‘react’</p>
+<pre><code>class Page extends React.Component {
+  render() {
+    return (&lt;div&gt;
+      home111 &amp;copy;
+    &lt;/div&gt;)
+  }
+}
+
+ReactDOM.render((
+  &lt;div&gt;
+    &lt;Page/&gt;
+  &lt;/div&gt;
+), document.getElementById(&apos;root&apos;))</code></pre><p>我们定义了一个Page组件，可以在jsx里面像调用html一样直接调用。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/31/note-2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1416,127 +1555,6 @@ EndADT</code></pre>
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/28/new5/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Koshi Ryo">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="This is Jiaozi :)">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/12/28/new5/" itemprop="url">NEW SKILLS 2019</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-12-28T23:12:19+09:00">
-                2019-12-28
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="2019年后端新技术5"><a href="#2019年后端新技术5" class="headerlink" title="2019年后端新技术5"></a>2019年后端新技术5</h1><h2 id="CakePHP"><a href="#CakePHP" class="headerlink" title="CakePHP"></a>CakePHP</h2><p>cakephpCakePHP是一个用PHP编写的开源web开发框架，从一开始就在市场上非常流行。它基于模型-控制器-视图和关联数据映射的概念。通过使用CakePHP, processionals可以轻松地以结构化和快速的方式开发web应用程序。使用CakePHP的最大优势之一是它提供了详细的文档和实用指南，以及非常容易编写代码的框架。</p>
-<p>因此，开发人员可以使用这个框架轻松地创建web应用程序。如果您选择这个框架进行开发，那么通过编写相对较少的代码，您将能够实现更多的功能。您甚至可以通过这个框架重用旧项目的代码，从而使CakePHP web应用程序开发速度更快。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1587,7 +1605,7 @@ EndADT</code></pre>
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">62</span>
+                  <span class="site-state-item-count">63</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>

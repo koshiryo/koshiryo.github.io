@@ -229,6 +229,142 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/07/mock/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Koshi Ryo">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="This is Jiaozi :)">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/12/07/mock/" itemprop="url">Mock</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-12-07T22:50:35+09:00">
+                2019-12-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Mock"><a href="#Mock" class="headerlink" title="Mock"></a>Mock</h1><h2 id="Mock概念介绍"><a href="#Mock概念介绍" class="headerlink" title="Mock概念介绍"></a>Mock概念介绍</h2><h3 id="mock的定义（what）："><a href="#mock的定义（what）：" class="headerlink" title="mock的定义（what）："></a>mock的定义（what）：</h3><p>mock是在测试过程中，对于一些不容易构造/获取的对象，创建一个mock对象来模拟对象的行为</p>
+<h3 id="为什么要使用mock（why）："><a href="#为什么要使用mock（why）：" class="headerlink" title="为什么要使用mock（why）："></a>为什么要使用mock（why）：</h3><ul>
+<li>被测对象依赖的对象构造复杂</li>
+</ul>
+<p>我们想对class A进行单元测试，需要构造大量的class B、C、D等依赖对象，他们的构造过程复杂(体现在构造步骤多、耗时较长)，这时我们可以利用mock去构造虚拟的class B、C、D对象用于class A的测试，因为我们只是想测试class A的行为是否符合预期，我们并不需要测试依赖对象。</p>
+<ul>
+<li>被测单元依赖的模块尚未开发完成，而被测对象需要依赖模块的返回值进行测试：<br>比如service层的代码中，包含对dao层的调用，但dao层代码尚未开发<br>比如web的前端依赖后端接口获取数据进行联调测试，但后端接口并未开发完成</li>
+</ul>
+<h3 id="哪些时机和场合需要使用mock（when-amp-where）"><a href="#哪些时机和场合需要使用mock（when-amp-where）" class="headerlink" title="哪些时机和场合需要使用mock（when&amp;where）"></a>哪些时机和场合需要使用mock（when&amp;where）</h3><ul>
+<li>单元测试/接口测试中测试对象依赖其他对象，这些对象的构造复杂、耗时或者根本无法构造(未交付)</li>
+<li>我们只测试对象内部逻辑的质量，不关心依赖对象的逻辑正确性和稳定性</li>
+</ul>
+<h3 id="是否应该在测试中使用mock，投入产出比如何-how-much"><a href="#是否应该在测试中使用mock，投入产出比如何-how-much" class="headerlink" title="是否应该在测试中使用mock，投入产出比如何(how much)"></a>是否应该在测试中使用mock，投入产出比如何(how much)</h3><p>我们可以基于以下2个原则去做mock，这样的mock的投入产出比是最高的</p>
+<ul>
+<li>不需要对所有的依赖对象/服务进行mock，只对那些构造步骤复杂、构造耗时较长、不稳定的依赖对象/服务进行mock。</li>
+<li>如果做分层测试（比如分层自动化），高层的测试设计可以基于以下假设：低层的测试已保证低层对象的质量，高层对低层的依赖可以mock，无需关心所依赖的低层对象的质量。</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/04/Webpack2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1553,158 +1689,6 @@ public class CalculateTest {
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/01/Vuejs/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Koshi Ryo">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="This is Jiaozi :)">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/11/01/Vuejs/" itemprop="url">Vue.js</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-11-01T21:09:57+09:00">
-                2019-11-01
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Vue-js-学习笔记-2"><a href="#Vue-js-学习笔记-2" class="headerlink" title="Vue.js 学习笔记 2"></a>Vue.js 学习笔记 2</h1><h2 id="常用语法"><a href="#常用语法" class="headerlink" title="常用语法"></a>常用语法</h2><h3 id="数据绑定"><a href="#数据绑定" class="headerlink" title="数据绑定"></a>数据绑定</h3><p>vue与html中内容建立关系的方式是绑定，在自定的js文件中定义一个Vue对象，内部元素el作为选择器绑定对应标签，如div;data是一个对象，其中的键值对对应html中v-model属性的值如data：{ name:”Jack”}。在html中将被绑定的值用双大括号保住，则的值随自定义vue对象data值中name的值改变。</p>
-<h4 id="v-model-v-show"><a href="#v-model-v-show" class="headerlink" title="v-model , v-show"></a>v-model , v-show</h4><p>v-model,v-show是vue自定义的属性，称为指令：directive.<br>v-model与v-show一般配合使用。v-model绑定输入标签input与vue对象变量；v-show绑定输出标签与VUE变量对象如SPAN等；</p>
-<h5 id="html"><a href="#html" class="headerlink" title="html:"></a>html:</h5><pre><code>&lt;div id=&quot;app&quot;&gt;
-    &lt;div&gt;
-        &lt;!-- v-model是vue定义的属性，称为指令：directive --&gt;
-        &lt;input type=&quot;text&quot; v-model=&quot;name&quot;&gt;
-        &lt;span v-show=&quot;name&quot;&gt;
-            My name is {{name}}
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-        &lt;input type=&quot;text&quot; v-model=&quot;age&quot;&gt;
-        &lt;span v-show=&quot;age&quot;&gt;
-            I am {{age}} years old.
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-        &lt;input type=&quot;text&quot; v-model=&quot;sex&quot;&gt;
-        &lt;!-- v-show的作用是：如果sex属性存在，则显示此sapn
-v-if,与v-show作用相同，区别是，v-show是仅仅隐藏，而v-if是当sex属性不存在时则将span从DOM中删除
---&gt;
-        &lt;span v-show=&quot;sex&quot;&gt;
-           I am a {{sex}}.
-        &lt;/span&gt;
-    &lt;/div&gt;
-&lt;/div&gt;</code></pre><h5 id="js"><a href="#js" class="headerlink" title="js:"></a>js:</h5><pre><code>var app = new Vue({
-    el:&apos;#app&apos;,
-    data:{
-        name:&apos;Sophie&apos;,
-        age:&apos;25,
-        sex:&apos;girl&apos;
-    }
-})</code></pre><p>可以在console中输入app.name来查看对应的值。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1755,7 +1739,7 @@ v-if,与v-show作用相同，区别是，v-show是仅仅隐藏，而v-if是当se
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">62</span>
+                  <span class="site-state-item-count">63</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>

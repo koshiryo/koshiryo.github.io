@@ -229,6 +229,158 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/01/Vuejs/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Koshi Ryo">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="This is Jiaozi :)">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/11/01/Vuejs/" itemprop="url">Vue.js</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-11-01T21:09:57+09:00">
+                2019-11-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Vue-js-学习笔记-2"><a href="#Vue-js-学习笔记-2" class="headerlink" title="Vue.js 学习笔记 2"></a>Vue.js 学习笔记 2</h1><h2 id="常用语法"><a href="#常用语法" class="headerlink" title="常用语法"></a>常用语法</h2><h3 id="数据绑定"><a href="#数据绑定" class="headerlink" title="数据绑定"></a>数据绑定</h3><p>vue与html中内容建立关系的方式是绑定，在自定的js文件中定义一个Vue对象，内部元素el作为选择器绑定对应标签，如div;data是一个对象，其中的键值对对应html中v-model属性的值如data：{ name:”Jack”}。在html中将被绑定的值用双大括号保住，则的值随自定义vue对象data值中name的值改变。</p>
+<h4 id="v-model-v-show"><a href="#v-model-v-show" class="headerlink" title="v-model , v-show"></a>v-model , v-show</h4><p>v-model,v-show是vue自定义的属性，称为指令：directive.<br>v-model与v-show一般配合使用。v-model绑定输入标签input与vue对象变量；v-show绑定输出标签与VUE变量对象如SPAN等；</p>
+<h5 id="html"><a href="#html" class="headerlink" title="html:"></a>html:</h5><pre><code>&lt;div id=&quot;app&quot;&gt;
+    &lt;div&gt;
+        &lt;!-- v-model是vue定义的属性，称为指令：directive --&gt;
+        &lt;input type=&quot;text&quot; v-model=&quot;name&quot;&gt;
+        &lt;span v-show=&quot;name&quot;&gt;
+            My name is {{name}}
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;input type=&quot;text&quot; v-model=&quot;age&quot;&gt;
+        &lt;span v-show=&quot;age&quot;&gt;
+            I am {{age}} years old.
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;input type=&quot;text&quot; v-model=&quot;sex&quot;&gt;
+        &lt;!-- v-show的作用是：如果sex属性存在，则显示此sapn
+v-if,与v-show作用相同，区别是，v-show是仅仅隐藏，而v-if是当sex属性不存在时则将span从DOM中删除
+--&gt;
+        &lt;span v-show=&quot;sex&quot;&gt;
+           I am a {{sex}}.
+        &lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre><h5 id="js"><a href="#js" class="headerlink" title="js:"></a>js:</h5><pre><code>var app = new Vue({
+    el:&apos;#app&apos;,
+    data:{
+        name:&apos;Sophie&apos;,
+        age:&apos;25,
+        sex:&apos;girl&apos;
+    }
+})</code></pre><p>可以在console中输入app.name来查看对应的值。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/27/Vue/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1318,125 +1470,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/10/Note3/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Koshi Ryo">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="This is Jiaozi :)">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/10/10/Note3/" itemprop="url">Note</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-10-10T18:50:31+09:00">
-                2019-10-10
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Day-3-for-応用情報技術者試験"><a href="#Day-3-for-応用情報技術者試験" class="headerlink" title="Day 3 for 応用情報技術者試験"></a>Day 3 for 応用情報技術者試験</h1><h2 id="ストラテジ-part-2"><a href="#ストラテジ-part-2" class="headerlink" title="ストラテジ　part 2"></a>ストラテジ　part 2</h2><h3 id="経営戦略マネジメント"><a href="#経営戦略マネジメント" class="headerlink" title="経営戦略マネジメント"></a>経営戦略マネジメント</h3><img src="/2019/10/10/Note3/2.jpg">
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1487,7 +1520,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">62</span>
+                  <span class="site-state-item-count">63</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
