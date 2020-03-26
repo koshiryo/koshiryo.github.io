@@ -229,6 +229,203 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/20/junit-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Koshi Ryo">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="This is Jiaozi :)">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/11/20/junit-1/" itemprop="url">junit</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-11-20T22:17:37+09:00">
+                2019-11-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Junit的基本使用2"><a href="#Junit的基本使用2" class="headerlink" title="Junit的基本使用2"></a>Junit的基本使用2</h1><h2 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h2><p>测试的方法多，不想一个个的建立测试方法那么可以使用以下方法：<br>    package com.koshi.textjunit;</p>
+<pre><code>import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class CalculateTest3 {
+
+    @Test
+    public void testAdd() {
+        fail(&quot;Not yet implemented&quot;);
+    }
+
+    @Test
+    public void testSubstract() {
+        fail(&quot;Not yet implemented&quot;);
+    }
+
+    @Test
+    public void testCheng() {
+        fail(&quot;Not yet implemented&quot;);
+    }
+
+    @Test
+    public void testChu() {
+        fail(&quot;Not yet implemented&quot;);
+    }
+
+}</code></pre><p>再在这个基础上进行修改测试类方法</p>
+<p>在测试中结果中关于Failure和error的解释</p>
+<p>1.Failure 一般由测试单元使用断言方法判断失败引起的，这个报错，说明测试点发现了问题，即程序输出的结果和我们预期的不一样</p>
+<p>2.error 是由代码异常引起的，它可以产生代码本身的错误，也可以是测试代码中的一个隐藏bug，测试用例不是用来证明你是对的，而是用来证明你没错。</p>
+<pre><code>package com.fulisha.textjunit;
+
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+public class JunitFlowText {
+
+    @BeforeClass
+    public static void setUpBeforeClass() throws Exception {
+    System.out.println(&quot;this is beforeClasss....&quot;);
+    }
+
+    @AfterClass
+    public static void tearDownAfterClass() throws Exception {
+        System.out.println(&quot;this is afterClasss....&quot;);
+    }
+
+    @Before
+    public void setUp() throws Exception {
+        System.out.println(&quot;this is brfore....&quot;);
+    }
+
+    @After
+    public void tearDown() throws Exception {
+        System.out.println(&quot;this is after....&quot;);
+    }
+
+    @Test
+    public void test1() {
+        System.out.println(&quot;this is test1....&quot;);
+    }
+    @Test
+    public void test2() {
+        System.out.println(&quot;this is test2....&quot;);
+    }
+}</code></pre><h2 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h2><p><code>@BeforeClass</code></p>
+<p>修饰的方法会在所有方法被调用前执行，且该方法时静态的，所以当测试类被加载后就接着运行它，而且在内存中他只会存在一份实例，他比较适合加载配置文件（针对所有测试，只执行一次 ）</p>
+<p><code>@AfterClass</code></p>
+<p>所修饰的方法通常用来对资源管理，如关闭数据库连接（针对所有测试，只执行一次 ）</p>
+<p><code>@Before</code>和<code>@After</code> 会在每个测试方法前后各执行一次</p>
+<p><code>@Test</code>：测试方法，在这里可以测试期望异常和超时时间</p>
+<p><code>@Ignore</code>：忽略的测试方法  </p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/19/junit/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1491,125 +1688,6 @@ v-if,与v-show作用相同，区别是，v-show是仅仅隐藏，而v-if是当se
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/18/Note8/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Koshi Ryo">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="This is Jiaozi :)">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/10/18/Note8/" itemprop="url">Note8</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-10-18T22:27:22+09:00">
-                2019-10-18
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Day-8-for-応用情報技術者試験"><a href="#Day-8-for-応用情報技術者試験" class="headerlink" title="Day 8 for 応用情報技術者試験"></a>Day 8 for 応用情報技術者試験</h1><h2 id="テクノロジ-part-3"><a href="#テクノロジ-part-3" class="headerlink" title="テクノロジ　part 3"></a>テクノロジ　part 3</h2><h3 id="セキュリティ"><a href="#セキュリティ" class="headerlink" title="セキュリティ"></a>セキュリティ</h3><img src="/2019/10/18/Note8/3.jpg">
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1660,7 +1738,7 @@ v-if,与v-show作用相同，区别是，v-show是仅仅隐藏，而v-if是当se
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">67</span>
+                  <span class="site-state-item-count">68</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
