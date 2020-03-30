@@ -229,6 +229,653 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/29/note-0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Koshi Ryo">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="This is Jiaozi :)">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/11/29/note-0/" itemprop="url">SpringMVC 1</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-11-29T22:58:39+09:00">
+                2019-11-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="SpringMVC-1"><a href="#SpringMVC-1" class="headerlink" title="SpringMVC 1"></a>SpringMVC 1</h1><h2 id="MVC-设计概述"><a href="#MVC-设计概述" class="headerlink" title="MVC 设计概述"></a>MVC 设计概述</h2><p>在早期 Java Web 的开发中，统一把显示层、控制层、数据层的操作全部交给 JSP 或者 JavaBean 来进行处理，我们称之为 Model1：</p>
+<img src="/2019/11/29/note-0/1.jpg">
+
+<h3 id="出现的弊端"><a href="#出现的弊端" class="headerlink" title="出现的弊端"></a>出现的弊端</h3><ul>
+<li>JSP 和 Java Bean 之间严重耦合，Java 代码和 HTML 代码也耦合在了一起</li>
+<li>要求开发者不仅要掌握 Java ，还要有高超的前端水平</li>
+<li>前端和后端相互依赖，前端需要等待后端完成，后端也依赖前端完成，才能进行有效的测试</li>
+<li>代码难以复用</li>
+</ul>
+<p>正因为上面的种种弊端，所以很快这种方式就被 Servlet + JSP + Java Bean 所替代了，早期的 MVC 模型（Model2）就像下图这样：</p>
+<img src="/2019/11/29/note-0/2.jpg">
+
+<p>首先用户的请求会到达 Servlet，然后根据请求调用相应的 Java Bean，并把所有的显示结果交给 JSP 去完成，这样的模式我们就称为 MVC 模式。</p>
+<ul>
+<li><strong>M 代表 模型（Model）</strong><br>模型是什么呢？ 模型就是数据，就是 dao,bean</li>
+<li><strong>V 代表 视图（View）</strong><br>视图是什么呢？ 就是网页, JSP，用来展示模型中的数据</li>
+<li><strong>C 代表 控制器（controller)</strong><br>控制器是什么？ 控制器的作用就是把不同的数据(Model)，显示在不同的视图(View)上，Servlet 扮演的就是这样的角色。</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/23/Cook-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Koshi Ryo">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="This is Jiaozi :)">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/11/23/Cook-1/" itemprop="url">Cooking</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-11-23T21:18:13+09:00">
+                2019-11-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="蛋饺"><a href="#蛋饺" class="headerlink" title="蛋饺"></a>蛋饺</h1><hr>
+<p>今天介绍的一道菜是蛋饺，在我家乡经常吃的一道传统料理。烹饪方法非常简单易学。<br>一起来试试吧！</p>
+<p>需要准备以下食材：</p>
+<blockquote>
+<ul>
+<li>猪肉末</li>
+<li>葱姜蒜</li>
+<li>生抽，料酒，白砂糖，盐，淀粉</li>
+</ul>
+</blockquote>
+<hr>
+<h2 id="烹饪方法"><a href="#烹饪方法" class="headerlink" title="烹饪方法"></a>烹饪方法</h2><h3 id="1-用盐腌渍肉末"><a href="#1-用盐腌渍肉末" class="headerlink" title="1. 用盐腌渍肉末"></a>1. 用盐腌渍肉末</h3><p>加入胡椒去腥，加入小半勺糖，生抽，盐，少许姜葱</p>
+<h3 id="2-将鸡蛋打碎，打成蛋液，放置"><a href="#2-将鸡蛋打碎，打成蛋液，放置" class="headerlink" title="2. 将鸡蛋打碎，打成蛋液，放置"></a>2. 将鸡蛋打碎，打成蛋液，放置</h3><p>顺时针搅拌，分三次将三勺清水加入肉馅中，胶版至胶状</p>
+<h3 id="3-在平底锅刷层油，开最小的火。"><a href="#3-在平底锅刷层油，开最小的火。" class="headerlink" title="3. 在平底锅刷层油，开最小的火。"></a>3. 在平底锅刷层油，开最小的火。</h3><p>倒入蛋液，凝固后迅速用勺子压边，先按中间，再按旁边</p>
+<h3 id="4-肉馅放置一边，凝固后迅速将蛋皮包上"><a href="#4-肉馅放置一边，凝固后迅速将蛋皮包上" class="headerlink" title="4. 肉馅放置一边，凝固后迅速将蛋皮包上"></a>4. 肉馅放置一边，凝固后迅速将蛋皮包上</h3><hr>
+<img src="/2019/11/23/Cook-1/1.JPG">
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/20/junit-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Koshi Ryo">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="This is Jiaozi :)">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/11/20/junit-1/" itemprop="url">junit</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-11-20T22:17:37+09:00">
+                2019-11-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Junit的基本使用2"><a href="#Junit的基本使用2" class="headerlink" title="Junit的基本使用2"></a>Junit的基本使用2</h1><h2 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h2><p>测试的方法多，不想一个个的建立测试方法那么可以使用以下方法：<br>    package com.koshi.textjunit;</p>
+<pre><code>import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class CalculateTest3 {
+
+    @Test
+    public void testAdd() {
+        fail(&quot;Not yet implemented&quot;);
+    }
+
+    @Test
+    public void testSubstract() {
+        fail(&quot;Not yet implemented&quot;);
+    }
+
+    @Test
+    public void testCheng() {
+        fail(&quot;Not yet implemented&quot;);
+    }
+
+    @Test
+    public void testChu() {
+        fail(&quot;Not yet implemented&quot;);
+    }
+
+}</code></pre><p>再在这个基础上进行修改测试类方法</p>
+<p>在测试中结果中关于Failure和error的解释</p>
+<p>1.Failure 一般由测试单元使用断言方法判断失败引起的，这个报错，说明测试点发现了问题，即程序输出的结果和我们预期的不一样</p>
+<p>2.error 是由代码异常引起的，它可以产生代码本身的错误，也可以是测试代码中的一个隐藏bug，测试用例不是用来证明你是对的，而是用来证明你没错。</p>
+<pre><code>package com.fulisha.textjunit;
+
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+public class JunitFlowText {
+
+    @BeforeClass
+    public static void setUpBeforeClass() throws Exception {
+    System.out.println(&quot;this is beforeClasss....&quot;);
+    }
+
+    @AfterClass
+    public static void tearDownAfterClass() throws Exception {
+        System.out.println(&quot;this is afterClasss....&quot;);
+    }
+
+    @Before
+    public void setUp() throws Exception {
+        System.out.println(&quot;this is brfore....&quot;);
+    }
+
+    @After
+    public void tearDown() throws Exception {
+        System.out.println(&quot;this is after....&quot;);
+    }
+
+    @Test
+    public void test1() {
+        System.out.println(&quot;this is test1....&quot;);
+    }
+    @Test
+    public void test2() {
+        System.out.println(&quot;this is test2....&quot;);
+    }
+}</code></pre><h2 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h2><p><code>@BeforeClass</code></p>
+<p>修饰的方法会在所有方法被调用前执行，且该方法时静态的，所以当测试类被加载后就接着运行它，而且在内存中他只会存在一份实例，他比较适合加载配置文件（针对所有测试，只执行一次 ）</p>
+<p><code>@AfterClass</code></p>
+<p>所修饰的方法通常用来对资源管理，如关闭数据库连接（针对所有测试，只执行一次 ）</p>
+<p><code>@Before</code>和<code>@After</code> 会在每个测试方法前后各执行一次</p>
+<p><code>@Test</code>：测试方法，在这里可以测试期望异常和超时时间</p>
+<p><code>@Ignore</code>：忽略的测试方法  </p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/19/junit/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Koshi Ryo">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="This is Jiaozi :)">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/11/19/junit/" itemprop="url">junit</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-11-19T21:04:34+09:00">
+                2019-11-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Junit的基本使用"><a href="#Junit的基本使用" class="headerlink" title="Junit的基本使用"></a>Junit的基本使用</h1><h2 id="什么是Junit"><a href="#什么是Junit" class="headerlink" title="什么是Junit?"></a>什么是Junit?</h2><p>Junit是xUnit的一个子集， xUnit是一套基于测试驱动开发的测试框架<br>其中的断言机制：将程序预期的结果与程序运行的最终结果进行比对，确保对结果的可预知性。</p>
+<h2 id="简单使用"><a href="#简单使用" class="headerlink" title="简单使用"></a>简单使用</h2><ol>
+<li><p>新建一个工程</p>
+</li>
+<li><p>工程右键，点击Properties<br><img src="//yoursite.com/2019/11/19/junit/1.PNG" alt><br><img src="//yoursite.com/2019/11/19/junit/2.PNG" alt></p>
+</li>
+<li><p>新建一个类：Calculate</p>
+<pre><code>package koshiryotest;
+
+    public class Calculate {
+    public int add(int a,int b){
+        return a+b;
+    }
+    public int substract(int a , int b){
+        return a-b;
+    }
+    public int cheng(int a,int b){
+        return a*b;
+    }
+    public int chu(int a, int b){
+        return a/b;
+    }
+}</code></pre></li>
+<li><p>再新建一个测试类</p>
+<pre><code>package koshiryotest;
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+
+public class CalculateTest {
+    @Test
+    public void testAdd(){
+        assertEquals(6,new Calculate().add(3, 3));
+    }
+
+    @Test
+    public void testsubstract(){
+        assertEquals(2,new Calculate().substract(5, 3));
+    }
+
+    @Test
+    public void testcheng(){
+        assertEquals(15,new Calculate().cheng(5, 3));
+    }
+    @Test
+    public void testchu(){
+        assertEquals(2,new Calculate().chu(6, 3));
+    }
+}</code></pre></li>
+<li><p>在test类上运行<br><img src="//yoursite.com/2019/11/19/junit/3.PNG" alt><br><img src="//yoursite.com/2019/11/19/junit/4.PNG" alt></p>
+</li>
+</ol>
+<h2 id="对此进行总结："><a href="#对此进行总结：" class="headerlink" title="对此进行总结："></a>对此进行总结：</h2><ul>
+<li>测试方法上必须使用@Test</li>
+<li>测试方法必须使用 public void进行修饰</li>
+<li>新建一个源代码目录来存放测试代码</li>
+<li>测试类的包应该和被测试类的包一样</li>
+<li>测试单元中的每个方法一定要能够独立测试，其方法不能有任何依赖</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/12/Vuejs5/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1074,482 +1721,6 @@ v-if,与v-show作用相同，区别是，v-show是仅仅隐藏，而v-if是当se
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/22/Note10/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Koshi Ryo">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="This is Jiaozi :)">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/10/22/Note10/" itemprop="url">Note10</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-10-22T19:24:26+09:00">
-                2019-10-22
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Day-10-for-応用情報技術者試験"><a href="#Day-10-for-応用情報技術者試験" class="headerlink" title="Day 10 for 応用情報技術者試験"></a>Day 10 for 応用情報技術者試験</h1><h2 id="マネジメント"><a href="#マネジメント" class="headerlink" title="マネジメント　"></a>マネジメント　</h2><img src="/2019/10/22/Note10/1.jpg">
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/19/Note9/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Koshi Ryo">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="This is Jiaozi :)">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/10/19/Note9/" itemprop="url">Note9</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-10-19T21:17:26+09:00">
-                2019-10-19
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Day-9-for-応用情報技術者試験"><a href="#Day-9-for-応用情報技術者試験" class="headerlink" title="Day 9 for 応用情報技術者試験"></a>Day 9 for 応用情報技術者試験</h1><h2 id="テクノロジ-part-4"><a href="#テクノロジ-part-4" class="headerlink" title="テクノロジ　part 4"></a>テクノロジ　part 4</h2><h3 id="システム開発技術＆ソフトウェア開発管理技術"><a href="#システム開発技術＆ソフトウェア開発管理技術" class="headerlink" title="システム開発技術＆ソフトウェア開発管理技術"></a>システム開発技術＆ソフトウェア開発管理技術</h3><img src="/2019/10/19/Note9/4.jpg">
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/18/Note8/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Koshi Ryo">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="This is Jiaozi :)">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/10/18/Note8/" itemprop="url">Note8</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-10-18T22:27:22+09:00">
-                2019-10-18
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Day-8-for-応用情報技術者試験"><a href="#Day-8-for-応用情報技術者試験" class="headerlink" title="Day 8 for 応用情報技術者試験"></a>Day 8 for 応用情報技術者試験</h1><h2 id="テクノロジ-part-3"><a href="#テクノロジ-part-3" class="headerlink" title="テクノロジ　part 3"></a>テクノロジ　part 3</h2><h3 id="セキュリティ"><a href="#セキュリティ" class="headerlink" title="セキュリティ"></a>セキュリティ</h3><img src="/2019/10/18/Note8/3.jpg">
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/17/Note7/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Koshi Ryo">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="This is Jiaozi :)">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/10/17/Note7/" itemprop="url">Note7</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-10-17T23:59:32+09:00">
-                2019-10-17
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Day-7-for-応用情報技術者試験"><a href="#Day-7-for-応用情報技術者試験" class="headerlink" title="Day 7 for 応用情報技術者試験"></a>Day 7 for 応用情報技術者試験</h1><h2 id="テクノロジ-part-2"><a href="#テクノロジ-part-2" class="headerlink" title="テクノロジ　part 2"></a>テクノロジ　part 2</h2><h3 id="ネットワーク"><a href="#ネットワーク" class="headerlink" title="ネットワーク"></a>ネットワーク</h3><img src="/2019/10/17/Note7/2.jpg">
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1600,7 +1771,7 @@ v-if,与v-show作用相同，区别是，v-show是仅仅隐藏，而v-if是当se
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">66</span>
+                  <span class="site-state-item-count">70</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>

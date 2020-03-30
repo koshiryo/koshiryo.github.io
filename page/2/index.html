@@ -229,6 +229,599 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/28/react8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Koshi Ryo">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="This is Jiaozi :)">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/02/28/react8/" itemprop="url">React</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-02-28T22:49:12+09:00">
+                2020-02-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="React-Study-Note8"><a href="#React-Study-Note8" class="headerlink" title="React Study Note8"></a>React Study Note8</h1><h2 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h2><p>react里面的用户事件都是合成事件，被React封装过。内部使用的还是事件的委托机制。<br>常用的事件有点击事件onClick，input的onChange事件等，官网都可以查到。</p>
+<h4 id="合成事件的this指向问题"><a href="#合成事件的this指向问题" class="headerlink" title="合成事件的this指向问题"></a>合成事件的this指向问题</h4><p>就像上文一样，我们绑定事件的方式很奇怪，使用了bind来显示绑定this的指向。因为传递到组件内部的只是一个函数，而脱离了当前对象的函数的this指向是不能指到当前组件的，需要显示指定。</p>
+<h4 id="通过bind"><a href="#通过bind" class="headerlink" title="通过bind"></a>通过bind</h4><pre><code>&lt;button onClick={this.update.bind(this)}&gt;更新&lt;/button&gt;</code></pre><h4 id="构造器内部指定"><a href="#构造器内部指定" class="headerlink" title="构造器内部指定"></a>构造器内部指定</h4><pre><code>import * as React from &apos;react&apos;
+
+class Child extends React.Component {
+  constructor(props) {
+     super(props) 
+     this.update = this.update.bind(this)
+  }
+
+  update() {
+      this.props.onChange(&apos;小明名字改了&apos;)
+  }
+
+  render() {
+    return (&lt;div&gt;
+      {this.props.parentName}
+      &lt;button onClick={this.update}&gt;更新&lt;/button&gt;
+    &lt;/div&gt;)
+  }
+}</code></pre>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/27/react7/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Koshi Ryo">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="This is Jiaozi :)">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/02/27/react7/" itemprop="url">React</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-02-27T22:12:11+09:00">
+                2020-02-27
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="React-Study-Note7"><a href="#React-Study-Note7" class="headerlink" title="React Study Note7"></a>React Study Note7</h1><h2 id="props"><a href="#props" class="headerlink" title="props"></a>props</h2><p>props是组件之间传递数据的最主要api, react推崇的是自顶向下的数据流向，也就是组件的数据要从父组件传给子组件。如果子组件需要向父组件传递数据，则需要使用回调函数的方式。<br>    import * as React from ‘react’</p>
+<pre><code>class Child extends React.Component {
+  render() {
+    return (&lt;div&gt;
+      {this.props.parentName}
+    &lt;/div&gt;)
+  }
+}
+
+class Parent extends React.Component {
+  state = {
+      name: &apos;小明&apos;
+  }    
+
+  render() {
+    setTimeout(() =&gt; this.setState({name: &apos;小明儿子&apos;})， 5000)
+
+    return (&lt;div&gt;
+      &lt;Child parentName={this.state.name}/&gt;
+    &lt;/div&gt;)
+  }
+}</code></pre><p>可以看到Child组件显示了父组件的name。当父组件状态更新了，子组件同步更新。那如何在子组件中更改父组件状态呢？答案是回调函数。<br>    import * as React from ‘react’</p>
+<pre><code>class Child extends React.Component {
+  update() {
+      this.props.onChange(&apos;小明名字改了&apos;)
+  }
+
+  render() {
+    return (&lt;div&gt;
+      {this.props.parentName}
+      &lt;button onClick={this.update.bind(this)}&gt;更新&lt;/button&gt;
+    &lt;/div&gt;)
+  }
+}
+
+class Parent extends React.Component {
+  state = {
+      name: &apos;小明&apos;
+  }    
+
+  changeName(name) {
+      this.setState({
+          name
+      })
+  }
+
+  render() {
+    setTimeout(() =&gt; this.setState({name: &apos;小明儿子&apos;})， 5000)
+
+    return (&lt;div&gt;
+      &lt;Child onChange={this.changeName.bind(this)} parentName={this.state.name}/&gt;
+    &lt;/div&gt;)
+  }
+}</code></pre><p>注意props是不可以更改的，这既不符合react单向数据流思想，也为维护带来灾难。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/25/react6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Koshi Ryo">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="This is Jiaozi :)">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/02/25/react6/" itemprop="url">React</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-02-25T21:34:28+09:00">
+                2020-02-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="React-Study-Note6"><a href="#React-Study-Note6" class="headerlink" title="React Study Note6"></a>React Study Note6</h1><h2 id="React数据流"><a href="#React数据流" class="headerlink" title="React数据流"></a>React数据流</h2><h4 id="state"><a href="#state" class="headerlink" title="state"></a>state</h4><p>state是组件的内部状态，需要在视图里面用到的状态，才需要放到state里面去。如下，我们在类上创建一个state属性，在视图里面通过使用this.state.name去引用。而这里的state定义则代替的是getinitialstate方法。<br>    import * as React from ‘react’</p>
+<pre><code>class Page extends React.Component {
+  state = {
+      name: &apos;小明&apos;
+  }    
+
+  render() {
+    return (&lt;div&gt;
+      {this}
+    &lt;/div&gt;)
+  }
+}</code></pre><p>如何更新state呢，直接更改state其实可以可以的，不过这样子无法触发组件视图的更新机制。所以使用<code>setState()</code>api。值得注意的是setState是异步的，原因是react内部需要对setState做优化，不是state变了立刻去更新视图，而是拦截一部分state的改变，等到合适的时机再去更新视图。</p>
+<pre><code>import * as React from &apos;react&apos;
+
+class Page extends React.Component {
+  state = {
+      name: &apos;小明&apos;
+  }    
+
+  render() {
+    setTimeout(() =&gt; this.setState({name: &apos;小明儿子&apos;})， 5000)
+
+    return (&lt;div&gt;
+      {this.state.name}
+    &lt;/div&gt;)
+  }
+}</code></pre>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/22/react5/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Koshi Ryo">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="This is Jiaozi :)">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/02/22/react5/" itemprop="url">React</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-02-22T23:14:54+09:00">
+                2020-02-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="React-Study-Note5"><a href="#React-Study-Note5" class="headerlink" title="React Study Note5"></a>React Study Note5</h1><h2 id="React组件创建"><a href="#React组件创建" class="headerlink" title="React组件创建"></a>React组件创建</h2><h4 id="React-createClass"><a href="#React-createClass" class="headerlink" title="React.createClass"></a>React.createClass</h4><p>这是旧版本的api，使用React.createClass创建组件，配套的一些api，有getDefaultProps, getinitialstate。官方已经不建议使用了，使用下面新的api替代。</p>
+<h4 id="ES6-classes"><a href="#ES6-classes" class="headerlink" title="ES6 classes"></a>ES6 classes</h4><pre><code>import * as React from &apos;react&apos;
+
+class Page extends React.Component {
+  render() {
+    return (&lt;div&gt;
+      home
+    &lt;/div&gt;)
+  }
+}</code></pre><p>这是一个实现了render方法的class。也是一个基本的react组件。</p>
+<h4 id="无状态函数"><a href="#无状态函数" class="headerlink" title="无状态函数"></a>无状态函数</h4><pre><code>function Button(props, context) {
+    return (
+        &lt;button&gt;
+            &lt;em&gt;{props.text}&lt;/em&gt;
+            &lt;span&gt;{context.name}&lt;/span&gt;
+        &lt;/button&gt;
+    );</code></pre><p>纯函数,不存在state，只接受props和state。纯函数有优点，优点就是易于测试，无副作用。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/19/rect4/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1046,526 +1639,6 @@ EndADT</code></pre><h2 id="树的存储结构："><a href="#树的存储结构�
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/14/6/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Koshi Ryo">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="This is Jiaozi :)">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/01/14/6/" itemprop="url">数据与结构</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-01-14T23:13:58+09:00">
-                2020-01-14
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="树"><a href="#树" class="headerlink" title="树"></a>树</h1><h2 id="树的其他相关概念："><a href="#树的其他相关概念：" class="headerlink" title="树的其他相关概念："></a>树的其他相关概念：</h2><ul>
-<li>结点的层次（Level）从根开始定义起，根为第一层，根的孩子为第二层。</li>
-<li>双亲在同一层的结点互称为堂兄弟。</li>
-<li>树中结点的最大层次称为书的深度（Depth）或高度。</li>
-<li>如果左右子树是有次序的，不能互换的，则称该树为有序树，否则称为无序树。</li>
-<li>森林（Forest）是m（m &gt;= 0）课互不相交的树的集合。</li>
-</ul>
-<h2 id="线性结构-VS-树结构："><a href="#线性结构-VS-树结构：" class="headerlink" title="线性结构 VS 树结构："></a>线性结构 VS 树结构：</h2><p>线性结构：</p>
-<ul>
-<li>第一个数据元素：无前驱</li>
-<li>最后一个数据元素：无后续</li>
-<li>中间元素：一个前驱，一个后续</li>
-</ul>
-<p>树结构：</p>
-<ul>
-<li>根结点：无双亲，唯一</li>
-<li>叶结点：无孩子，可以多个</li>
-<li>中间结点：一个双亲，多个孩子</li>
-</ul>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/12/note6-0/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Koshi Ryo">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="This is Jiaozi :)">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/01/12/note6-0/" itemprop="url">数据与结构</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-01-12T22:02:49+09:00">
-                2020-01-12
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="树"><a href="#树" class="headerlink" title="树"></a>树</h1><p>树：n（n&gt;=0）个结点的有限集。</p>
-<h2 id="特点："><a href="#特点：" class="headerlink" title="特点："></a>特点：</h2><ul>
-<li>n=0时，称为空树。</li>
-<li>在任意一颗非空树中：<br>（1）有且仅有一个根结点<br>（2）当n&gt;1时，其余结点可分为m（m&gt;0）个互不相交的有限集，其中每一个集合本身又是一棵树，并且称为根的子树。</li>
-</ul>
-<h2 id="结点分类："><a href="#结点分类：" class="headerlink" title="结点分类："></a>结点分类：</h2><ul>
-<li>结点拥有的子树数称为结点的度（Degree）。</li>
-<li>度为0的结点称为叶结点（Leaf）或终端结点；度不为0的结点称为非终端结点或分支结点。</li>
-<li>除根节点之外，分支结点也称为内部结点。</li>
-<li>树的度是树内结点的度的最大值。</li>
-</ul>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/10/note5-0/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Koshi Ryo">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="This is Jiaozi :)">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/01/10/note5-0/" itemprop="url">数据与结构</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-01-10T20:55:39+09:00">
-                2020-01-10
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="串"><a href="#串" class="headerlink" title="串"></a>串</h1><h2 id="串：是由零个或多个字符组成的有限序列，又叫字符串。"><a href="#串：是由零个或多个字符组成的有限序列，又叫字符串。" class="headerlink" title="串：是由零个或多个字符组成的有限序列，又叫字符串。"></a>串：是由零个或多个字符组成的有限序列，又叫字符串。</h2><p>字符串在开发的时候很常用，以Objective-C为例，有可变字符串和不可变字符串，两者的实现数据结构应该有点区别；一个是链式存储结构，一个是顺序存储结构。</p>
-<p>字符串的抽象数据类型：<br>    ADT 串（String）<br>    Data<br>        串中元素仅由一个字符组成，相邻元素具有前驱和后续关系。<br>    Operation<br>        StringEmpty(S)：若串S为空，返回true，否则返回false。<br>         …<br>    EndADT</p>
-<h2 id="按存储结构分类："><a href="#按存储结构分类：" class="headerlink" title="按存储结构分类："></a>按存储结构分类：</h2><ul>
-<li>顺序存储结构的字符串</li>
-<li>链式存储结构的字符串</li>
-</ul>
-<h2 id="字符串的模式匹配"><a href="#字符串的模式匹配" class="headerlink" title="字符串的模式匹配"></a>字符串的模式匹配</h2><p>朴素的模式匹配算法：核心思想，需要匹配的字符串和主串从下标0开始匹配，一旦子串不匹配，则子串又从下标0开始匹配，主串则挪到下标1，不断的循环这个过程，直到主串或者字串当前的下标超过字符串的长度或者匹配成功返回。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/08/note4-0/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Koshi Ryo">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="This is Jiaozi :)">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/01/08/note4-0/" itemprop="url">数据与结构</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-01-08T22:02:13+09:00">
-                2020-01-08
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="栈与队列"><a href="#栈与队列" class="headerlink" title="栈与队列"></a>栈与队列</h1><p>栈：限定在表尾进行插入和删除的线性表。<br>栈是一种LIFO(Last In First Out)的线性表，也就是数据元素遵循后进先出的原则。</p>
-<p>栈的抽象数据类型：<br>    ADT 栈(Stack)<br>    Data<br>          具有线性表一样的性质。<br>    Operation<br>          top：获取栈顶元素<br>          count：栈的长度<br>          isEmpty：栈内元素是否为空<br>          push(data)：元素进栈<br>          pop()：元素出栈<br>          removeAll()：清空栈内元素<br>    EndADT</p>
-<h2 id="按栈的存储结构分类："><a href="#按栈的存储结构分类：" class="headerlink" title="按栈的存储结构分类："></a>按栈的存储结构分类：</h2><ul>
-<li>栈的顺序存储结构<br>单栈<br>共享栈</li>
-<li>栈的链式存储结构</li>
-</ul>
-<h2 id="共享栈："><a href="#共享栈：" class="headerlink" title="共享栈："></a>共享栈：</h2><p>两个顺序栈共享存储空间，栈1的栈顶在下标0处，栈2的栈顶在下标n-1处。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1616,7 +1689,7 @@ EndADT</code></pre><h2 id="树的存储结构："><a href="#树的存储结构�
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">66</span>
+                  <span class="site-state-item-count">70</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>

@@ -229,6 +229,533 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/05/Learning/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Koshi Ryo">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="This is Jiaozi :)">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/10/05/Learning/" itemprop="url">Deep Learning</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-10-05T00:03:06+09:00">
+                2019-10-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="PocketTranslator开发学习笔记"><a href="#PocketTranslator开发学习笔记" class="headerlink" title="PocketTranslator开发学习笔记"></a>PocketTranslator开发学习笔记</h1><h2 id="Background"><a href="#Background" class="headerlink" title="Background"></a>Background</h2><p>在之前的工作中和学习中，都需要阅读大量的英语和日语的文档。遇到知识范围外的词汇或者生僻词汇时，需要查询百度翻译。每次复制粘贴打开网页，在中英日三种语言中切换翻译，觉得很麻烦。于是上网查讯大量了资料，借鉴了一些高手的源码，一边学习一边实现了这个小程序。</p>
+<h2 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h2><p>关于这次造的小程序，只需要在阅读文档时（线上线下都OK）复制单词，小程序自动识别为英语或日语，并实时翻译成中文。省去了切换语言亦或是打开浏览器的麻烦。<br>以下是本次的学习笔记。</p>
+<h2 id="Notes"><a href="#Notes" class="headerlink" title="Notes"></a>Notes</h2><h4 id="java-awt-Toolkit"><a href="#java-awt-Toolkit" class="headerlink" title="java.awt.Toolkit"></a>java.awt.Toolkit</h4><p>ToolKit是一个抽象类，ToolKit作为AWT工具箱，提供了GUI 最底层的Java访问，例如从系统获取图像、获取屏幕分辨率，获取屏幕色彩模型、全屏的时候获得屏幕大小等。<br>Toolkit是个非常有用类的，提供许多修改窗口默认行为的方法。</p>
+<h4 id="java-awt-datatransfer"><a href="#java-awt-datatransfer" class="headerlink" title="java.awt.datatransfer"></a>java.awt.datatransfer</h4><p>提供在应用程序之间和在应用程序内部传输数据的接口和类。它定义了”transferable”对象的概念，该对象可以在应用程序之间或应用程序内部传输。它是一种通过实现Transferable接口标识自身为可传输的对象。</p>
+<h4 id="Toolkit-getDefaultToolkit"><a href="#Toolkit-getDefaultToolkit" class="headerlink" title="Toolkit.getDefaultToolkit()"></a>Toolkit.getDefaultToolkit()</h4><p>在java中可以通过Toolkit类的getSystemClipboard方法来获得剪贴板的数据因为剪贴板上存放的可能不是文本，所以在使用剪贴板返回的数据之前我们需要先检测剪贴板上的内容是不是文本。</p>
+<h4 id="java-net"><a href="#java-net" class="headerlink" title="java.net"></a>java.net</h4><p>Java.net包中包含了所有与网络通信相关的类。<br>URL类:代表一个统一资源定位符，它是指向互联网“资源”的指针。</p>
+<h4 id="java-awt"><a href="#java-awt" class="headerlink" title="java.awt"></a>java.awt</h4><p>Abstract Window ToolKit (抽象窗口工具包)<br>java.awt包提供了基本的java程序的GUI设计工具。主要包括下述三个概念:</p>
+<ul>
+<li>组件–Component</li>
+<li>容器–Container</li>
+<li>布局管理器–LayoutManager</li>
+</ul>
+<h4 id="javax-swing"><a href="#javax-swing" class="headerlink" title="javax.swing"></a>javax.swing</h4><p>Swing 是一个为Java设计的GUI工具包。Swing包括了图形用户界面（GUI）器件如：文本框，按钮，分隔窗格和表。<br>Swing提供许多比AWT更好的屏幕显示元素。它们用纯Java写成，所以同Java本身一样可以跨平台运行，这一点不像AWT。</p>
+<img src="/2019/10/05/Learning/1.jpg">
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/04/MVC2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Koshi Ryo">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="This is Jiaozi :)">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/10/04/MVC2/" itemprop="url">MVC</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-10-04T19:11:54+09:00">
+                2019-10-04
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="MVC的理解-2"><a href="#MVC的理解-2" class="headerlink" title="MVC的理解#2"></a>MVC的理解#2</h1><h2 id="MVC的优点"><a href="#MVC的优点" class="headerlink" title="MVC的优点"></a>MVC的优点</h2><p>MVC是是一种软件设计典范。它是用一种业务逻辑、数据与界面显示分离的方法来组织代码，将众多的业务逻辑聚集到一个部件里面，在需要改进和个性化定制界面及用户交互的同时，不需要重新编写业务逻辑，达到减少编码的时间。</p>
+<p>使用的MVC的目的：在于将M和V的实现代码分离，从而使同一个程序可以使用不同的表现形式。比如Windows系统资源管理器文件夹内容的显示方式，下面两张图中左边为详细信息显示方式，右边为中等图标显示方式，文件的内容并没有改变，改变的是显示的方式。不管用户使用何种类型的显示方式，文件的内容并没有改变，达到M和V分离的目的。</p>
+<img src="/2019/10/04/MVC2/1.PNG">
+
+<h2 id="MVC的举例"><a href="#MVC的举例" class="headerlink" title="MVC的举例"></a>MVC的举例</h2><h3 id="jsp-servlet-javabean模式"><a href="#jsp-servlet-javabean模式" class="headerlink" title="jsp+servlet+javabean模式"></a>jsp+servlet+javabean模式</h3><p>最典型的MVC就是jsp+servlet+javabean模式。</p>
+<p>JavaBean作为模型，既可以作为数据模型来封装业务数据，又可以作为业务逻辑模型来包含应用的业务操作。其中，数据模型用来存储或传递业务数据，而业务逻辑模型接收到控制器传过来的模型更新请求后，执行特定的业务逻辑处理，然后返回相应的执行结果。</p>
+<p>JSP作为表现层，负责提供页面为用户展示数据，提供相应的表单（Form）来用于用户的请求，并在适当的时候（点击按钮）向控制器发出请求来请求模型进行更新。</p>
+<p>Serlvet作为控制器，用来接收用户提交的请求，然后获取请求中的数据，将之转换为业务模型需要的数据模型，然后调用业务模型相应的业务方法进行更新，同时根据业务执行结果来选择要返回的视图。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/03/MVC/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Koshi Ryo">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="This is Jiaozi :)">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/10/03/MVC/" itemprop="url">MVC</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-10-03T22:14:39+09:00">
+                2019-10-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="MVC的理解-1"><a href="#MVC的理解-1" class="headerlink" title="MVC的理解#1"></a>MVC的理解#1</h1><h2 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h2><p>MVC 模式代表 Model-View-Controller（模型-视图-控制器） 模式。这种模式用于应用程序的分层开发。</p>
+<ul>
+<li>Model（模型） - 模型代表一个存取数据的对象或 JAVA POJO。它也可以带有逻辑，在数据变化时更新控制器。</li>
+<li>View（视图） - 视图代表模型包含的数据的可视化。</li>
+<li>Controller（控制器） - 控制器作用于模型和视图上。它控制数据流向模型对象，并在数据变化时更新视图。它使视图与模型分离开。<img src="/2019/10/03/MVC/1.JPG">
+
+</li>
+</ul>
+<h2 id="view-视图"><a href="#view-视图" class="headerlink" title="view 视图"></a>view 视图</h2><p>视图是用户看到并与之交互的界面（它可以包括一些可以显示数据信息的页面，或者展示形式。例如jsp，html，asp，php）。对老式的Web应用程序来说，视图就是由HTML元素组成的界面，在新式的Web应用程序中，HTML依旧在视图中扮演着重要的角色，但一些新的技术已层出不穷，它们包括Macromedia Flash和象XHTML，XML/XSL，WML等一些标识语言和Web services。</p>
+<h2 id="model-模型"><a href="#model-模型" class="headerlink" title="model 模型"></a>model 模型</h2><p>模型表示企业数据和业务规则（可以说就是后端接口，用于业务处理）。在MVC的三个部件中，模型拥有最多的处理任务。被模型返回的数据是中立的，就是说模型与数据格式无关，这样一个模型能为多个视图提供数据。由于应用于模型的代码只需写一次就可以被多个视图重用，所以减少了代码的重复性。</p>
+<h2 id="controller-控制器"><a href="#controller-控制器" class="headerlink" title="controller 控制器"></a>controller 控制器</h2><p>控制器接受用户的输入并调用模型和视图去完成用户的需求（接受客户发送的请求，根据请求调用所对应的接口，然后模型业务处理后返回的数据，由控制器决定调用那个View展示）。所以当单击Web页面中的超链接和发送HTML表单时，控制器本身不输出任何东西和做任何处理。它只是接收请求并决定调用哪个模型构件去处理请求，然后用确定用哪个视图来显示模型处理返回的数据。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/27/Cooking/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Koshi Ryo">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="This is Jiaozi :)">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/09/27/Cooking/" itemprop="url">Cooking</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-09-27T19:56:31+09:00">
+                2019-09-27
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="红烧茄子"><a href="#红烧茄子" class="headerlink" title="红烧茄子"></a>红烧茄子</h1><hr>
+<p>从今天起决定在blog上分享自己喜爱的料理的烹饪方法。从很小的时候就开始坚持画插画，于是我也决定用插画的方式记录料理的美好:)</p>
+<p>今天介绍的第一道菜是红烧茄子，虽然是大概去年画的插画，但是这道菜是我最喜欢也是第一道学会的料理，所以我决定将它作为开始。</p>
+<p>需要准备以下食材：</p>
+<blockquote>
+<ul>
+<li>茄子X2</li>
+<li>猪肉末</li>
+<li>葱姜蒜</li>
+<li>生抽，料酒，白砂糖，盐，淀粉</li>
+</ul>
+</blockquote>
+<hr>
+<h2 id="烹饪方法"><a href="#烹饪方法" class="headerlink" title="烹饪方法"></a>烹饪方法</h2><h3 id="1-将茄子切块，用盐浸泡5分钟"><a href="#1-将茄子切块，用盐浸泡5分钟" class="headerlink" title="1. 将茄子切块，用盐浸泡5分钟"></a>1. 将茄子切块，用盐浸泡5分钟</h3><p>这是为了让茄子不变黄，保持色泽鲜美</p>
+<h3 id="2-猪肉末用料酒，糖，生抽均匀搅拌"><a href="#2-猪肉末用料酒，糖，生抽均匀搅拌" class="headerlink" title="2. 猪肉末用料酒，糖，生抽均匀搅拌"></a>2. 猪肉末用料酒，糖，生抽均匀搅拌</h3><p>让肉末味道变得更均匀</p>
+<h3 id="3-倒掉浸泡茄子的盐水-并用清水冲洗，将水榨干"><a href="#3-倒掉浸泡茄子的盐水-并用清水冲洗，将水榨干" class="headerlink" title="3. 倒掉浸泡茄子的盐水,并用清水冲洗，将水榨干"></a>3. 倒掉浸泡茄子的盐水,并用清水冲洗，将水榨干</h3><p>建议用手榨干茄子水分</p>
+<h3 id="4-起油锅，将茄子炒软盛好"><a href="#4-起油锅，将茄子炒软盛好" class="headerlink" title="4. 起油锅，将茄子炒软盛好"></a>4. 起油锅，将茄子炒软盛好</h3><h3 id="5-锅内加点油，加入葱蒜姜末"><a href="#5-锅内加点油，加入葱蒜姜末" class="headerlink" title="5. 锅内加点油，加入葱蒜姜末"></a>5. 锅内加点油，加入葱蒜姜末</h3><p>倒入肉末，加点料酒，将肉末炒至变白后倒入茄子，加入糖，生抽，盐。</p>
+<h3 id="6-出锅前用淀粉勾芡，汁水收干即可出锅。"><a href="#6-出锅前用淀粉勾芡，汁水收干即可出锅。" class="headerlink" title="6. 出锅前用淀粉勾芡，汁水收干即可出锅。"></a>6. 出锅前用淀粉勾芡，汁水收干即可出锅。</h3><hr>
+<img src="/2019/09/27/Cooking/1.JPG">
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/13/Translation4/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1052,7 +1579,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">66</span>
+                  <span class="site-state-item-count">70</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>

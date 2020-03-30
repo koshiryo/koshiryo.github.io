@@ -229,6 +229,526 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/14/6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Koshi Ryo">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="This is Jiaozi :)">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/01/14/6/" itemprop="url">数据与结构</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-01-14T23:13:58+09:00">
+                2020-01-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="树"><a href="#树" class="headerlink" title="树"></a>树</h1><h2 id="树的其他相关概念："><a href="#树的其他相关概念：" class="headerlink" title="树的其他相关概念："></a>树的其他相关概念：</h2><ul>
+<li>结点的层次（Level）从根开始定义起，根为第一层，根的孩子为第二层。</li>
+<li>双亲在同一层的结点互称为堂兄弟。</li>
+<li>树中结点的最大层次称为书的深度（Depth）或高度。</li>
+<li>如果左右子树是有次序的，不能互换的，则称该树为有序树，否则称为无序树。</li>
+<li>森林（Forest）是m（m &gt;= 0）课互不相交的树的集合。</li>
+</ul>
+<h2 id="线性结构-VS-树结构："><a href="#线性结构-VS-树结构：" class="headerlink" title="线性结构 VS 树结构："></a>线性结构 VS 树结构：</h2><p>线性结构：</p>
+<ul>
+<li>第一个数据元素：无前驱</li>
+<li>最后一个数据元素：无后续</li>
+<li>中间元素：一个前驱，一个后续</li>
+</ul>
+<p>树结构：</p>
+<ul>
+<li>根结点：无双亲，唯一</li>
+<li>叶结点：无孩子，可以多个</li>
+<li>中间结点：一个双亲，多个孩子</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/12/note6-0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Koshi Ryo">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="This is Jiaozi :)">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/01/12/note6-0/" itemprop="url">数据与结构</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-01-12T22:02:49+09:00">
+                2020-01-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="树"><a href="#树" class="headerlink" title="树"></a>树</h1><p>树：n（n&gt;=0）个结点的有限集。</p>
+<h2 id="特点："><a href="#特点：" class="headerlink" title="特点："></a>特点：</h2><ul>
+<li>n=0时，称为空树。</li>
+<li>在任意一颗非空树中：<br>（1）有且仅有一个根结点<br>（2）当n&gt;1时，其余结点可分为m（m&gt;0）个互不相交的有限集，其中每一个集合本身又是一棵树，并且称为根的子树。</li>
+</ul>
+<h2 id="结点分类："><a href="#结点分类：" class="headerlink" title="结点分类："></a>结点分类：</h2><ul>
+<li>结点拥有的子树数称为结点的度（Degree）。</li>
+<li>度为0的结点称为叶结点（Leaf）或终端结点；度不为0的结点称为非终端结点或分支结点。</li>
+<li>除根节点之外，分支结点也称为内部结点。</li>
+<li>树的度是树内结点的度的最大值。</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/10/note5-0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Koshi Ryo">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="This is Jiaozi :)">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/01/10/note5-0/" itemprop="url">数据与结构</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-01-10T20:55:39+09:00">
+                2020-01-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="串"><a href="#串" class="headerlink" title="串"></a>串</h1><h2 id="串：是由零个或多个字符组成的有限序列，又叫字符串。"><a href="#串：是由零个或多个字符组成的有限序列，又叫字符串。" class="headerlink" title="串：是由零个或多个字符组成的有限序列，又叫字符串。"></a>串：是由零个或多个字符组成的有限序列，又叫字符串。</h2><p>字符串在开发的时候很常用，以Objective-C为例，有可变字符串和不可变字符串，两者的实现数据结构应该有点区别；一个是链式存储结构，一个是顺序存储结构。</p>
+<p>字符串的抽象数据类型：<br>    ADT 串（String）<br>    Data<br>        串中元素仅由一个字符组成，相邻元素具有前驱和后续关系。<br>    Operation<br>        StringEmpty(S)：若串S为空，返回true，否则返回false。<br>         …<br>    EndADT</p>
+<h2 id="按存储结构分类："><a href="#按存储结构分类：" class="headerlink" title="按存储结构分类："></a>按存储结构分类：</h2><ul>
+<li>顺序存储结构的字符串</li>
+<li>链式存储结构的字符串</li>
+</ul>
+<h2 id="字符串的模式匹配"><a href="#字符串的模式匹配" class="headerlink" title="字符串的模式匹配"></a>字符串的模式匹配</h2><p>朴素的模式匹配算法：核心思想，需要匹配的字符串和主串从下标0开始匹配，一旦子串不匹配，则子串又从下标0开始匹配，主串则挪到下标1，不断的循环这个过程，直到主串或者字串当前的下标超过字符串的长度或者匹配成功返回。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/08/note4-0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Koshi Ryo">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="This is Jiaozi :)">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/01/08/note4-0/" itemprop="url">数据与结构</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-01-08T22:02:13+09:00">
+                2020-01-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="栈与队列"><a href="#栈与队列" class="headerlink" title="栈与队列"></a>栈与队列</h1><p>栈：限定在表尾进行插入和删除的线性表。<br>栈是一种LIFO(Last In First Out)的线性表，也就是数据元素遵循后进先出的原则。</p>
+<p>栈的抽象数据类型：<br>    ADT 栈(Stack)<br>    Data<br>          具有线性表一样的性质。<br>    Operation<br>          top：获取栈顶元素<br>          count：栈的长度<br>          isEmpty：栈内元素是否为空<br>          push(data)：元素进栈<br>          pop()：元素出栈<br>          removeAll()：清空栈内元素<br>    EndADT</p>
+<h2 id="按栈的存储结构分类："><a href="#按栈的存储结构分类：" class="headerlink" title="按栈的存储结构分类："></a>按栈的存储结构分类：</h2><ul>
+<li>栈的顺序存储结构<br>单栈<br>共享栈</li>
+<li>栈的链式存储结构</li>
+</ul>
+<h2 id="共享栈："><a href="#共享栈：" class="headerlink" title="共享栈："></a>共享栈：</h2><p>两个顺序栈共享存储空间，栈1的栈顶在下标0处，栈2的栈顶在下标n-1处。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/06/note3-0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -989,494 +1509,6 @@ EndADT</code></pre>
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/23/new2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Koshi Ryo">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="This is Jiaozi :)">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/12/23/new2/" itemprop="url">NEW SKILLS 2019</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-12-23T21:04:26+09:00">
-                2019-12-23
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="2019年后端新技术2"><a href="#2019年后端新技术2" class="headerlink" title="2019年后端新技术2"></a>2019年后端新技术2</h1><h2 id="ThinkPHP"><a href="#ThinkPHP" class="headerlink" title="ThinkPHP"></a>ThinkPHP</h2><p>ThinkPHP是一个快速、兼容而且简单的轻量级国产PHP开发框架，诞生于2006年初，原名FCS，2007年元旦正式更名为ThinkPHP，遵循Apache2开源协议发布，从Struts结构移植过来并做了改进和完善，同时也借鉴了国外很多优秀的框架和模式，使用面向对象的开发结构和MVC模式，融合了Struts的思想和TagLib（标签库）、RoR的ORM映射和ActiveRecord模式。</p>
-<p>ThinkPHP可以支持windows/Unix/Linux等服务器环境，正式版需要PHP5.0以上版本支持，支持MySql、PgSQL、Sqlite多种数据库以及PDO扩展，ThinkPHP框架本身没有什么特别模块要求，具体的应用系统运行环境要求视开发所涉及的模块。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/21/new1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Koshi Ryo">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="This is Jiaozi :)">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/12/21/new1/" itemprop="url">NEW SKILLS 2019</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-12-21T20:42:43+09:00">
-                2019-12-21
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="2019年后端新技术1"><a href="#2019年后端新技术1" class="headerlink" title="2019年后端新技术1"></a>2019年后端新技术1</h1><h2 id="Laravel"><a href="#Laravel" class="headerlink" title="Laravel"></a>Laravel</h2><p>当我们谈到后端web开发框架时，laravel会出现在前面。自2011年成立以来，Laravel为开发者展示了一条光明的道路。Laravel是一个免费的开源PHP web框架，旨在按照模型-视图-控制器(MVC)架构模式构建最先进的web应用程序。</p>
-<p>Laravel的一些特性是具有专用依赖管理器的模块化打包系统、有助于应用程序部署和维护的实用工具、访问关系数据库的许多方法，以及它面向语法的方向。这就是为什么它被认为是最好的PHP框架，并促使企业为他们的下一个项目雇佣Laravel开发人员的原因。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/18/NEW4/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Koshi Ryo">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="This is Jiaozi :)">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/12/18/NEW4/" itemprop="url">NEW SKILLS 2019</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-12-18T23:50:54+09:00">
-                2019-12-18
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="2019年前端新技术4"><a href="#2019年前端新技术4" class="headerlink" title="2019年前端新技术4"></a>2019年前端新技术4</h1><h2 id="WebAssembly"><a href="#WebAssembly" class="headerlink" title="WebAssembly"></a>WebAssembly</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>WebAssembly 或者 wasm 是一个可移植、体积小、加载快并且兼容 Web 的全新格式</p>
-<h3 id="编译目标"><a href="#编译目标" class="headerlink" title="编译目标"></a>编译目标</h3><p>WebAssembly是一个编译目标。什么是编译目标？当我们写TypeScript的时候，Webpack最后打包生成的JavaScript文件就是编译目标。WebAssembly与JavaScript很实际的一个性能对比。几乎稳定的是JavaScript的两倍。</p>
-<h3 id="什么时候使用WebAssembly？"><a href="#什么时候使用WebAssembly？" class="headerlink" title="什么时候使用WebAssembly？"></a>什么时候使用WebAssembly？</h3><p>我到底什么时候该使用它呢？总结下来，大部分情况分两个点。</p>
-<p>对性能有很高要求的App/Module/游戏<br>在Web中使用C/C++/Rust/Go的库<br>举个简单的例子。如果你要实现的Web版本的Ins或者Facebook， 你想要提高效率。那么就可以把其中对图片进行压缩、解压缩、处理的工具，用C++实现，然后再编译回WebAssembly。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/15/new3/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Koshi Ryo">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="This is Jiaozi :)">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/12/15/new3/" itemprop="url">NEW SKILLS 2019</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-12-15T22:07:41+09:00">
-                2019-12-15
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="2019年前端新技术3"><a href="#2019年前端新技术3" class="headerlink" title="2019年前端新技术3"></a>2019年前端新技术3</h1><h2 id="Serverless"><a href="#Serverless" class="headerlink" title="Serverless"></a>Serverless</h2><h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><p>我们把 Serverless 拆解为 server 和 less 两个单词，从字面上推断词意即为“少服务器的，亦或是无服务器的”。当然这并非指应用架构中是没有服务器资源的，而是通过 Serverless 这种服务形态，用户在使用对应的服务时，不需要关心或较少关心服务器的硬件资源、软件资源、稳定性等等，这些通常已经由云计算厂商提供设施、服务和 SLA 保障，完全托管给云计算厂商。而用户只需要专注自己应用代码本身，上传执行函数到相应云计算平台，按照函数运行的时长按量付费即可。当前比较成熟的 Serverless 云产品主要有 Amazon Lambda、Google Cloud Function、Azure Function、AliCloud Function Compute。</p>
-<h3 id="架构"><a href="#架构" class="headerlink" title="架构"></a>架构</h3><p>如上文的描述，Serverless 架构由两部分组成，即 Faas 和 BaaS。</p>
-<p>FaaS（Function-as-a-Service）即为函数运行平台，用户无需搭建庞大的服务系统，只需要上传自己的逻辑函数如一些定时任务、数据处理任务等到云函数平台，配置执行条件触发器、路由等等，完成基础函数的注册。</p>
-<p>BaaS（Backend-as-a-Service）包含了后端服务组件，它是基于 API 的第三方服务，用于实现应用程序中的核心功能，包含常用的数据库、对象存储、消息队列、日志服务等等。<br>Serverless 其实是通过事件驱动的，当一个任务被触发时，比如 HTTP 请求，API Gateway 接受请求、解析和认证，传递对应参数给云函数平台，平台中执行对应回调函数，配合 DB、MQ 等 BaaS 服务在特定容器中完成计算，最终将结果返回给用户。函数执行完成后，一般会被 FaaS 平台销毁，释放对应容器，等待下一个函数运行。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1527,7 +1559,7 @@ EndADT</code></pre>
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">66</span>
+                  <span class="site-state-item-count">70</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
