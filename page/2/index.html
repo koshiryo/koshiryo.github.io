@@ -229,6 +229,145 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/28/react8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Koshi Ryo">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="This is Jiaozi :)">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/02/28/react8/" itemprop="url">React</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-02-28T22:49:12+09:00">
+                2020-02-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="React-Study-Note8"><a href="#React-Study-Note8" class="headerlink" title="React Study Note8"></a>React Study Note8</h1><h2 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h2><p>react里面的用户事件都是合成事件，被React封装过。内部使用的还是事件的委托机制。<br>常用的事件有点击事件onClick，input的onChange事件等，官网都可以查到。</p>
+<h4 id="合成事件的this指向问题"><a href="#合成事件的this指向问题" class="headerlink" title="合成事件的this指向问题"></a>合成事件的this指向问题</h4><p>就像上文一样，我们绑定事件的方式很奇怪，使用了bind来显示绑定this的指向。因为传递到组件内部的只是一个函数，而脱离了当前对象的函数的this指向是不能指到当前组件的，需要显示指定。</p>
+<h4 id="通过bind"><a href="#通过bind" class="headerlink" title="通过bind"></a>通过bind</h4><pre><code>&lt;button onClick={this.update.bind(this)}&gt;更新&lt;/button&gt;</code></pre><h4 id="构造器内部指定"><a href="#构造器内部指定" class="headerlink" title="构造器内部指定"></a>构造器内部指定</h4><pre><code>import * as React from &apos;react&apos;
+
+class Child extends React.Component {
+  constructor(props) {
+     super(props) 
+     this.update = this.update.bind(this)
+  }
+
+  update() {
+      this.props.onChange(&apos;小明名字改了&apos;)
+  }
+
+  render() {
+    return (&lt;div&gt;
+      {this.props.parentName}
+      &lt;button onClick={this.update}&gt;更新&lt;/button&gt;
+    &lt;/div&gt;)
+  }
+}</code></pre>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/27/react7/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1500,144 +1639,6 @@ EndADT</code></pre><h2 id="树的存储结构："><a href="#树的存储结构�
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/14/6/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Koshi Ryo">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="This is Jiaozi :)">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/01/14/6/" itemprop="url">数据与结构</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-01-14T23:13:58+09:00">
-                2020-01-14
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="树"><a href="#树" class="headerlink" title="树"></a>树</h1><h2 id="树的其他相关概念："><a href="#树的其他相关概念：" class="headerlink" title="树的其他相关概念："></a>树的其他相关概念：</h2><ul>
-<li>结点的层次（Level）从根开始定义起，根为第一层，根的孩子为第二层。</li>
-<li>双亲在同一层的结点互称为堂兄弟。</li>
-<li>树中结点的最大层次称为书的深度（Depth）或高度。</li>
-<li>如果左右子树是有次序的，不能互换的，则称该树为有序树，否则称为无序树。</li>
-<li>森林（Forest）是m（m &gt;= 0）课互不相交的树的集合。</li>
-</ul>
-<h2 id="线性结构-VS-树结构："><a href="#线性结构-VS-树结构：" class="headerlink" title="线性结构 VS 树结构："></a>线性结构 VS 树结构：</h2><p>线性结构：</p>
-<ul>
-<li>第一个数据元素：无前驱</li>
-<li>最后一个数据元素：无后续</li>
-<li>中间元素：一个前驱，一个后续</li>
-</ul>
-<p>树结构：</p>
-<ul>
-<li>根结点：无双亲，唯一</li>
-<li>叶结点：无孩子，可以多个</li>
-<li>中间结点：一个双亲，多个孩子</li>
-</ul>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1688,7 +1689,7 @@ EndADT</code></pre><h2 id="树的存储结构："><a href="#树的存储结构�
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">69</span>
+                  <span class="site-state-item-count">70</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
